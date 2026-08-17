@@ -1,0 +1,35 @@
+{
+ "reference": "DSSP via PDB-REDO precomputed mmCIF, whole structure",
+ "n_structures_compared": 97,
+ "n_structures_unavailable": 23,
+ "n_residues_compared": 65336,
+ "three_state_agreement": 0.9767050324476552,
+ "cohens_kappa": 0.9645840052159051,
+ "confusion_ours_rows_dssp_cols": [
+  [
+   19858,
+   0,
+   548
+  ],
+  [
+   0,
+   17976,
+   3
+  ],
+  [
+   31,
+   940,
+   25980
+  ]
+ ],
+ "states": [
+  "helix",
+  "strand",
+  "loop"
+ ],
+ "strand_recall": 0.9503066187354621,
+ "strand_called_loop_by_us": 940,
+ "strand_total_in_dssp": 18916,
+ "helix_recall": 0.9984413494896677,
+ "interpretation": "Residues that DSSP calls strand and we call loop are the expected signature of our per-chain implementation, since a bridge partner in another chain is invisible to it. The strand recall reported here bounds that gap directly, replacing the qualitative statement in the manuscript's limitations."
+}

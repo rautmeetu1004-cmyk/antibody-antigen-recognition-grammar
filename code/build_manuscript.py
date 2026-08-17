@@ -342,15 +342,24 @@ def build_manuscript():
          "kind should not be trusted without evidence, it was validated against the "
          "HELIX and SHEET records deposited with each structure, giving 88.9 percent "
          "three-state agreement across 622,662 residues. The implementation was "
-         "additionally cross-checked against pydssp, an independent numpy "
-         "implementation of the same algorithm, over 432 chains and 79,977 "
-         "residues drawn from both corpora. Three-state agreement was 98.25 "
-         "percent with a Cohen kappa of 0.973 and no failures. The two figures "
-         "answer different questions. Agreement with an independent "
-         "implementation establishes that the algorithm is implemented "
-         "faithfully. Agreement with deposited records is bounded by the records "
-         "themselves, so the lower figure is a property of that reference rather "
-         "than of the code. That figure is lower "
+         "additionally validated against two independent references. Against pydssp, "
+         "a separate implementation of the same algorithm, three-state agreement "
+         "was 98.25 percent over 432 chains and 79,977 residues. Against the DSSP "
+         "program itself, using annotations computed on the complete structure and "
+         "obtained from PDB-REDO, agreement was 97.67 percent with a Cohen kappa "
+         "of 0.965 over 65,336 residues in 97 structures, with residues matched "
+         "between the two files by alpha-carbon coordinate rather than by residue "
+         "number. The second comparison is the more informative because DSSP "
+         "operates on the whole structure while our implementation operates per "
+         "chain. Recall against DSSP was 0.998 for helix and 0.950 for strand, and "
+         "the disagreement is almost entirely one-directional: 940 residues that "
+         "DSSP assigns to strand are assigned to loop here, against 3 in the "
+         "opposite direction. That asymmetry is the expected signature of "
+         "per-chain assignment, since a bridge partner in another chain cannot be "
+         "seen, and it bounds the effect at five percent of strand residues. "
+         "Agreement with deposited HELIX and SHEET records is lower still, at 88.9 "
+         "percent, but that figure is bounded by the reference rather than by the "
+         "code, since those records are author annotations with no loop category. It is lower "
          "than the agreement typically quoted between independent secondary-"
          "structure programs, which exceeds 95 percent, and the discrepancy "
          "requires comment. Deposited HELIX and SHEET records are author "
@@ -753,22 +762,28 @@ def build_manuscript():
 
     heading(doc, "3.6 The difference is not an artefact of structural context", 2)
     para(doc,
-         "Antibody paratopes are loop-dominated. Secondary-structure assignment "
-         "confirms this: 67 percent of paratope contacts are contributed by loop "
-         "residues, against 46 percent for the probe side of protein-protein "
+         "Antibody paratopes are loop-dominated. Secondary-structure assignment from "
+         "DSSP confirms this: 64 percent of paratope contacts are contributed by "
+         "loop residues, against 42 percent for the probe side of protein-protein "
          "complexes. The obvious concern is that the recognition grammar reported "
          "above is loop grammar rather than antibody grammar.",
          align=WD_ALIGN_PARAGRAPH.JUSTIFY)
     para(doc,
          "Restricting both groups to loop residues on both sides does not reduce the "
-         "difference. It increases it. The cross-group correlation falls from 0.39 "
-         "for all contacts to 0.19 for loop-to-loop contacts. Because restriction "
-         "also reduces sample size, this was compared with random subsets of the "
-         "unrestricted data at the same size, which give 0.32 with a 95 percent "
-         "range of 0.25 to 0.39. The observed value lies below that range. Matching "
-         "structural context therefore sharpens the difference rather than "
-         "explaining it, and the same holds when the target side is restricted to "
-         "strand or helix.",
+         "difference. It increases it. Using secondary structure from the DSSP "
+         "program, available for 2,767 of the 2,804 entries and covering 97 "
+         "percent of contacts in each group, the cross-group correlation falls "
+         "from 0.387 for all contacts to 0.190 for loop-to-loop contacts. Because "
+         "restriction also reduces sample size, this was compared with random "
+         "subsets of the unrestricted data at the same size, which give 0.348 with "
+         "a 95 percent range of 0.252 to 0.428. The observed value lies below that "
+         "range. Restricting the target side to loop behaves the same way, at 0.239 "
+         "against a null of 0.372. Restricting it to strand or helix gives 0.264 "
+         "and 0.235, both inside their nulls and so uninformative rather than "
+         "contrary. Matching structural context therefore sharpens the difference "
+         "where it discriminates at all, and never explains it. The same test run "
+         "with the in-house assignment gives 0.185 for loop-to-loop against a null "
+         "of 0.323, so the conclusion does not depend on which assignment is used.",
          align=WD_ALIGN_PARAGRAPH.JUSTIFY)
     para(doc,
          "Fold composition differs between the groups as expected, with 50 percent "
@@ -879,9 +894,16 @@ def build_manuscript():
          "protein but not relative to other exposed surface, which is consistent "
          "with the earlier failure to relate epitopes to a protrusion index. And the "
          "protrusion in an antibody complex belongs to the antibody. Epitope "
-         "secondary structure tells the same story, with 51.2 percent of epitope "
-         "contacts contributed by loop residues against 50.9 percent for "
-         "protein-protein partners.",
+         "secondary structure is the one axis on which the epitope is not quite "
+         "ordinary. Under DSSP assignment 48.8 percent of epitope contacts come "
+         "from loop residues against 44.9 percent for protein-protein partner "
+         "surfaces, a difference of 3.9 points. That is real, and it is an order "
+         "of magnitude smaller than the paratope excess over the same baseline, "
+         "which is 22 points, so the loop character of an antibody complex remains "
+         "overwhelmingly a property of the antibody. An earlier version of this "
+         "comparison used a per-chain assignment that misses inter-chain bridges "
+         "and reported the two as indistinguishable; the residual difference "
+         "emerges only once strands are fully recovered.",
          align=WD_ALIGN_PARAGRAPH.JUSTIFY)
     para(doc,
          "Two further analyses support the same conclusion from different "
@@ -1131,12 +1153,13 @@ def build_manuscript():
          "This inflates loop content and deflates strand content in both groups. "
          "Because the same procedure is applied to each, the comparative claims are "
          "unaffected, but the absolute loop fractions in Section 3.6 should be read "
-         "as upper bounds. The independent implementation used for cross-validation "
-         "in Section 2.2 assigns from a single ordered backbone array and so "
-         "shares this constraint, meaning the 98.25 percent agreement reported "
-         "there establishes fidelity to the algorithm but does not bound the "
-         "inter-chain gap. Resolving it would require a full DSSP executable, "
-         "which processes the complete structure. Per-residue evolutionary "
+         "as upper bounds. Comparison against DSSP annotations computed on the "
+         "complete structure quantifies the effect: strand recall is 0.950, so "
+         "approximately five percent of strand residues are assigned to loop "
+         "here, while helix recall is 0.998 and the reverse error is negligible "
+         "at three residues in 65,336. Because the same procedure is applied to "
+         "both groups, this shifts absolute loop fractions upward in each without "
+         "creating a difference between them. Per-residue evolutionary "
          "conservation could not be computed corpus-wide in this environment and is "
          "reported only for the lysozyme case study. Interface-versus-surface "
          "comparisons in Section 3.7 are computed on unit-level medians, paired within "
@@ -1172,77 +1195,33 @@ def build_manuscript():
     para(doc, "Author contributions: MR designed the study, implemented the analysis pipeline and drafted the manuscript. AS and AK contributed to study design and interpretation and revised the manuscript. All authors read and approved the final manuscript.", size=10)
 
     heading(doc, "References", 1)
-    para(doc,
-         "Entries marked with an asterisk were verified against the publisher record. "
-         "The remainder are given to the best available detail and should be "
-         "confirmed at proof stage.",
-         size=9, italic=True)
     refs = [
-        "Barlow DJ, Thornton JM. Ion-pairs in proteins. J Mol Biol. "
-        "1983;168(4):867-885.",
-        "Barlow DJ, Edwards MS, Thornton JM. Continuous and discontinuous protein "
-        "antigenic determinants. Nature. 1986;322(6081):747-748.",
-        "Bogan AA, Thorn KS. Anatomy of hot spots in protein interfaces. J Mol Biol. "
-        "1998;280(1):1-9.",
-        "*Brenke R, Hall DR, Chuang GY, Comeau SR, Bohnuud T, Beglov D, Schueler-"
-        "Furman O, Vajda S, Kozakov D. Application of asymmetric statistical "
-        "potentials to antibody-protein docking. Bioinformatics. "
-        "2012;28(20):2608-2614. doi:10.1093/bioinformatics/bts493",
-        "Chakrabarti P, Janin J. Dissecting protein-protein recognition sites. "
-        "Proteins. 2002;47(3):334-343.",
-        "Chuang GY, Kozakov D, Brenke R, Comeau SR, Vajda S. DARS (Decoys As the "
-        "Reference State) potentials for protein-protein docking. Biophys J. "
-        "2008;95(9):4217-4227.",
-        "De Genst E, Silence K, Decanniere K, Conrath K, Loris R, Kinne J, Muyldermans "
-        "S, Wyns L. Molecular basis for the preferential cleft recognition by "
-        "dromedary heavy-chain antibodies. Proc Natl Acad Sci USA. "
-        "2006;103(12):4586-4591.",
-        "Gallivan JP, Dougherty DA. Cation-pi interactions in structural biology. "
-        "Proc Natl Acad Sci USA. 1999;96(17):9459-9464.",
-        "Jones S, Thornton JM. Principles of protein-protein interactions. Proc Natl "
-        "Acad Sci USA. 1996;93(1):13-20.",
-        "Kabsch W, Sander C. Dictionary of protein secondary structure: pattern "
-        "recognition of hydrogen-bonded and geometrical features. Biopolymers. "
-        "1983;22(12):2577-2637.",
-        "*Kringelum JV, Nielsen M, Padkjaer SB, Lund O. Structural analysis of B-cell "
-        "epitopes in antibody:protein complexes. Mol Immunol. 2013;53(1-2):24-34. "
-        "doi:10.1016/j.molimm.2012.06.001",
-        "Lawrence MC, Colman PM. Shape complementarity at protein/protein interfaces. "
-        "J Mol Biol. 1993;234(4):946-950.",
-        "Lefranc MP, Pommie C, Ruiz M, Giudicelli V, Foulquier E, Truong L, "
-        "Thouvenin-Contet V, Lefranc G. IMGT unique numbering for immunoglobulin and "
-        "T cell receptor variable domains and Ig superfamily V-like domains. Dev Comp "
-        "Immunol. 2003;27(1):55-77.",
-        "Lo Conte L, Chothia C, Janin J. The atomic structure of protein-protein "
-        "recognition sites. J Mol Biol. 1999;285(5):2177-2198.",
-        "MacCallum RM, Martin ACR, Thornton JM. Antibody-antigen interactions: "
-        "contact analysis and binding site topography. J Mol Biol. "
-        "1996;262(5):732-745.",
-        "Mian IS, Bradwell AR, Olson AJ. Structure, function and properties of "
-        "antibody binding sites. J Mol Biol. 1991;217(1):133-151.",
-        "Murphy KP, Freire E. Thermodynamics of structural stability and cooperative "
-        "folding behavior in proteins. Adv Protein Chem. 1992;43:313-361.",
-        "Muyldermans S. Nanobodies: natural single-domain antibodies. Annu Rev "
-        "Biochem. 2013;82:775-797.",
-        "*Peng HP, Lee KH, Jian JW, Yang AS. Origins of specificity and affinity in "
-        "antibody-protein interactions. Proc Natl Acad Sci USA. "
-        "2014;111(26):E2656-E2665. doi:10.1073/pnas.1401131111",
-        "Ramaraj T, Angel T, Dratz EA, Jesaitis AJ, Mumey B. Antigen-antibody "
-        "interface properties: composition, residue interactions, and features of 53 "
-        "non-redundant structures. Biochim Biophys Acta. 2012;1824(3):520-532.",
-        "Rubinstein ND, Mayrose I, Halperin D, Yekutieli D, Gershoni JM, Pupko T. "
-        "Computational characterization of B-cell epitopes. Mol Immunol. "
-        "2009;45(12):3477-3489.",
-        "Sela-Culang I, Kunik V, Ofran Y. The structural basis of antibody-antigen "
-        "recognition. Front Immunol. 2013;4:302.",
-        "Shrake A, Rupley JA. Environment and exposure to solvent of protein atoms. "
-        "Lysozyme and insulin. J Mol Biol. 1973;79(2):351-371.",
-        "Spolar RS, Record MT Jr. Coupling of local folding to site-specific binding "
-        "of proteins to DNA. Science. 1994;263(5148):777-784.",
-        "Sundberg EJ, Mariuzza RA. Molecular recognition in antibody-antigen "
-        "complexes. Adv Protein Chem. 2002;61:119-160.",
-        "Xu JL, Davis MM. Diversity in the CDR3 region of VH is sufficient for most "
-        "antibody specificities. Immunity. 2000;13(1):37-45.",
+        "Barlow D, Thornton J. Ion-pairs in proteins. Journal of Molecular Biology. 1983;168(4):867-885. doi:10.1016/s0022-2836(83)80079-5.",
+        "Barlow DJ, Edwards MS, Thornton JM. Continuous and discontinuous protein antigenic determinants. Nature. 1986;322(6081):747-748. doi:10.1038/322747a0.",
+        "Bogan AA, Thorn KS. Anatomy of hot spots in protein interfaces. Journal of Molecular Biology. 1998;280(1):1-9. doi:10.1006/jmbi.1998.1843.",
+        "Brenke R, Hall DR, Chuang G, Comeau SR, Bohnuud T, Beglov D, Schueler-Furman O, Vajda S, Kozakov D. Application of asymmetric statistical potentials to antibody–protein docking. Bioinformatics. 2012;28(20):2608-2614. doi:10.1093/bioinformatics/bts493.",
+        "Chakrabarti P, Janin J. Dissecting protein–protein recognition sites. Proteins: Structure, Function, and Bioinformatics. 2002;47(3):334-343. doi:10.1002/prot.10085.",
+        "Chuang G, Kozakov D, Brenke R, Comeau SR, Vajda S. DARS (Decoys As the Reference State) Potentials for Protein-Protein Docking. Biophysical Journal. 2008;95(9):4217-4227. doi:10.1529/biophysj.108.135814.",
+        "De Genst E, Silence K, Decanniere K, Conrath K, Loris R, Kinne J, Muyldermans S, Wyns L. Molecular basis for the preferential cleft recognition by dromedary heavy-chain antibodies. Proceedings of the National Academy of Sciences. 2006;103(12):4586-4591. doi:10.1073/pnas.0505379103.",
+        "Gallivan JP, Dougherty DA. Cation-π interactions in structural biology. Proceedings of the National Academy of Sciences. 1999;96(17):9459-9464. doi:10.1073/pnas.96.17.9459.",
+        "Jones S, Thornton JM. Principles of protein-protein interactions. Proceedings of the National Academy of Sciences. 1996;93(1):13-20. doi:10.1073/pnas.93.1.13.",
+        "Kabsch W, Sander C. Dictionary of protein secondary structure: Pattern recognition of hydrogen‐bonded and geometrical features. Biopolymers. 1983;22(12):2577-2637. doi:10.1002/bip.360221211.",
+        "Kringelum JV, Nielsen M, Padkjær SB, Lund O. Structural analysis of B-cell epitopes in antibody:protein complexes. Molecular Immunology. 2013;53(1-2):24-34. doi:10.1016/j.molimm.2012.06.001.",
+        "Lawrence MC, Colman PM. Shape Complementarity at Protein/Protein Interfaces. Journal of Molecular Biology. 1993;234(4):946-950. doi:10.1006/jmbi.1993.1648.",
+        "Lefranc M, Pommié C, Ruiz M, Giudicelli V, Foulquier E, Truong L, Thouvenin-Contet V, Lefranc G. IMGT unique numbering for immunoglobulin and T cell receptor variable domains and Ig superfamily V-like domains. Developmental &amp; Comparative Immunology. 2003;27(1):55-77. doi:10.1016/s0145-305x(02)00039-3.",
+        "Conte LL, Chothia C, Janin J. The atomic structure of protein-protein recognition sites 1 1Edited by A. R. Fersht. Journal of Molecular Biology. 1999;285(5):2177-2198. doi:10.1006/jmbi.1998.2439.",
+        "MacCallum RM, Martin AC, Thornton JM. Antibody-antigen Interactions: Contact Analysis and Binding Site Topography. Journal of Molecular Biology. 1996;262(5):732-745. doi:10.1006/jmbi.1996.0548.",
+        "Mian I, Bradwell AR, Olson AJ. Structure, function and properties of antibody binding sites. Journal of Molecular Biology. 1991;217(1):133-151. doi:10.1016/0022-2836(91)90617-f.",
+        "Murphy KP, Freire E. Thermodynamics of structural stability and cooperative folding behavior in proteins. Advances in Protein Chemistry. 1992;43:313-361. doi:10.1016/s0065-3233(08)60556-2.",
+        "Muyldermans S. Nanobodies: Natural Single-Domain Antibodies. Annual Review of Biochemistry. 2013;82(1):775-797. doi:10.1146/annurev-biochem-063011-092449.",
+        "Peng H, Lee KH, Jian J, Yang A. Origins of specificity and affinity in antibody–protein interactions. Proceedings of the National Academy of Sciences. 2014;111(26). doi:10.1073/pnas.1401131111.",
+        "Ramaraj T, Angel T, Dratz EA, Jesaitis AJ, Mumey B. Antigen–antibody interface properties: Composition, residue interactions, and features of 53 non-redundant structures. Biochimica et Biophysica Acta (BBA) - Proteins and Proteomics. 2012;1824(3):520-532. doi:10.1016/j.bbapap.2011.12.007.",
+        "Rubinstein ND, Mayrose I, Halperin D, Yekutieli D, Gershoni JM, Pupko T. Computational characterization of B-cell epitopes. Molecular Immunology. 2008;45(12):3477-3489. doi:10.1016/j.molimm.2007.10.016.",
+        "Sela-Culang I, Kunik V, Ofran Y. The Structural Basis of Antibody-Antigen Recognition. Frontiers in Immunology. 2013;4. doi:10.3389/fimmu.2013.00302.",
+        "Shrake A, Rupley J. Environment and exposure to solvent of protein atoms. Lysozyme and insulin. Journal of Molecular Biology. 1973;79(2):351-371. doi:10.1016/0022-2836(73)90011-9.",
+        "Spolar RS, Record MT. Coupling of Local Folding to Site-Specific Binding of Proteins to DNA. Science. 1994;263(5148):777-784. doi:10.1126/science.8303294.",
+        "Sundberg EJ, Mariuzza RA. Molecular recognition in antibody-antigen complexes. Advances in Protein Chemistry. 2002;119-160. doi:10.1016/s0065-3233(02)61004-6.",
+        "Xu JL, Davis MM. Diversity in the CDR3 Region of VH Is Sufficient for Most Antibody Specificities. Immunity. 2000;13(1):37-45. doi:10.1016/s1074-7613(00)00006-6.",
     ]
     for i_, r_ in enumerate(refs, 1):
         para(doc, f"{i_}. {r_}", size=9, space=2)
@@ -1452,6 +1431,26 @@ def build_supplementary():
               "and an independent implementation of the same algorithm. Both assign "
               "from a single ordered backbone array, so this establishes fidelity to "
               "the algorithm and does not address inter-chain beta bridges.", size=9)
+
+    heading(doc, "S8c. Validation against the DSSP program", 1)
+    w = J("dssp_real_validation.json")
+    table(doc, [
+        ["Quantity", "Value"],
+        ["Reference", "DSSP, whole structure, via PDB-REDO"],
+        ["Structures compared", str(w.get("n_structures_compared", 0))],
+        ["Residues compared", f"{w.get('n_residues_compared', 0):,}"],
+        ["Three-state agreement", f"{w.get('three_state_agreement', 0):.4f}"],
+        ["Cohen kappa", f"{w.get('cohens_kappa', 0):.4f}"],
+        ["Helix recall", f"{w.get('helix_recall', 0):.4f}"],
+        ["Strand recall", f"{w.get('strand_recall', 0):.4f}"],
+        ["DSSP strand assigned loop here",
+         f"{w.get('strand_called_loop_by_us', 0):,} of "
+         f"{w.get('strand_total_in_dssp', 0):,}"],
+    ])
+    para(doc, "Table S8c Agreement with the DSSP program itself. Residues were "
+              "matched by alpha-carbon coordinate. The one-directional strand "
+              "disagreement quantifies the per-chain limitation of the in-house "
+              "implementation.", size=9)
 
     heading(doc, "S9. Analysis code", 1)
     para(doc,

@@ -3,6 +3,7 @@ interactions/analysis/structural_residues.csv
 metadata/sabdab_summary.csv
 
 # Downloaded caches
+dssp_reference/
 sabdab_imgt/
 metadata/analysis/fold_annotations.json
 

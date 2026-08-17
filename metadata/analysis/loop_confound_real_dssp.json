@@ -1,0 +1,91 @@
+{
+ "source": "DSSP program, whole structure, via PDB-REDO",
+ "n_structures_with_dssp": 2767,
+ "n_structures_without_dssp": 37,
+ "n_residues_labelled": 1999321,
+ "ss_composition": {
+  "antibody_probe": {
+   "helix": 0.0839,
+   "strand": 0.2772,
+   "loop": 0.6389
+  },
+  "antibody_target": {
+   "helix": 0.2489,
+   "strand": 0.2628,
+   "loop": 0.4883
+  },
+  "ppi_probe": {
+   "helix": 0.3568,
+   "strand": 0.2227,
+   "loop": 0.4205
+  },
+  "ppi_target": {
+   "helix": 0.3323,
+   "strand": 0.2192,
+   "loop": 0.4485
+  }
+ },
+ "loop_confound": {
+  "all": {
+   "r": 0.38717791618003167,
+   "n_antibody": 35839,
+   "n_ppi": 397825
+  },
+  "loop_probe": {
+   "r": 0.34238268484173007,
+   "n_antibody": 23242,
+   "n_ppi": 177715,
+   "null_median": 0.3887035893714882,
+   "null_ci": [
+    0.32688602060536154,
+    0.44903599048841636
+   ],
+   "verdict": "within null, consistent with sample size"
+  },
+  "loop_both": {
+   "r": 0.18997668232941298,
+   "n_antibody": 12229,
+   "n_ppi": 98182,
+   "null_median": 0.34789377296463797,
+   "null_ci": [
+    0.2518616679686627,
+    0.4282319254650584
+   ],
+   "verdict": "below null, matching context does not explain the difference"
+  },
+  "target_loop": {
+   "r": 0.2392811781372579,
+   "n_antibody": 18676,
+   "n_ppi": 192724,
+   "null_median": 0.3716508140206678,
+   "null_ci": [
+    0.29252912664818587,
+    0.4598018857371499
+   ],
+   "verdict": "below null, matching context does not explain the difference"
+  },
+  "target_strand": {
+   "r": 0.2640716631706082,
+   "n_antibody": 9294,
+   "n_ppi": 77733,
+   "null_median": 0.3295181139344673,
+   "null_ci": [
+    0.23412500079451445,
+    0.38816063437609216
+   ],
+   "verdict": "within null, consistent with sample size"
+  },
+  "target_helix": {
+   "r": 0.2346316054659387,
+   "n_antibody": 7869,
+   "n_ppi": 127368,
+   "null_median": 0.3147271389859397,
+   "null_ci": [
+    0.23098876475892627,
+    0.3885410979869877
+   ],
+   "verdict": "within null, consistent with sample size"
+  }
+ },
+ "comparison_note": "This repeats the Section 3.6 test with authoritative secondary structure. The in-house assignment gave all-contacts 0.387 and loop-to-loop 0.185, the latter below its size-matched null. If the conclusion holds here, the per-chain limitation of that assignment does not drive it."
+}

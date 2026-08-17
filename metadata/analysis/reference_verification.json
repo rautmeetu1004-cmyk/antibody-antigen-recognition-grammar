@@ -1,0 +1,296 @@
+{
+ "n_references": 26,
+ "n_verified": 25,
+ "n_needing_review": 1,
+ "needing_review": [
+  "murphy1992"
+ ],
+ "records": [
+  {
+   "key": "barlow1983",
+   "status": "VERIFIED",
+   "title_similarity": 1.0,
+   "author_match": true,
+   "year_match": true,
+   "crossref_year": 1983,
+   "crossref_title": "Ion-pairs in proteins",
+   "doi": "10.1016/s0022-2836(83)80079-5",
+   "formatted": "Barlow D, Thornton J. Ion-pairs in proteins. Journal of Molecular Biology. 1983;168(4):867-885. doi:10.1016/s0022-2836(83)80079-5"
+  },
+  {
+   "key": "barlow1986",
+   "status": "VERIFIED",
+   "title_similarity": 1.0,
+   "author_match": true,
+   "year_match": true,
+   "crossref_year": 1986,
+   "crossref_title": "Continuous and discontinuous protein antigenic determinants",
+   "doi": "10.1038/322747a0",
+   "formatted": "Barlow DJ, Edwards MS, Thornton JM. Continuous and discontinuous protein antigenic determinants. Nature. 1986;322(6081):747-748. doi:10.1038/322747a0"
+  },
+  {
+   "key": "bogan1998",
+   "status": "VERIFIED",
+   "title_similarity": 1.0,
+   "author_match": true,
+   "year_match": true,
+   "crossref_year": 1998,
+   "crossref_title": "Anatomy of hot spots in protein interfaces",
+   "doi": "10.1006/jmbi.1998.1843",
+   "formatted": "Bogan AA, Thorn KS. Anatomy of hot spots in protein interfaces. Journal of Molecular Biology. 1998;280(1):1-9. doi:10.1006/jmbi.1998.1843"
+  },
+  {
+   "key": "brenke2012",
+   "status": "VERIFIED",
+   "title_similarity": 0.987,
+   "author_match": true,
+   "year_match": true,
+   "crossref_year": 2012,
+   "crossref_title": "Application of asymmetric statistical potentials to antibody\u2013protein docking",
+   "doi": "10.1093/bioinformatics/bts493",
+   "formatted": "Brenke R, Hall DR, Chuang G, Comeau SR, Bohnuud T, Beglov D, Schueler-Furman O, Vajda S, Kozakov D. Application of asymmetric statistical potentials to antibody\u2013protein docking. Bioinformatics. 2012;28(20):2608-2614. doi:10.1093/bioinformatics/bts493"
+  },
+  {
+   "key": "chakrabarti2002",
+   "status": "VERIFIED",
+   "title_similarity": 0.977,
+   "author_match": true,
+   "year_match": true,
+   "crossref_year": 2002,
+   "crossref_title": "Dissecting protein\u2013protein recognition sites",
+   "doi": "10.1002/prot.10085",
+   "formatted": "Chakrabarti P, Janin J. Dissecting protein\u2013protein recognition sites. Proteins: Structure, Function, and Bioinformatics. 2002;47(3):334-343. doi:10.1002/prot.10085"
+  },
+  {
+   "key": "chuang2008",
+   "status": "VERIFIED",
+   "title_similarity": 1.0,
+   "author_match": true,
+   "year_match": true,
+   "crossref_year": 2008,
+   "crossref_title": "DARS (Decoys As the Reference State) Potentials for Protein-Protein Docking",
+   "doi": "10.1529/biophysj.108.135814",
+   "formatted": "Chuang G, Kozakov D, Brenke R, Comeau SR, Vajda S. DARS (Decoys As the Reference State) Potentials for Protein-Protein Docking. Biophysical Journal. 2008;95(9):4217-4227. doi:10.1529/biophysj.108.135814"
+  },
+  {
+   "key": "degenst2006",
+   "status": "VERIFIED",
+   "title_similarity": 1.0,
+   "author_match": true,
+   "year_match": true,
+   "crossref_year": 2006,
+   "crossref_title": "Molecular basis for the preferential cleft recognition by dromedary heavy-chain antibodies",
+   "doi": "10.1073/pnas.0505379103",
+   "formatted": "De Genst E, Silence K, Decanniere K, Conrath K, Loris R, Kinne J, Muyldermans S, Wyns L. Molecular basis for the preferential cleft recognition by dromedary heavy-chain antibodies. Proceedings of the National Academy of Sciences. 2006;103(12):4586-4591. doi:10.1073/pnas.0505379103"
+  },
+  {
+   "key": "gallivan1999",
+   "status": "VERIFIED",
+   "title_similarity": 0.966,
+   "author_match": true,
+   "year_match": true,
+   "crossref_year": 1999,
+   "crossref_title": "Cation-\u03c0 interactions in structural biology",
+   "doi": "10.1073/pnas.96.17.9459",
+   "formatted": "Gallivan JP, Dougherty DA. Cation-\u03c0 interactions in structural biology. Proceedings of the National Academy of Sciences. 1999;96(17):9459-9464. doi:10.1073/pnas.96.17.9459"
+  },
+  {
+   "key": "jones1996",
+   "status": "VERIFIED",
+   "title_similarity": 0.988,
+   "author_match": true,
+   "year_match": true,
+   "crossref_year": 1996,
+   "crossref_title": "Principles of protein-protein interactions.",
+   "doi": "10.1073/pnas.93.1.13",
+   "formatted": "Jones S, Thornton JM. Principles of protein-protein interactions. Proceedings of the National Academy of Sciences. 1996;93(1):13-20. doi:10.1073/pnas.93.1.13"
+  },
+  {
+   "key": "kabsch1983",
+   "status": "VERIFIED",
+   "title_similarity": 0.991,
+   "author_match": true,
+   "year_match": true,
+   "crossref_year": 1983,
+   "crossref_title": "Dictionary of protein secondary structure: Pattern recognition of hydrogen\u2010bonded and geometrical features",
+   "doi": "10.1002/bip.360221211",
+   "formatted": "Kabsch W, Sander C. Dictionary of protein secondary structure: Pattern recognition of hydrogen\u2010bonded and geometrical features. Biopolymers. 1983;22(12):2577-2637. doi:10.1002/bip.360221211"
+  },
+  {
+   "key": "kringelum2013",
+   "status": "VERIFIED",
+   "title_similarity": 1.0,
+   "author_match": true,
+   "year_match": true,
+   "crossref_year": 2013,
+   "crossref_title": "Structural analysis of B-cell epitopes in antibody:protein complexes",
+   "doi": "10.1016/j.molimm.2012.06.001",
+   "formatted": "Kringelum JV, Nielsen M, Padkj\u00e6r SB, Lund O. Structural analysis of B-cell epitopes in antibody:protein complexes. Molecular Immunology. 2013;53(1-2):24-34. doi:10.1016/j.molimm.2012.06.001"
+  },
+  {
+   "key": "lawrence1993",
+   "status": "VERIFIED",
+   "title_similarity": 1.0,
+   "author_match": true,
+   "year_match": true,
+   "crossref_year": 1993,
+   "crossref_title": "Shape Complementarity at Protein/Protein Interfaces",
+   "doi": "10.1006/jmbi.1993.1648",
+   "formatted": "Lawrence MC, Colman PM. Shape Complementarity at Protein/Protein Interfaces. Journal of Molecular Biology. 1993;234(4):946-950. doi:10.1006/jmbi.1993.1648"
+  },
+  {
+   "key": "lefranc2003",
+   "status": "VERIFIED",
+   "title_similarity": 1.0,
+   "author_match": true,
+   "year_match": true,
+   "crossref_year": 2003,
+   "crossref_title": "IMGT unique numbering for immunoglobulin and T cell receptor variable domains and Ig superfamily V-like domains",
+   "doi": "10.1016/s0145-305x(02)00039-3",
+   "formatted": "Lefranc M, Pommi\u00e9 C, Ruiz M, Giudicelli V, Foulquier E, Truong L, Thouvenin-Contet V, Lefranc G. IMGT unique numbering for immunoglobulin and T cell receptor variable domains and Ig superfamily V-like domains. Developmental &amp; Comparative Immunology. 2003;27(1):55-77. doi:10.1016/s0145-305x(02)00039-3"
+  },
+  {
+   "key": "loconte1999",
+   "status": "VERIFIED",
+   "title_similarity": 0.814,
+   "author_match": true,
+   "year_match": true,
+   "crossref_year": 1999,
+   "crossref_title": "The atomic structure of protein-protein recognition sites 1 1Edited by A. R. Fersht",
+   "doi": "10.1006/jmbi.1998.2439",
+   "formatted": "Conte LL, Chothia C, Janin J. The atomic structure of protein-protein recognition sites 1 1Edited by A. R. Fersht. Journal of Molecular Biology. 1999;285(5):2177-2198. doi:10.1006/jmbi.1998.2439"
+  },
+  {
+   "key": "maccallum1996",
+   "status": "VERIFIED",
+   "title_similarity": 1.0,
+   "author_match": true,
+   "year_match": true,
+   "crossref_year": 1996,
+   "crossref_title": "Antibody-antigen Interactions: Contact Analysis and Binding Site Topography",
+   "doi": "10.1006/jmbi.1996.0548",
+   "formatted": "MacCallum RM, Martin AC, Thornton JM. Antibody-antigen Interactions: Contact Analysis and Binding Site Topography. Journal of Molecular Biology. 1996;262(5):732-745. doi:10.1006/jmbi.1996.0548"
+  },
+  {
+   "key": "mian1991",
+   "status": "VERIFIED",
+   "title_similarity": 1.0,
+   "author_match": true,
+   "year_match": true,
+   "crossref_year": 1991,
+   "crossref_title": "Structure, function and properties of antibody binding sites",
+   "doi": "10.1016/0022-2836(91)90617-f",
+   "formatted": "Mian I, Bradwell AR, Olson AJ. Structure, function and properties of antibody binding sites. Journal of Molecular Biology. 1991;217(1):133-151. doi:10.1016/0022-2836(91)90617-f"
+  },
+  {
+   "key": "murphy1992",
+   "status": "CHECK",
+   "title_similarity": 1.0,
+   "author_match": false,
+   "year_match": true,
+   "crossref_year": 1992,
+   "crossref_title": "Thermodynamics of Structural Stability and Cooperative Folding Behavior in Proteins",
+   "doi": "10.1016/s0065-3233(08)60556-2",
+   "formatted": ". Thermodynamics of Structural Stability and Cooperative Folding Behavior in Proteins. Advances in Protein Chemistry. 1992;313-361. doi:10.1016/s0065-3233(08)60556-2"
+  },
+  {
+   "key": "muyldermans2013",
+   "status": "VERIFIED",
+   "title_similarity": 1.0,
+   "author_match": true,
+   "year_match": true,
+   "crossref_year": 2013,
+   "crossref_title": "Nanobodies: Natural Single-Domain Antibodies",
+   "doi": "10.1146/annurev-biochem-063011-092449",
+   "formatted": "Muyldermans S. Nanobodies: Natural Single-Domain Antibodies. Annual Review of Biochemistry. 2013;82(1):775-797. doi:10.1146/annurev-biochem-063011-092449"
+  },
+  {
+   "key": "peng2014",
+   "status": "VERIFIED",
+   "title_similarity": 0.985,
+   "author_match": true,
+   "year_match": true,
+   "crossref_year": 2014,
+   "crossref_title": "Origins of specificity and affinity in antibody\u2013protein interactions",
+   "doi": "10.1073/pnas.1401131111",
+   "formatted": "Peng H, Lee KH, Jian J, Yang A. Origins of specificity and affinity in antibody\u2013protein interactions. Proceedings of the National Academy of Sciences. 2014;111(26). doi:10.1073/pnas.1401131111"
+  },
+  {
+   "key": "ramaraj2012",
+   "status": "VERIFIED",
+   "title_similarity": 0.991,
+   "author_match": true,
+   "year_match": true,
+   "crossref_year": 2012,
+   "crossref_title": "Antigen\u2013antibody interface properties: Composition, residue interactions, and features of 53 non-redundant structures",
+   "doi": "10.1016/j.bbapap.2011.12.007",
+   "formatted": "Ramaraj T, Angel T, Dratz EA, Jesaitis AJ, Mumey B. Antigen\u2013antibody interface properties: Composition, residue interactions, and features of 53 non-redundant structures. Biochimica et Biophysica Acta (BBA) - Proteins and Proteomics. 2012;1824(3):520-532. doi:10.1016/j.bbapap.2011.12.007"
+  },
+  {
+   "key": "rubinstein2009",
+   "status": "VERIFIED",
+   "title_similarity": 1.0,
+   "author_match": true,
+   "year_match": true,
+   "crossref_year": 2008,
+   "crossref_title": "Computational characterization of B-cell epitopes",
+   "doi": "10.1016/j.molimm.2007.10.016",
+   "formatted": "Rubinstein ND, Mayrose I, Halperin D, Yekutieli D, Gershoni JM, Pupko T. Computational characterization of B-cell epitopes. Molecular Immunology. 2008;45(12):3477-3489. doi:10.1016/j.molimm.2007.10.016"
+  },
+  {
+   "key": "selaculang2013",
+   "status": "VERIFIED",
+   "title_similarity": 1.0,
+   "author_match": true,
+   "year_match": true,
+   "crossref_year": 2013,
+   "crossref_title": "The Structural Basis of Antibody-Antigen Recognition",
+   "doi": "10.3389/fimmu.2013.00302",
+   "formatted": "Sela-Culang I, Kunik V, Ofran Y. The Structural Basis of Antibody-Antigen Recognition. Frontiers in Immunology. 2013;4. doi:10.3389/fimmu.2013.00302"
+  },
+  {
+   "key": "shrake1973",
+   "status": "VERIFIED",
+   "title_similarity": 1.0,
+   "author_match": true,
+   "year_match": true,
+   "crossref_year": 1973,
+   "crossref_title": "Environment and exposure to solvent of protein atoms. Lysozyme and insulin",
+   "doi": "10.1016/0022-2836(73)90011-9",
+   "formatted": "Shrake A, Rupley J. Environment and exposure to solvent of protein atoms. Lysozyme and insulin. Journal of Molecular Biology. 1973;79(2):351-371. doi:10.1016/0022-2836(73)90011-9"
+  },
+  {
+   "key": "spolar1994",
+   "status": "VERIFIED",
+   "title_similarity": 1.0,
+   "author_match": true,
+   "year_match": true,
+   "crossref_year": 1994,
+   "crossref_title": "Coupling of Local Folding to Site-Specific Binding of Proteins to DNA",
+   "doi": "10.1126/science.8303294",
+   "formatted": "Spolar RS, Record MT. Coupling of Local Folding to Site-Specific Binding of Proteins to DNA. Science. 1994;263(5148):777-784. doi:10.1126/science.8303294"
+  },
+  {
+   "key": "sundberg2002",
+   "status": "VERIFIED",
+   "title_similarity": 1.0,
+   "author_match": true,
+   "year_match": true,
+   "crossref_year": 2002,
+   "crossref_title": "Molecular recognition in antibody-antigen complexes",
+   "doi": "10.1016/s0065-3233(02)61004-6",
+   "formatted": "Sundberg EJ, Mariuzza RA. Molecular recognition in antibody-antigen complexes. Advances in Protein Chemistry. 2002;119-160. doi:10.1016/s0065-3233(02)61004-6"
+  },
+  {
+   "key": "xu2000",
+   "status": "VERIFIED",
+   "title_similarity": 1.0,
+   "author_match": true,
+   "year_match": true,
+   "crossref_year": 2000,
+   "crossref_title": "Diversity in the CDR3 Region of VH Is Sufficient for Most Antibody Specificities",
+   "doi": "10.1016/s1074-7613(00)00006-6",
+   "formatted": "Xu JL, Davis MM. Diversity in the CDR3 Region of VH Is Sufficient for Most Antibody Specificities. Immunity. 2000;13(1):37-45. doi:10.1016/s1074-7613(00)00006-6"
+  }
+ ]
+}
