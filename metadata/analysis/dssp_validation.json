@@ -1,0 +1,52 @@
+{
+ "reference": "pydssp 0.9.1 numpy backend, loaded directly (no torch)",
+ "n_structures_attempted": 120,
+ "n_chains_compared": 432,
+ "n_residues_compared": 79977,
+ "n_failed": 0,
+ "three_state_agreement": 0.9824949673030996,
+ "cohens_kappa": 0.9732949528305161,
+ "confusion_ours_rows_pydssp_cols": [
+  [
+   21807,
+   0,
+   878
+  ],
+  [
+   8,
+   23979,
+   54
+  ],
+  [
+   127,
+   333,
+   32791
+  ]
+ ],
+ "states": [
+  "helix",
+  "strand",
+  "loop"
+ ],
+ "per_state": {
+  "helix": {
+   "ours_n": 22685,
+   "pydssp_n": 21942,
+   "recall_vs_pydssp": 0.9938474159146842,
+   "precision_vs_pydssp": 0.9612960105796782
+  },
+  "strand": {
+   "ours_n": 24041,
+   "pydssp_n": 24312,
+   "recall_vs_pydssp": 0.9863030602171767,
+   "precision_vs_pydssp": 0.9974210723347614
+  },
+  "loop": {
+   "ours_n": 33251,
+   "pydssp_n": 33723,
+   "recall_vs_pydssp": 0.9723630756457018,
+   "precision_vs_pydssp": 0.9861658295991098
+  }
+ },
+ "scope_note": "This is an implementation cross-check. pydssp assigns from a single ordered backbone array, as our implementation does, so it shares the per-chain limitation and cannot detect beta bridges between chains. Agreement here tests fidelity to the algorithm, not coverage of inter-chain sheets."
+}

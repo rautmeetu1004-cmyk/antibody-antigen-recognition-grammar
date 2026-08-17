@@ -341,7 +341,16 @@ def build_manuscript():
          "from the resulting hydrogen-bond map. Because an implementation of this "
          "kind should not be trusted without evidence, it was validated against the "
          "HELIX and SHEET records deposited with each structure, giving 88.9 percent "
-         "three-state agreement across 622,662 residues. This figure is lower "
+         "three-state agreement across 622,662 residues. The implementation was "
+         "additionally cross-checked against pydssp, an independent numpy "
+         "implementation of the same algorithm, over 432 chains and 79,977 "
+         "residues drawn from both corpora. Three-state agreement was 98.25 "
+         "percent with a Cohen kappa of 0.973 and no failures. The two figures "
+         "answer different questions. Agreement with an independent "
+         "implementation establishes that the algorithm is implemented "
+         "faithfully. Agreement with deposited records is bounded by the records "
+         "themselves, so the lower figure is a property of that reference rather "
+         "than of the code. That figure is lower "
          "than the agreement typically quoted between independent secondary-"
          "structure programs, which exceeds 95 percent, and the discrepancy "
          "requires comment. Deposited HELIX and SHEET records are author "
@@ -1122,8 +1131,12 @@ def build_manuscript():
          "This inflates loop content and deflates strand content in both groups. "
          "Because the same procedure is applied to each, the comparative claims are "
          "unaffected, but the absolute loop fractions in Section 3.6 should be read "
-         "as upper bounds, and no DSSP executable was available for a direct "
-         "cross-check. Per-residue evolutionary "
+         "as upper bounds. The independent implementation used for cross-validation "
+         "in Section 2.2 assigns from a single ordered backbone array and so "
+         "shares this constraint, meaning the 98.25 percent agreement reported "
+         "there establishes fidelity to the algorithm but does not bound the "
+         "inter-chain gap. Resolving it would require a full DSSP executable, "
+         "which processes the complete structure. Per-residue evolutionary "
          "conservation could not be computed corpus-wide in this environment and is "
          "reported only for the lysozyme case study. Interface-versus-surface "
          "comparisons in Section 3.7 are computed on unit-level medians, paired within "
@@ -1414,6 +1427,31 @@ def build_supplementary():
          "mismatch when matching partner identity across the two arms, which "
          "compared each protein against its partner rather than against itself.",
          align=WD_ALIGN_PARAGRAPH.JUSTIFY)
+
+    heading(doc, "S8b. Secondary-structure cross-validation", 1)
+    v = J("dssp_validation.json")
+    table(doc, [
+        ["Quantity", "Value"],
+        ["Reference implementation", "pydssp 0.9.1, numpy backend"],
+        ["Chains compared", f"{v.get('n_chains_compared', 0):,}"],
+        ["Residues compared", f"{v.get('n_residues_compared', 0):,}"],
+        ["Three-state agreement", f"{v.get('three_state_agreement', 0):.4f}"],
+        ["Cohen kappa", f"{v.get('cohens_kappa', 0):.4f}"],
+        ["Failures", str(v.get("n_failed", 0))],
+        ["Helix recall / precision",
+         f"{v['per_state']['helix']['recall_vs_pydssp']:.3f} / "
+         f"{v['per_state']['helix']['precision_vs_pydssp']:.3f}"],
+        ["Strand recall / precision",
+         f"{v['per_state']['strand']['recall_vs_pydssp']:.3f} / "
+         f"{v['per_state']['strand']['precision_vs_pydssp']:.3f}"],
+        ["Loop recall / precision",
+         f"{v['per_state']['loop']['recall_vs_pydssp']:.3f} / "
+         f"{v['per_state']['loop']['precision_vs_pydssp']:.3f}"],
+    ])
+    para(doc, "Table S8b Agreement between the in-house Kabsch-Sander implementation "
+              "and an independent implementation of the same algorithm. Both assign "
+              "from a single ordered backbone array, so this establishes fidelity to "
+              "the algorithm and does not address inter-chain beta bridges.", size=9)
 
     heading(doc, "S9. Analysis code", 1)
     para(doc,
