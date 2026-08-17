@@ -1,0 +1,68 @@
+{
+ "n_structures_with_ligand": 587,
+ "n_scanned": 1512,
+ "by_arm": {
+  "antibody": 153,
+  "ppi": 434
+ },
+ "frac_interface_in_functional_site": {
+  "median_antibody": 0.0161,
+  "median_ppi": 0.106925,
+  "effect_rank_biserial": -0.4525697727619338,
+  "p": 8.276100893212328e-09,
+  "n_units_antibody": 79,
+  "n_units_ppi": 166
+ },
+ "commonest_ligands": [
+  [
+   "NAG",
+   132
+  ],
+  [
+   "HEM",
+   88
+  ],
+  [
+   "BMA",
+   38
+  ],
+  [
+   "SF4",
+   35
+  ],
+  [
+   "MAN",
+   33
+  ],
+  [
+   "FUC",
+   31
+  ],
+  [
+   "F3S",
+   21
+  ],
+  [
+   "CSO",
+   20
+  ],
+  [
+   "CSD",
+   19
+  ],
+  [
+   "PCA",
+   17
+  ],
+  [
+   "HEC",
+   15
+  ],
+  [
+   "GLC",
+   13
+  ]
+ ],
+ "definition": "functional site = target-chain residues within 4.5 A of a bound heteroatom group with >=6 heavy atoms, excluding water, buffers, cryoprotectants and lone ions. A structural PROXY for a functional site, computed identically for both arms.",
+ "caveat": "Only structures that happen to be solved WITH a ligand contribute, which is not a random subset -- enzymes and receptors are over-represented."
+}

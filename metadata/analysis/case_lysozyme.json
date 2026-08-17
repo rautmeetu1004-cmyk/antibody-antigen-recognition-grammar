@@ -1,0 +1,1601 @@
+{
+ "antigen": "Lysozyme C (P00698)",
+ "n_antibody_complexes": 42,
+ "conservation": {
+  "n_homologues_aligned": 236,
+  "mean_identity": 0.6201878859545396,
+  "source": "UniRef50 via UniProt REST, pairwise BLOSUM62 global alignment (case-study scale only)"
+ },
+ "functional_sites": [
+  {
+   "type": "Active site",
+   "position": 35,
+   "residue": "E",
+   "description": ""
+  },
+  {
+   "type": "Active site",
+   "position": 52,
+   "residue": "D",
+   "description": ""
+  },
+  {
+   "type": "Binding site",
+   "position": 101,
+   "residue": "D",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 6,
+   "residue": "C",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 7,
+   "residue": "E",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 8,
+   "residue": "L",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 9,
+   "residue": "A",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 10,
+   "residue": "A",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 11,
+   "residue": "A",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 12,
+   "residue": "M",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 13,
+   "residue": "K",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 14,
+   "residue": "R",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 15,
+   "residue": "H",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 16,
+   "residue": "G",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 17,
+   "residue": "L",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 18,
+   "residue": "D",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 19,
+   "residue": "N",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 20,
+   "residue": "Y",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 21,
+   "residue": "R",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 22,
+   "residue": "G",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 23,
+   "residue": "Y",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 24,
+   "residue": "S",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 25,
+   "residue": "L",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 26,
+   "residue": "G",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 27,
+   "residue": "N",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 28,
+   "residue": "W",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 29,
+   "residue": "V",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 30,
+   "residue": "C",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 31,
+   "residue": "A",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 32,
+   "residue": "A",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 33,
+   "residue": "K",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 34,
+   "residue": "F",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 35,
+   "residue": "E",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 36,
+   "residue": "S",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 37,
+   "residue": "N",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 38,
+   "residue": "F",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 39,
+   "residue": "N",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 40,
+   "residue": "T",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 41,
+   "residue": "Q",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 42,
+   "residue": "A",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 43,
+   "residue": "T",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 44,
+   "residue": "N",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 45,
+   "residue": "R",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 46,
+   "residue": "N",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 47,
+   "residue": "T",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 48,
+   "residue": "D",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 49,
+   "residue": "G",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 50,
+   "residue": "S",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 51,
+   "residue": "T",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 52,
+   "residue": "D",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 53,
+   "residue": "Y",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 54,
+   "residue": "G",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 55,
+   "residue": "I",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 56,
+   "residue": "L",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 57,
+   "residue": "Q",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 58,
+   "residue": "I",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 59,
+   "residue": "N",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 60,
+   "residue": "S",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 61,
+   "residue": "R",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 62,
+   "residue": "W",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 63,
+   "residue": "W",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 64,
+   "residue": "C",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 65,
+   "residue": "N",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 66,
+   "residue": "D",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 67,
+   "residue": "G",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 68,
+   "residue": "R",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 69,
+   "residue": "T",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 70,
+   "residue": "P",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 71,
+   "residue": "G",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 72,
+   "residue": "S",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 73,
+   "residue": "R",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 74,
+   "residue": "N",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 75,
+   "residue": "L",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 76,
+   "residue": "C",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 77,
+   "residue": "N",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 78,
+   "residue": "I",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 79,
+   "residue": "P",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 80,
+   "residue": "C",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 81,
+   "residue": "S",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 82,
+   "residue": "A",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 83,
+   "residue": "L",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 84,
+   "residue": "L",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 85,
+   "residue": "S",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 86,
+   "residue": "S",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 87,
+   "residue": "D",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 88,
+   "residue": "I",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 89,
+   "residue": "T",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 90,
+   "residue": "A",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 91,
+   "residue": "S",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 92,
+   "residue": "V",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 93,
+   "residue": "N",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 94,
+   "residue": "C",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 95,
+   "residue": "A",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 96,
+   "residue": "K",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 97,
+   "residue": "K",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 98,
+   "residue": "I",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 99,
+   "residue": "V",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 100,
+   "residue": "S",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 101,
+   "residue": "D",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 102,
+   "residue": "G",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 103,
+   "residue": "N",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 104,
+   "residue": "G",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 105,
+   "residue": "M",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 106,
+   "residue": "N",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 107,
+   "residue": "A",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 108,
+   "residue": "W",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 109,
+   "residue": "V",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 110,
+   "residue": "A",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 111,
+   "residue": "W",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 112,
+   "residue": "R",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 113,
+   "residue": "N",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 114,
+   "residue": "R",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 115,
+   "residue": "C",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 116,
+   "residue": "K",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 117,
+   "residue": "G",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 118,
+   "residue": "T",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 119,
+   "residue": "D",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 120,
+   "residue": "V",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 121,
+   "residue": "Q",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 122,
+   "residue": "A",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 123,
+   "residue": "W",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 124,
+   "residue": "I",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 125,
+   "residue": "R",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 126,
+   "residue": "G",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 127,
+   "residue": "C",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 30,
+   "residue": "C",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 31,
+   "residue": "A",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 32,
+   "residue": "A",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 33,
+   "residue": "K",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 34,
+   "residue": "F",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 35,
+   "residue": "E",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 36,
+   "residue": "S",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 37,
+   "residue": "N",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 38,
+   "residue": "F",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 39,
+   "residue": "N",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 40,
+   "residue": "T",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 41,
+   "residue": "Q",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 42,
+   "residue": "A",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 43,
+   "residue": "T",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 44,
+   "residue": "N",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 45,
+   "residue": "R",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 46,
+   "residue": "N",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 47,
+   "residue": "T",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 48,
+   "residue": "D",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 49,
+   "residue": "G",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 50,
+   "residue": "S",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 51,
+   "residue": "T",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 52,
+   "residue": "D",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 53,
+   "residue": "Y",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 54,
+   "residue": "G",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 55,
+   "residue": "I",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 56,
+   "residue": "L",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 57,
+   "residue": "Q",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 58,
+   "residue": "I",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 59,
+   "residue": "N",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 60,
+   "residue": "S",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 61,
+   "residue": "R",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 62,
+   "residue": "W",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 63,
+   "residue": "W",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 64,
+   "residue": "C",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 65,
+   "residue": "N",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 66,
+   "residue": "D",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 67,
+   "residue": "G",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 68,
+   "residue": "R",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 69,
+   "residue": "T",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 70,
+   "residue": "P",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 71,
+   "residue": "G",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 72,
+   "residue": "S",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 73,
+   "residue": "R",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 74,
+   "residue": "N",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 75,
+   "residue": "L",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 76,
+   "residue": "C",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 77,
+   "residue": "N",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 78,
+   "residue": "I",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 79,
+   "residue": "P",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 80,
+   "residue": "C",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 81,
+   "residue": "S",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 82,
+   "residue": "A",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 83,
+   "residue": "L",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 84,
+   "residue": "L",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 85,
+   "residue": "S",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 86,
+   "residue": "S",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 87,
+   "residue": "D",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 88,
+   "residue": "I",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 89,
+   "residue": "T",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 90,
+   "residue": "A",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 91,
+   "residue": "S",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 92,
+   "residue": "V",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 93,
+   "residue": "N",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 94,
+   "residue": "C",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 95,
+   "residue": "A",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 96,
+   "residue": "K",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 97,
+   "residue": "K",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 98,
+   "residue": "I",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 99,
+   "residue": "V",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 100,
+   "residue": "S",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 101,
+   "residue": "D",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 102,
+   "residue": "G",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 103,
+   "residue": "N",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 104,
+   "residue": "G",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 105,
+   "residue": "M",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 106,
+   "residue": "N",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 107,
+   "residue": "A",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 108,
+   "residue": "W",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 109,
+   "residue": "V",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 110,
+   "residue": "A",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 111,
+   "residue": "W",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 112,
+   "residue": "R",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 113,
+   "residue": "N",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 114,
+   "residue": "R",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 115,
+   "residue": "C",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 64,
+   "residue": "C",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 65,
+   "residue": "N",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 66,
+   "residue": "D",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 67,
+   "residue": "G",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 68,
+   "residue": "R",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 69,
+   "residue": "T",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 70,
+   "residue": "P",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 71,
+   "residue": "G",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 72,
+   "residue": "S",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 73,
+   "residue": "R",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 74,
+   "residue": "N",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 75,
+   "residue": "L",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 76,
+   "residue": "C",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 77,
+   "residue": "N",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 78,
+   "residue": "I",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 79,
+   "residue": "P",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 80,
+   "residue": "C",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 76,
+   "residue": "C",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 77,
+   "residue": "N",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 78,
+   "residue": "I",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 79,
+   "residue": "P",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 80,
+   "residue": "C",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 81,
+   "residue": "S",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 82,
+   "residue": "A",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 83,
+   "residue": "L",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 84,
+   "residue": "L",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 85,
+   "residue": "S",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 86,
+   "residue": "S",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 87,
+   "residue": "D",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 88,
+   "residue": "I",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 89,
+   "residue": "T",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 90,
+   "residue": "A",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 91,
+   "residue": "S",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 92,
+   "residue": "V",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 93,
+   "residue": "N",
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "position": 94,
+   "residue": "C",
+   "description": ""
+  }
+ ],
+ "catalytic_positions_mature": [
+  35,
+  52,
+  101
+ ],
+ "catalytic_targeting": [
+  {
+   "position": 35,
+   "residue": "E",
+   "frac_antibodies_contacting": 0.119,
+   "conservation": 0.975
+  },
+  {
+   "position": 52,
+   "residue": "D",
+   "frac_antibodies_contacting": 0.19,
+   "conservation": 0.97
+  },
+  {
+   "position": 101,
+   "residue": "D",
+   "frac_antibodies_contacting": 0.69,
+   "conservation": 0.962
+  }
+ ],
+ "immunodominant_top": [
+  {
+   "position": 102,
+   "residue": "G",
+   "frac_antibodies": 0.976,
+   "conservation": 0.102
+  },
+  {
+   "position": 103,
+   "residue": "N",
+   "frac_antibodies": 0.833,
+   "conservation": 0.521
+  },
+  {
+   "position": 19,
+   "residue": "N",
+   "frac_antibodies": 0.833,
+   "conservation": 0.191
+  },
+  {
+   "position": 63,
+   "residue": "W",
+   "frac_antibodies": 0.762,
+   "conservation": 1.0
+  },
+  {
+   "position": 73,
+   "residue": "R",
+   "frac_antibodies": 0.738,
+   "conservation": 0.123
+  },
+  {
+   "position": 62,
+   "residue": "W",
+   "frac_antibodies": 0.738,
+   "conservation": 0.72
+  },
+  {
+   "position": 75,
+   "residue": "L",
+   "frac_antibodies": 0.714,
+   "conservation": 0.119
+  },
+  {
+   "position": 21,
+   "residue": "R",
+   "frac_antibodies": 0.714,
+   "conservation": 0.407
+  },
+  {
+   "position": 101,
+   "residue": "D",
+   "frac_antibodies": 0.69,
+   "conservation": 0.962
+  },
+  {
+   "position": 20,
+   "residue": "Y",
+   "frac_antibodies": 0.643,
+   "conservation": 0.805
+  },
+  {
+   "position": 96,
+   "residue": "K",
+   "frac_antibodies": 0.619,
+   "conservation": 1.0
+  },
+  {
+   "position": 97,
+   "residue": "K",
+   "frac_antibodies": 0.619,
+   "conservation": 0.131
+  }
+ ],
+ "conservation_vs_immunodominance": {
+  "spearman_rho": -0.1610590733070793,
+  "p": 0.06824320540348898,
+  "hot_vs_cold_effect": -0.26230769230769235,
+  "hot_vs_cold_p": 0.07817297191308566,
+  "mean_conservation_hot": 0.4713983050847458,
+  "mean_conservation_cold": 0.6199478487614083
+ },
+ "note": "Conservation here is case-study scale: corpus-wide per-residue conservation is not computable in this environment (ConSurf-DB unreachable, no HMMER/BLAST installed) and is not claimed."
+}

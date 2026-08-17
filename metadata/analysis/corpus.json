@@ -1,0 +1,210 @@
+{
+ "antibody": {
+  "n_in_manifest": 774,
+  "n_in_analysis_set": 512,
+  "n_excluded": 262,
+  "excluded_reasons": [
+   [
+    "antigen shorter than the 50-residue folded-protein floor",
+    262
+   ]
+  ],
+  "resolution_median": 1.83,
+  "resolution_range": [
+   1.02,
+   2.0
+  ],
+  "top_partners": [
+   [
+    "Spike protein S1",
+    32
+   ],
+   [
+    "Lysozyme C",
+    31
+   ],
+   [
+    "Nucleoprotein",
+    10
+   ],
+   [
+    "Spike glycoprotein",
+    10
+   ],
+   [
+    "Programmed cell death protein 1",
+    9
+   ],
+   [
+    "Ribonuclease pancreatic",
+    8
+   ],
+   [
+    "Protein L",
+    7
+   ],
+   [
+    "LYSOZYME C",
+    6
+   ],
+   [
+    "Green fluorescent protein",
+    6
+   ],
+   [
+    "Major prion protein",
+    6
+   ],
+   [
+    "Capsid protein",
+    6
+   ],
+   [
+    "ENVELOPE GLYCOPROTEIN GP120",
+    5
+   ]
+  ],
+  "antibody_type": [
+   [
+    "FAB",
+    254
+   ],
+   [
+    "SD-H",
+    203
+   ],
+   [
+    "FV",
+    48
+   ],
+   [
+    "unannotated",
+    6
+   ],
+   [
+    "SD-L",
+    1
+   ]
+  ],
+  "method": [
+   [
+    "XRAY",
+    506
+   ],
+   [
+    "unannotated",
+    6
+   ]
+  ],
+  "top_organisms": [
+   [
+    "Homo sapiens",
+    183
+   ],
+   [
+    "Severe acute respiratory syndrome coronavirus 2",
+    45
+   ],
+   [
+    "Gallus gallus",
+    39
+   ],
+   [
+    "Human immunodeficiency virus 1",
+    13
+   ],
+   [
+    "Mus musculus",
+    11
+   ],
+   [
+    "Ricinus communis",
+    11
+   ],
+   [
+    "Bos taurus",
+    9
+   ],
+   [
+    "Plasmodium falciparum 3D7",
+    9
+   ],
+   [
+    "Escherichia coli K-12",
+    8
+   ],
+   [
+    "Finegoldia magna",
+    8
+   ]
+  ],
+  "sabdab_annotated": 506
+ },
+ "ppi": {
+  "n_in_manifest": 2310,
+  "n_in_analysis_set": 2292,
+  "n_excluded": 18,
+  "excluded_reasons": [
+   [
+    "not in the extracted contact table",
+    18
+   ]
+  ],
+  "resolution_median": 1.8,
+  "resolution_range": [
+   0.89,
+   2.15
+  ],
+  "top_partners": [
+   [
+    "Hemoglobin subunit alpha",
+    45
+   ],
+   [
+    "Pancreatic trypsin inhibitor",
+    34
+   ],
+   [
+    "Hemoglobin alpha chain",
+    28
+   ],
+   [
+    "Nitrile hydratase subunit alpha",
+    26
+   ],
+   [
+    "TRYPTOPHAN SYNTHASE ALPHA CHAIN",
+    21
+   ],
+   [
+    "FACTOR X LIGHT CHAIN",
+    20
+   ],
+   [
+    "Ovomucoid",
+    18
+   ],
+   [
+    "chymotrypsin inhibitor 2",
+    18
+   ],
+   [
+    "Ubiquitin",
+    17
+   ],
+   [
+    "2-OXOISOVALERATE DEHYDROGENASE BETA SUBUNIT",
+    16
+   ],
+   [
+    "Tryptophan synthase alpha chain",
+    16
+   ],
+   [
+    "MelC",
+    16
+   ]
+  ]
+ },
+ "sabdab_index_size": 11458
+}

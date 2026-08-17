@@ -1,0 +1,119 @@
+{
+ "baseline_r": 0.4059695267925199,
+ "resolution": {
+  "high (<2.0 A)": {
+   "r": 0.3558887274650907,
+   "n_antibody": 32742,
+   "n_ppi": 336906,
+   "null_median": 0.4011759565179185,
+   "null_ci": [
+    0.37278648502508344,
+    0.45293810185797584
+   ],
+   "verdict": "differs from size-matched expectation"
+  },
+  "low (>=2.0 A)": {
+   "r": 0.22954371187040626,
+   "n_antibody": 4068,
+   "n_ppi": 69491,
+   "null_median": 0.2642491670824585,
+   "null_ci": [
+    0.17107450763962187,
+    0.34783622300984723
+   ],
+   "verdict": "consistent with baseline"
+  }
+ },
+ "redundancy": {
+  "top_clusters": [
+   [
+    "c30_18",
+    45
+   ],
+   [
+    "c30_116",
+    39
+   ],
+   [
+    "c30_858",
+    14
+   ],
+   [
+    "c30_493",
+    11
+   ],
+   [
+    "c30_4650",
+    9
+   ]
+  ],
+  "drop_top_n": {
+   "1": {
+    "r": 0.40239631037296725,
+    "n_contacts": 34024,
+    "dropped_clusters": [
+     "c30_18"
+    ]
+   },
+   "2": {
+    "r": 0.40198547536240203,
+    "n_contacts": 31014,
+    "dropped_clusters": [
+     "c30_18",
+     "c30_116"
+    ]
+   },
+   "3": {
+    "r": 0.40208146584017235,
+    "n_contacts": 29141,
+    "dropped_clusters": [
+     "c30_18",
+     "c30_116",
+     "c30_858"
+    ]
+   },
+   "5": {
+    "r": 0.44933461137511244,
+    "n_contacts": 27731,
+    "dropped_clusters": [
+     "c30_493",
+     "c30_4650",
+     "c30_18",
+     "c30_116",
+     "c30_858"
+    ]
+   }
+  },
+  "leave_one_cluster_out": {
+   "n": 20,
+   "min": 0.3818020575728543,
+   "max": 0.4565126290266341,
+   "median": 0.4054708900141497
+  }
+ },
+ "hbond_criterion": {
+  "3.0": {
+   "cross_arm_r": 0.299772519716076,
+   "antibody_self_r_vs_3.5": 0.819939152020594,
+   "ppi_self_r_vs_3.5": 0.9275920201700306
+  },
+  "3.2": {
+   "cross_arm_r": 0.31679095492789006,
+   "antibody_self_r_vs_3.5": 0.9315941761875938,
+   "ppi_self_r_vs_3.5": 0.9771340693192572
+  },
+  "3.5": {
+   "cross_arm_r": 0.276305359775813,
+   "antibody_self_r_vs_3.5": 1.0,
+   "ppi_self_r_vs_3.5": 1.0
+  }
+ },
+ "construct_type": {
+  "n_contacts_fab": 17874,
+  "n_contacts_nanobody": 14891,
+  "fab_vs_nanobody_r": 0.17931035963912734,
+  "fab_vs_ppi_r": 0.4046989178773985,
+  "nanobody_vs_ppi_r": 0.28689795603483664,
+  "interpretation": "if fab_vs_nanobody_r is much HIGHER than either arm's correlation with PPI, the two antibody formats share one grammar and 'antibody grammar' is a coherent object"
+ }
+}

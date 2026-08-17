@@ -1,0 +1,138 @@
+{
+ "antigen": "LYSOZYME",
+ "cluster30": "c30_18",
+ "n_structures_used": 42,
+ "n_structures_dropped_unmappable": 3,
+ "dropped": [
+  "1OP9",
+  "3EBA",
+  "4I0C"
+ ],
+ "n_positions_contacted": 85,
+ "protein_length": 129,
+ "frac_surface_ever_contacted": 0.659,
+ "gini_of_contact_frequency": 0.492,
+ "top_positions": [
+  {
+   "position": 102,
+   "residue": "G",
+   "n_antibodies": 41,
+   "fraction": 0.976
+  },
+  {
+   "position": 103,
+   "residue": "N",
+   "n_antibodies": 35,
+   "fraction": 0.833
+  },
+  {
+   "position": 19,
+   "residue": "N",
+   "n_antibodies": 35,
+   "fraction": 0.833
+  },
+  {
+   "position": 63,
+   "residue": "W",
+   "n_antibodies": 32,
+   "fraction": 0.762
+  },
+  {
+   "position": 73,
+   "residue": "R",
+   "n_antibodies": 31,
+   "fraction": 0.738
+  },
+  {
+   "position": 62,
+   "residue": "W",
+   "n_antibodies": 31,
+   "fraction": 0.738
+  },
+  {
+   "position": 75,
+   "residue": "L",
+   "n_antibodies": 30,
+   "fraction": 0.714
+  },
+  {
+   "position": 21,
+   "residue": "R",
+   "n_antibodies": 30,
+   "fraction": 0.714
+  },
+  {
+   "position": 101,
+   "residue": "D",
+   "n_antibodies": 29,
+   "fraction": 0.69
+  },
+  {
+   "position": 20,
+   "residue": "Y",
+   "n_antibodies": 27,
+   "fraction": 0.643
+  },
+  {
+   "position": 96,
+   "residue": "K",
+   "n_antibodies": 26,
+   "fraction": 0.619
+  },
+  {
+   "position": 97,
+   "residue": "K",
+   "n_antibodies": 26,
+   "fraction": 0.619
+  },
+  {
+   "position": 98,
+   "residue": "I",
+   "n_antibodies": 26,
+   "fraction": 0.619
+  },
+  {
+   "position": 100,
+   "residue": "S",
+   "n_antibodies": 26,
+   "fraction": 0.619
+  },
+  {
+   "position": 15,
+   "residue": "H",
+   "n_antibodies": 25,
+   "fraction": 0.595
+  },
+  {
+   "position": 14,
+   "residue": "R",
+   "n_antibodies": 25,
+   "fraction": 0.595
+  },
+  {
+   "position": 16,
+   "residue": "G",
+   "n_antibodies": 25,
+   "fraction": 0.595
+  },
+  {
+   "position": 93,
+   "residue": "N",
+   "n_antibodies": 24,
+   "fraction": 0.571
+  },
+  {
+   "position": 116,
+   "residue": "K",
+   "n_antibodies": 23,
+   "fraction": 0.548
+  },
+  {
+   "position": 89,
+   "residue": "T",
+   "n_antibodies": 21,
+   "fraction": 0.5
+  }
+ ],
+ "note": "Residue numbering was normalised to canonical HEWL by offset alignment (>=80% sequence identity required); unmappable chains are dropped and counted. Counts are numbers of INDEPENDENT antibody complexes contacting that position."
+}

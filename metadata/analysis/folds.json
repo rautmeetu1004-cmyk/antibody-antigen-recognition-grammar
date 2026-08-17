@@ -1,0 +1,155 @@
+{
+ "composition": {
+  "antibody": {
+   "n_structures": 512,
+   "n_with_cath": 219,
+   "coverage": 0.428,
+   "class_fractions": {
+    "mainly beta": 0.4977,
+    "alpha/beta": 0.2603,
+    "mainly alpha": 0.2329,
+    "special": 0.0091
+   },
+   "top_topologies": [
+    [
+     "2.60.40",
+     62
+    ],
+    [
+     "1.10.530",
+     26
+    ],
+    [
+     "3.10.130",
+     9
+    ],
+    [
+     "3.40.420",
+     9
+    ],
+    [
+     "2.40.510",
+     8
+    ],
+    [
+     "2.60.120",
+     7
+    ],
+    [
+     "3.40.50",
+     7
+    ],
+    [
+     "3.10.20",
+     5
+    ],
+    [
+     "2.170.40",
+     5
+    ],
+    [
+     "1.10.287",
+     4
+    ]
+   ]
+  },
+  "ppi": {
+   "n_structures": 2292,
+   "n_with_cath": 1835,
+   "coverage": 0.801,
+   "class_fractions": {
+    "alpha/beta": 0.4332,
+    "mainly alpha": 0.3144,
+    "mainly beta": 0.2185,
+    "few secondary structures": 0.0223,
+    "special": 0.0114
+   },
+   "top_topologies": [
+    [
+     "1.10.490",
+     185
+    ],
+    [
+     "3.40.50",
+     151
+    ],
+    [
+     "3.30.70",
+     98
+    ],
+    [
+     "2.60.40",
+     85
+    ],
+    [
+     "3.10.20",
+     62
+    ],
+    [
+     "3.20.20",
+     60
+    ],
+    [
+     "3.10.450",
+     44
+    ],
+    [
+     "1.25.40",
+     38
+    ],
+    [
+     "2.10.25",
+     37
+    ],
+    [
+     "3.90.330",
+     37
+    ]
+   ]
+  }
+ },
+ "fold_matched_control": {
+  "all": {
+   "r": 0.4059695267925199,
+   "n_antibody": 36810,
+   "n_ppi": 406397
+  },
+  "cath_class_1": {
+   "label": "mainly alpha",
+   "r": 0.1671855522443141,
+   "n_antibody": 2845,
+   "n_ppi": 108352,
+   "size_matched_null_median": 0.24225461983982685,
+   "size_matched_null_ci": [
+    0.16807550308862249,
+    0.3362595275020394
+   ],
+   "verdict": "below null - fold matching does NOT explain the difference"
+  },
+  "cath_class_2": {
+   "label": "mainly beta",
+   "r": 0.259859500727649,
+   "n_antibody": 8293,
+   "n_ppi": 68218,
+   "size_matched_null_median": 0.3120871929224238,
+   "size_matched_null_ci": [
+    0.21398587857542492,
+    0.3940306909555748
+   ],
+   "verdict": "within null - difference is consistent with sample size"
+  },
+  "cath_class_3": {
+   "label": "alpha/beta",
+   "r": 0.17184490733884478,
+   "n_antibody": 3880,
+   "n_ppi": 152337,
+   "size_matched_null_median": 0.2792495750650476,
+   "size_matched_null_ci": [
+    0.17454220890761732,
+    0.35280182350922634
+   ],
+   "verdict": "below null - fold matching does NOT explain the difference"
+  }
+ },
+ "note": "CATH/SCOP coverage is partial because recently deposited chains are not yet classified; the covered fraction is reported per arm. The control compares observed r against a SIZE-MATCHED null drawn from the unrestricted pool, because restriction shrinks the data and small samples attenuate correlations by themselves."
+}

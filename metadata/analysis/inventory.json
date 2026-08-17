@@ -1,0 +1,140 @@
+{
+ "n_interfaces": {
+  "antibody": 512,
+  "ppi": 2292
+ },
+ "size": {
+  "n_pairs": {
+   "p": 2.8134537269566774e-13,
+   "effect_rank_biserial": -0.31351085646631005,
+   "median_antibody": 59.0,
+   "median_ppi": 86.32142857142857,
+   "n_units_antibody": 233,
+   "n_units_ppi": 812
+  },
+  "n_probe_residues": {
+   "p": 1.621007394604036e-14,
+   "effect_rank_biserial": -0.3295682783991205,
+   "median_antibody": 25.0,
+   "median_ppi": 37.41666666666667,
+   "n_units_antibody": 233,
+   "n_units_ppi": 812
+  },
+  "n_target_residues": {
+   "p": 3.931308697623635e-10,
+   "effect_rank_biserial": -0.268573331360071,
+   "median_antibody": 23.5,
+   "median_ppi": 33.0,
+   "n_units_antibody": 233,
+   "n_units_ppi": 812
+  },
+  "contacts_per_probe_residue": {
+   "p": 0.5022825476659813,
+   "effect_rank_biserial": 0.028806105837332785,
+   "median_antibody": 2.3599702380952383,
+   "median_ppi": 2.3217837586160877,
+   "n_units_antibody": 233,
+   "n_units_ppi": 812
+  },
+  "n_atom_contacts": {
+   "p": 2.4559539712130263e-08,
+   "effect_rank_biserial": -0.23939195331825203,
+   "median_antibody": 350.0,
+   "median_ppi": 467.5,
+   "n_units_antibody": 233,
+   "n_units_ppi": 812
+  },
+  "mean_min_dist": {
+   "p": 3.5330988467252645e-21,
+   "effect_rank_biserial": -0.40549483075752135,
+   "median_antibody": 3.5868,
+   "median_ppi": 3.641399587445126,
+   "n_units_antibody": 233,
+   "n_units_ppi": 812
+  }
+ },
+ "physicochemistry": {
+  "f_hbond": {
+   "p": 3.345582752275189e-24,
+   "effect_rank_biserial": 0.43569102940865556,
+   "median_antibody": 0.2530425963488844,
+   "median_ppi": 0.2,
+   "n_units_antibody": 233,
+   "n_units_ppi": 812
+  },
+  "f_salt": {
+   "p": 0.30028441836830666,
+   "effect_rank_biserial": -0.04444068584959515,
+   "median_antibody": 0.03260869565217391,
+   "median_ppi": 0.03333333333333333,
+   "n_units_antibody": 233,
+   "n_units_ppi": 812
+  },
+  "f_vdw": {
+   "p": 3.4327403608993197e-09,
+   "effect_rank_biserial": -0.25368929575678134,
+   "median_antibody": 0.65183606243601,
+   "median_ppi": 0.6836734693877551,
+   "n_units_antibody": 233,
+   "n_units_ppi": 812
+  },
+  "f_stack": {
+   "p": 0.6499320180645377,
+   "effect_rank_biserial": 0.01466732911900892,
+   "median_antibody": 0.0,
+   "median_ppi": 0.0,
+   "n_units_antibody": 233,
+   "n_units_ppi": 812
+  },
+  "f_opp_charge": {
+   "p": 0.35032395348710976,
+   "effect_rank_biserial": -0.040090699591957546,
+   "median_antibody": 0.05128205128205128,
+   "median_ppi": 0.0510576493371071,
+   "n_units_antibody": 233,
+   "n_units_ppi": 812
+  },
+  "f_like_charge": {
+   "p": 0.00012331501325939538,
+   "effect_rank_biserial": -0.1626197171187551,
+   "median_antibody": 0.010869565217391304,
+   "median_ppi": 0.016001024065540194,
+   "n_units_antibody": 233,
+   "n_units_ppi": 812
+  },
+  "f_apolar_apolar": {
+   "p": 1.3813847519503394e-33,
+   "effect_rank_biserial": -0.5184940484999683,
+   "median_antibody": 0.14545454545454545,
+   "median_ppi": 0.26076414628119593,
+   "n_units_antibody": 233,
+   "n_units_ppi": 812
+  },
+  "f_aromatic": {
+   "p": 8.11500818043875e-35,
+   "effect_rank_biserial": 0.528409691536819,
+   "median_antibody": 0.4305555555555556,
+   "median_ppi": 0.306099212814825,
+   "n_units_antibody": 233,
+   "n_units_ppi": 812
+  },
+  "f_cation_pi": {
+   "p": 2.7682634150653215e-15,
+   "effect_rank_biserial": 0.33868052178693,
+   "median_antibody": 0.05555555555555555,
+   "median_ppi": 0.03207538293063305,
+   "n_units_antibody": 233,
+   "n_units_ppi": 812
+  },
+  "f_target_sidechain_read": {
+   "p": 0.03690530247947647,
+   "effect_rank_biserial": 0.08958963191610825,
+   "median_antibody": 0.7309952692867541,
+   "median_ppi": 0.7110285978355491,
+   "n_units_antibody": 233,
+   "n_units_ppi": 812
+  }
+ },
+ "note": "all tests are Mann-Whitney U on UNIT-level means (one vote per cluster30 unit), not per-interface values, so hyper-solved antigens cannot inflate significance. effect_rank_biserial is the interpretable quantity: 0 = distributions overlap completely, +-1 = complete separation.",
+ "salt_bridge_caveat": "salt-bridge counts are not comparable to the nucleic-acid arm: carboxylate vs phosphate acceptor"
+}

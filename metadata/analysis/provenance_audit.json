@@ -1,0 +1,537 @@
+{
+ "phase": 0,
+ "criteria": {
+  "contact_cutoff_A": 4.5,
+  "gate_f1": 0.99,
+  "note": "extractor written from the stated criteria, independent of the inherited implementation"
+ },
+ "reextraction": {
+  "antibody": {
+   "arm": "antibody",
+   "n_structures_in_file": 512,
+   "n_sampled": 25,
+   "n_structure_files_missing": 0,
+   "missing": [],
+   "precision": 0.99853,
+   "recall": 0.99951,
+   "f1": 0.99902,
+   "n_pairs_compared": 2048,
+   "min_dist_max_abs_dev": 1.0352344512939453,
+   "min_dist_median_abs_dev": 0.0025179958343506392,
+   "n_insertion_coded_residues_in_sample": 6,
+   "per_structure": [
+    {
+     "pdb": "9HO6",
+     "n_mine": 155,
+     "n_theirs": 155,
+     "tp": 155,
+     "fp": 0,
+     "fn": 0,
+     "recall": 1.0
+    },
+    {
+     "pdb": "7WSL",
+     "n_mine": 48,
+     "n_theirs": 48,
+     "tp": 48,
+     "fp": 0,
+     "fn": 0,
+     "recall": 1.0
+    },
+    {
+     "pdb": "9HI6",
+     "n_mine": 42,
+     "n_theirs": 42,
+     "tp": 42,
+     "fp": 0,
+     "fn": 0,
+     "recall": 1.0
+    },
+    {
+     "pdb": "7EOW",
+     "n_mine": 38,
+     "n_theirs": 38,
+     "tp": 38,
+     "fp": 0,
+     "fn": 0,
+     "recall": 1.0
+    },
+    {
+     "pdb": "1G7M",
+     "n_mine": 38,
+     "n_theirs": 38,
+     "tp": 38,
+     "fp": 0,
+     "fn": 0,
+     "recall": 1.0
+    },
+    {
+     "pdb": "8CWU",
+     "n_mine": 43,
+     "n_theirs": 43,
+     "tp": 43,
+     "fp": 0,
+     "fn": 0,
+     "recall": 1.0
+    },
+    {
+     "pdb": "8IVX",
+     "n_mine": 55,
+     "n_theirs": 55,
+     "tp": 55,
+     "fp": 0,
+     "fn": 0,
+     "recall": 1.0
+    },
+    {
+     "pdb": "5C2U",
+     "n_mine": 60,
+     "n_theirs": 60,
+     "tp": 60,
+     "fp": 0,
+     "fn": 0,
+     "recall": 1.0
+    },
+    {
+     "pdb": "8A67",
+     "n_mine": 212,
+     "n_theirs": 212,
+     "tp": 212,
+     "fp": 0,
+     "fn": 0,
+     "recall": 1.0
+    },
+    {
+     "pdb": "9OAR",
+     "n_mine": 156,
+     "n_theirs": 156,
+     "tp": 156,
+     "fp": 0,
+     "fn": 0,
+     "recall": 1.0
+    },
+    {
+     "pdb": "7S2S",
+     "n_mine": 60,
+     "n_theirs": 59,
+     "tp": 58,
+     "fp": 2,
+     "fn": 1,
+     "recall": 0.9831
+    },
+    {
+     "pdb": "9H4R",
+     "n_mine": 96,
+     "n_theirs": 96,
+     "tp": 96,
+     "fp": 0,
+     "fn": 0,
+     "recall": 1.0
+    },
+    {
+     "pdb": "8HR2",
+     "n_mine": 78,
+     "n_theirs": 78,
+     "tp": 78,
+     "fp": 0,
+     "fn": 0,
+     "recall": 1.0
+    },
+    {
+     "pdb": "5VKD",
+     "n_mine": 51,
+     "n_theirs": 51,
+     "tp": 51,
+     "fp": 0,
+     "fn": 0,
+     "recall": 1.0
+    },
+    {
+     "pdb": "2VXQ",
+     "n_mine": 53,
+     "n_theirs": 53,
+     "tp": 53,
+     "fp": 0,
+     "fn": 0,
+     "recall": 1.0
+    },
+    {
+     "pdb": "6GJS",
+     "n_mine": 103,
+     "n_theirs": 103,
+     "tp": 103,
+     "fp": 0,
+     "fn": 0,
+     "recall": 1.0
+    },
+    {
+     "pdb": "4OKV",
+     "n_mine": 85,
+     "n_theirs": 85,
+     "tp": 85,
+     "fp": 0,
+     "fn": 0,
+     "recall": 1.0
+    },
+    {
+     "pdb": "8DFI",
+     "n_mine": 41,
+     "n_theirs": 41,
+     "tp": 41,
+     "fp": 0,
+     "fn": 0,
+     "recall": 1.0
+    },
+    {
+     "pdb": "5M2J",
+     "n_mine": 36,
+     "n_theirs": 36,
+     "tp": 36,
+     "fp": 0,
+     "fn": 0,
+     "recall": 1.0
+    },
+    {
+     "pdb": "7VKE",
+     "n_mine": 64,
+     "n_theirs": 64,
+     "tp": 64,
+     "fp": 0,
+     "fn": 0,
+     "recall": 1.0
+    },
+    {
+     "pdb": "7JUM",
+     "n_mine": 229,
+     "n_theirs": 229,
+     "tp": 229,
+     "fp": 0,
+     "fn": 0,
+     "recall": 1.0
+    },
+    {
+     "pdb": "8Q6R",
+     "n_mine": 72,
+     "n_theirs": 72,
+     "tp": 72,
+     "fp": 0,
+     "fn": 0,
+     "recall": 1.0
+    },
+    {
+     "pdb": "4HJG",
+     "n_mine": 37,
+     "n_theirs": 36,
+     "tp": 36,
+     "fp": 1,
+     "fn": 0,
+     "recall": 1.0
+    },
+    {
+     "pdb": "4ZFO",
+     "n_mine": 79,
+     "n_theirs": 79,
+     "tp": 79,
+     "fp": 0,
+     "fn": 0,
+     "recall": 1.0
+    },
+    {
+     "pdb": "1LK3",
+     "n_mine": 116,
+     "n_theirs": 116,
+     "tp": 116,
+     "fp": 0,
+     "fn": 0,
+     "recall": 1.0
+    }
+   ]
+  },
+  "ppi": {
+   "arm": "ppi",
+   "n_structures_in_file": 2292,
+   "n_sampled": 15,
+   "n_structure_files_missing": 0,
+   "missing": [],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "n_pairs_compared": 2563,
+   "min_dist_max_abs_dev": 0.8672202491760252,
+   "min_dist_median_abs_dev": 0.0024655055999756037,
+   "n_insertion_coded_residues_in_sample": 0,
+   "per_structure": [
+    {
+     "pdb": "2ZLU",
+     "n_mine": 46,
+     "n_theirs": 46,
+     "tp": 46,
+     "fp": 0,
+     "fn": 0,
+     "recall": 1.0
+    },
+    {
+     "pdb": "3DBO",
+     "n_mine": 104,
+     "n_theirs": 104,
+     "tp": 104,
+     "fp": 0,
+     "fn": 0,
+     "recall": 1.0
+    },
+    {
+     "pdb": "4ZI3",
+     "n_mine": 63,
+     "n_theirs": 63,
+     "tp": 63,
+     "fp": 0,
+     "fn": 0,
+     "recall": 1.0
+    },
+    {
+     "pdb": "1FY8",
+     "n_mine": 51,
+     "n_theirs": 51,
+     "tp": 51,
+     "fp": 0,
+     "fn": 0,
+     "recall": 1.0
+    },
+    {
+     "pdb": "2AA1",
+     "n_mine": 162,
+     "n_theirs": 162,
+     "tp": 162,
+     "fp": 0,
+     "fn": 0,
+     "recall": 1.0
+    },
+    {
+     "pdb": "3DRA",
+     "n_mine": 166,
+     "n_theirs": 166,
+     "tp": 166,
+     "fp": 0,
+     "fn": 0,
+     "recall": 1.0
+    },
+    {
+     "pdb": "1H2G",
+     "n_mine": 456,
+     "n_theirs": 456,
+     "tp": 456,
+     "fp": 0,
+     "fn": 0,
+     "recall": 1.0
+    },
+    {
+     "pdb": "2HEY",
+     "n_mine": 86,
+     "n_theirs": 86,
+     "tp": 86,
+     "fp": 0,
+     "fn": 0,
+     "recall": 1.0
+    },
+    {
+     "pdb": "1LES",
+     "n_mine": 567,
+     "n_theirs": 567,
+     "tp": 567,
+     "fp": 0,
+     "fn": 0,
+     "recall": 1.0
+    },
+    {
+     "pdb": "1G72",
+     "n_mine": 204,
+     "n_theirs": 204,
+     "tp": 204,
+     "fp": 0,
+     "fn": 0,
+     "recall": 1.0
+    },
+    {
+     "pdb": "3WA5",
+     "n_mine": 58,
+     "n_theirs": 58,
+     "tp": 58,
+     "fp": 0,
+     "fn": 0,
+     "recall": 1.0
+    },
+    {
+     "pdb": "3GJ7",
+     "n_mine": 54,
+     "n_theirs": 54,
+     "tp": 54,
+     "fp": 0,
+     "fn": 0,
+     "recall": 1.0
+    },
+    {
+     "pdb": "4YDY",
+     "n_mine": 116,
+     "n_theirs": 116,
+     "tp": 116,
+     "fp": 0,
+     "fn": 0,
+     "recall": 1.0
+    },
+    {
+     "pdb": "2IEJ",
+     "n_mine": 194,
+     "n_theirs": 194,
+     "tp": 194,
+     "fp": 0,
+     "fn": 0,
+     "recall": 1.0
+    },
+    {
+     "pdb": "4BX5",
+     "n_mine": 236,
+     "n_theirs": 236,
+     "tp": 236,
+     "fp": 0,
+     "fn": 0,
+     "recall": 1.0
+    }
+   ]
+  }
+ },
+ "n_shared_pdbs": 0,
+ "shared_pdbs": [],
+ "redundancy": {
+  "antibody": {
+   "n_units": 233,
+   "n_structures": 512,
+   "largest_cluster_frac": 0.0879,
+   "top_clusters": [
+    {
+     "cluster30": "c30_18",
+     "n": 45,
+     "antigen": "Lysozyme C"
+    },
+    {
+     "cluster30": "c30_116",
+     "n": 39,
+     "antigen": "Spike protein S1"
+    },
+    {
+     "cluster30": "c30_858",
+     "n": 14,
+     "antigen": "GII.4 P domain"
+    },
+    {
+     "cluster30": "c30_493",
+     "n": 11,
+     "antigen": "Ricin A chain"
+    },
+    {
+     "cluster30": "c30_4650",
+     "n": 9,
+     "antigen": "Programmed cell death protein 1"
+    },
+    {
+     "cluster30": "c30_115",
+     "n": 8,
+     "antigen": "Glycoprotein 120"
+    },
+    {
+     "cluster30": "c30_398",
+     "n": 8,
+     "antigen": "Ribonuclease pancreatic"
+    },
+    {
+     "cluster30": "c30_12058",
+     "n": 8,
+     "antigen": "Protein L"
+    }
+   ],
+   "n_singleton_units": 149
+  },
+  "ppi": {
+   "n_units": 1338,
+   "n_structures": 2310,
+   "largest_cluster_frac": 0.0361,
+   "top_clusters": [
+    {
+     "cluster30": "c30_102",
+     "n": 167,
+     "antigen": ""
+    },
+    {
+     "cluster30": "c30_73",
+     "n": 167,
+     "antigen": ""
+    },
+    {
+     "cluster30": "c30_142",
+     "n": 164,
+     "antigen": ""
+    },
+    {
+     "cluster30": "c30_175",
+     "n": 92,
+     "antigen": ""
+    },
+    {
+     "cluster30": "c30_71",
+     "n": 68,
+     "antigen": ""
+    },
+    {
+     "cluster30": "c30_1673",
+     "n": 56,
+     "antigen": ""
+    },
+    {
+     "cluster30": "c30_1080",
+     "n": 55,
+     "antigen": ""
+    },
+    {
+     "cluster30": "c30_1041",
+     "n": 55,
+     "antigen": ""
+    }
+   ],
+   "n_singleton_units": 719
+  }
+ },
+ "lineage": {
+  "quarantine_dirs": {
+   "_superseded_contaminated": {
+    "exists": true,
+    "n_matching_files": 0,
+    "examples": []
+   },
+   "_superseded": {
+    "exists": true,
+    "n_matching_files": 0,
+    "examples": []
+   },
+   "_archive": {
+    "exists": true,
+    "n_matching_files": 0,
+    "examples": []
+   }
+  },
+  "table_paths": {
+   "antibody": {
+    "resolved_path": "/Users/meetrayuraut/Documents/heatmap_validation/interactions/antibody_contacts.csv",
+    "inside_quarantine": false
+   },
+   "ppi": {
+    "resolved_path": "/Users/meetrayuraut/Documents/heatmap_validation/interactions/ppi_contacts.csv",
+    "inside_quarantine": false
+   }
+  }
+ },
+ "gates": {
+  "antibody_f1": true,
+  "ppi_f1": true,
+  "no_quarantine_lineage": true
+ },
+ "verdict": "PASS"
+}

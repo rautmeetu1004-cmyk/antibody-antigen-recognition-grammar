@@ -1,0 +1,12 @@
+{
+ "n_structures": 1110,
+ "n_failed": 2,
+ "ppi_sampled": 600,
+ "median_sc_antibody": 0.4638191834781511,
+ "median_sc_ppi": 0.46667234815841907,
+ "n_units_antibody": 233,
+ "n_units_ppi": 309,
+ "effect_rank_biserial": -0.0871564092948317,
+ "p": 0.08221204455553224,
+ "limitation": "Solvent-accessible-surface approximation to Lawrence & Colman's Connolly-molecular-surface Sc. Absolute values are NOT comparable to their published figures; the antibody-vs-PPI contrast, computed identically for both arms, is what this supports."
+}

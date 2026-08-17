@@ -1,0 +1,197 @@
+group_a,group_b,log2_or,weighted,raw
+"guanidinium","guanidinium",-0.4748,1982.2140,6397
+"guanidinium","ammonium",-1.2498,204.3895,453
+"guanidinium","carboxylate",1.2946,7727.8777,22432
+"guanidinium","amide (Asn/Gln)",-0.1750,2192.9940,8210
+"guanidinium","hydroxyl",-0.3942,747.8413,2447
+"guanidinium","phenol -OH",-0.2683,514.3032,1690
+"guanidinium","aromatic ring (Phe/Tyr)",-0.2520,3278.7926,12915
+"guanidinium","indole N-H",-0.4760,120.3787,327
+"guanidinium","indole ring",-0.0494,1106.3407,2846
+"guanidinium","imidazole",-0.4932,757.3063,3515
+"guanidinium","thiol/thioether",-0.6695,228.5163,812
+"guanidinium","aliphatic C",-0.3100,8152.0283,30198
+"guanidinium","bb amide N-H",-0.2584,1910.1673,6874
+"guanidinium","bb carbonyl C=O",0.1055,8271.2846,30018
+"ammonium","guanidinium",-1.2498,204.3895,453
+"ammonium","ammonium",-0.6208,55.7711,146
+"ammonium","carboxylate",1.8498,2003.5430,5736
+"ammonium","amide (Asn/Gln)",0.0145,441.2440,1211
+"ammonium","hydroxyl",-0.0507,167.4300,505
+"ammonium","phenol -OH",-0.7848,63.4353,173
+"ammonium","aromatic ring (Phe/Tyr)",-1.7297,207.7177,752
+"ammonium","indole N-H",-1.0138,14.6303,42
+"ammonium","indole ring",-1.1508,90.9810,238
+"ammonium","imidazole",-1.2691,78.0396,235
+"ammonium","thiol/thioether",-0.8306,36.0613,88
+"ammonium","aliphatic C",-0.5688,1202.1707,3490
+"ammonium","bb amide N-H",-0.3918,307.2749,897
+"ammonium","bb carbonyl C=O",0.3171,1690.0306,5173
+"carboxylate","guanidinium",1.2946,7727.8777,22432
+"carboxylate","ammonium",1.8498,2003.5430,5736
+"carboxylate","carboxylate",-1.2955,1467.6199,4791
+"carboxylate","amide (Asn/Gln)",-0.2740,2341.3806,7165
+"carboxylate","hydroxyl",0.3851,1467.8405,4579
+"carboxylate","phenol -OH",0.1430,782.1395,3081
+"carboxylate","aromatic ring (Phe/Tyr)",-0.6946,2758.8623,10194
+"carboxylate","indole N-H",-0.2960,155.9447,732
+"carboxylate","indole ring",-1.0039,652.8488,2378
+"carboxylate","imidazole",0.3974,1605.6392,4992
+"carboxylate","thiol/thioether",-1.4306,154.1932,443
+"carboxylate","aliphatic C",0.2657,13893.7001,43839
+"carboxylate","bb amide N-H",0.2315,3067.7257,10425
+"carboxylate","bb carbonyl C=O",-0.9808,4454.8182,14775
+"amide (Asn/Gln)","guanidinium",-0.1750,2192.9940,8210
+"amide (Asn/Gln)","ammonium",0.0145,441.2440,1211
+"amide (Asn/Gln)","carboxylate",-0.2740,2341.3806,7165
+"amide (Asn/Gln)","amide (Asn/Gln)",0.1535,2474.7197,7399
+"amide (Asn/Gln)","hydroxyl",0.1121,954.6347,3809
+"amide (Asn/Gln)","phenol -OH",-0.2931,454.3145,1798
+"amide (Asn/Gln)","aromatic ring (Phe/Tyr)",-0.2396,2972.1328,10036
+"amide (Asn/Gln)","indole N-H",-0.4604,109.3594,427
+"amide (Asn/Gln)","indole ring",-0.3144,827.4486,2577
+"amide (Asn/Gln)","imidazole",-0.7087,586.1604,4507
+"amide (Asn/Gln)","thiol/thioether",-0.4013,247.3290,824
+"amide (Asn/Gln)","aliphatic C",0.0937,9691.9590,32941
+"amide (Asn/Gln)","bb amide N-H",0.3022,2531.9865,8310
+"amide (Asn/Gln)","bb carbonyl C=O",0.1377,7601.3967,25231
+"hydroxyl","guanidinium",-0.3942,747.8413,2447
+"hydroxyl","ammonium",-0.0507,167.4300,505
+"hydroxyl","carboxylate",0.3851,1467.8405,4579
+"hydroxyl","amide (Asn/Gln)",0.1121,954.6347,3809
+"hydroxyl","hydroxyl",0.1174,380.3906,1035
+"hydroxyl","phenol -OH",-0.2633,184.1199,651
+"hydroxyl","aromatic ring (Phe/Tyr)",-0.5570,946.8310,3038
+"hydroxyl","indole N-H",-0.2820,49.1283,178
+"hydroxyl","indole ring",-0.7390,244.7289,847
+"hydroxyl","imidazole",0.1384,418.6054,1555
+"hydroxyl","thiol/thioether",-0.4107,97.5520,303
+"hydroxyl","aliphatic C",0.1315,3949.7547,13242
+"hydroxyl","bb amide N-H",0.1643,913.5191,3295
+"hydroxyl","bb carbonyl C=O",0.0025,2747.6378,9668
+"phenol -OH","guanidinium",-0.2683,514.3032,1690
+"phenol -OH","ammonium",-0.7848,63.4353,173
+"phenol -OH","carboxylate",0.1430,782.1395,3081
+"phenol -OH","amide (Asn/Gln)",-0.2931,454.3145,1798
+"phenol -OH","hydroxyl",-0.2633,184.1199,651
+"phenol -OH","phenol -OH",-1.4440,51.1895,173
+"phenol -OH","aromatic ring (Phe/Tyr)",-0.7225,532.0605,1735
+"phenol -OH","indole N-H",-0.8878,20.3450,78
+"phenol -OH","indole ring",-0.9221,135.8514,397
+"phenol -OH","imidazole",0.0613,250.0842,799
+"phenol -OH","thiol/thioether",-1.3927,31.1256,138
+"phenol -OH","aliphatic C",0.4207,3041.7520,10001
+"phenol -OH","bb amide N-H",0.3418,651.0978,2318
+"phenol -OH","bb carbonyl C=O",-0.0660,1651.3803,5616
+"aromatic ring (Phe/Tyr)","guanidinium",-0.2520,3278.7926,12915
+"aromatic ring (Phe/Tyr)","ammonium",-1.7297,207.7177,752
+"aromatic ring (Phe/Tyr)","carboxylate",-0.6946,2758.8623,10194
+"aromatic ring (Phe/Tyr)","amide (Asn/Gln)",-0.2396,2972.1328,10036
+"aromatic ring (Phe/Tyr)","hydroxyl",-0.5570,946.8310,3038
+"aromatic ring (Phe/Tyr)","phenol -OH",-0.7225,532.0605,1735
+"aromatic ring (Phe/Tyr)","aromatic ring (Phe/Tyr)",0.3842,7222.5461,22678
+"aromatic ring (Phe/Tyr)","indole N-H",-0.3225,189.7737,600
+"aromatic ring (Phe/Tyr)","indole ring",0.1890,1849.8343,7978
+"aromatic ring (Phe/Tyr)","imidazole",0.2348,1777.8552,5082
+"aromatic ring (Phe/Tyr)","thiol/thioether",0.1152,557.9766,1685
+"aromatic ring (Phe/Tyr)","aliphatic C",0.3215,17899.8825,57849
+"aromatic ring (Phe/Tyr)","bb amide N-H",-0.0761,3072.1188,10404
+"aromatic ring (Phe/Tyr)","bb carbonyl C=O",-0.2053,9451.2282,31989
+"indole N-H","guanidinium",-0.4760,120.3787,327
+"indole N-H","ammonium",-1.0138,14.6303,42
+"indole N-H","carboxylate",-0.2960,155.9447,732
+"indole N-H","amide (Asn/Gln)",-0.4604,109.3594,427
+"indole N-H","hydroxyl",-0.2820,49.1283,178
+"indole N-H","phenol -OH",-0.8878,20.3450,78
+"indole N-H","aromatic ring (Phe/Tyr)",-0.3225,189.7737,600
+"indole N-H","indole N-H",0.4373,13.7789,95
+"indole N-H","indole ring",-0.0324,68.0398,434
+"indole N-H","imidazole",-0.1833,57.0583,318
+"indole N-H","thiol/thioether",-0.6428,14.1484,34
+"indole N-H","aliphatic C",0.3483,781.9350,2860
+"indole N-H","bb amide N-H",0.1915,158.5897,607
+"indole N-H","bb carbonyl C=O",0.1191,507.4669,1926
+"indole ring","guanidinium",-0.0494,1106.3407,2846
+"indole ring","ammonium",-1.1508,90.9810,238
+"indole ring","carboxylate",-1.0039,652.8488,2378
+"indole ring","amide (Asn/Gln)",-0.3144,827.4486,2577
+"indole ring","hydroxyl",-0.7390,244.7289,847
+"indole ring","phenol -OH",-0.9221,135.8514,397
+"indole ring","aromatic ring (Phe/Tyr)",0.1890,1849.8343,7978
+"indole ring","indole N-H",-0.0324,68.0398,434
+"indole ring","indole ring",-0.0004,475.6610,2645
+"indole ring","imidazole",-0.1773,391.7975,1496
+"indole ring","thiol/thioether",-0.5904,100.3239,384
+"indole ring","aliphatic C",0.4119,5587.7501,20286
+"indole ring","bb amide N-H",0.1053,1021.5026,4096
+"indole ring","bb carbonyl C=O",-0.1374,2904.7974,10696
+"imidazole","guanidinium",-0.4932,757.3063,3515
+"imidazole","ammonium",-1.2691,78.0396,235
+"imidazole","carboxylate",0.3974,1605.6392,4992
+"imidazole","amide (Asn/Gln)",-0.7087,586.1604,4507
+"imidazole","hydroxyl",0.1384,418.6054,1555
+"imidazole","phenol -OH",0.0613,250.0842,799
+"imidazole","aromatic ring (Phe/Tyr)",0.2348,1777.8552,5082
+"imidazole","indole N-H",-0.1833,57.0583,318
+"imidazole","indole ring",-0.1773,391.7975,1496
+"imidazole","imidazole",0.8332,734.8847,2319
+"imidazole","thiol/thioether",0.3065,173.9437,1283
+"imidazole","aliphatic C",-0.0265,3839.5091,16520
+"imidazole","bb amide N-H",-0.1560,793.5509,3016
+"imidazole","bb carbonyl C=O",-0.0228,2928.2260,12595
+"thiol/thioether","guanidinium",-0.6695,228.5163,812
+"thiol/thioether","ammonium",-0.8306,36.0613,88
+"thiol/thioether","carboxylate",-1.4306,154.1932,443
+"thiol/thioether","amide (Asn/Gln)",-0.4013,247.3290,824
+"thiol/thioether","hydroxyl",-0.4107,97.5520,303
+"thiol/thioether","phenol -OH",-1.3927,31.1256,138
+"thiol/thioether","aromatic ring (Phe/Tyr)",0.1152,557.9766,1685
+"thiol/thioether","indole N-H",-0.6428,14.1484,34
+"thiol/thioether","indole ring",-0.5904,100.3239,384
+"thiol/thioether","imidazole",0.3065,173.9437,1283
+"thiol/thioether","thiol/thioether",1.5469,140.1286,370
+"thiol/thioether","aliphatic C",0.3739,1727.9466,6041
+"thiol/thioether","bb amide N-H",0.2964,370.2269,1329
+"thiol/thioether","bb carbonyl C=O",0.0193,1028.0193,3588
+"aliphatic C","guanidinium",-0.3100,8152.0283,30198
+"aliphatic C","ammonium",-0.5688,1202.1707,3490
+"aliphatic C","carboxylate",0.2657,13893.7001,43839
+"aliphatic C","amide (Asn/Gln)",0.0937,9691.9590,32941
+"aliphatic C","hydroxyl",0.1315,3949.7547,13242
+"aliphatic C","phenol -OH",0.4207,3041.7520,10001
+"aliphatic C","aromatic ring (Phe/Tyr)",0.3215,17899.8825,57849
+"aliphatic C","indole N-H",0.3483,781.9350,2860
+"aliphatic C","indole ring",0.4119,5587.7501,20286
+"aliphatic C","imidazole",-0.0265,3839.5091,16520
+"aliphatic C","thiol/thioether",0.3739,1727.9466,6041
+"aliphatic C","aliphatic C",-0.3035,30040.8123,113123
+"aliphatic C","bb amide N-H",-0.5466,5738.9960,21699
+"aliphatic C","bb carbonyl C=O",0.1318,30901.3400,115076
+"bb amide N-H","guanidinium",-0.2584,1910.1673,6874
+"bb amide N-H","ammonium",-0.3918,307.2749,897
+"bb amide N-H","carboxylate",0.2315,3067.7257,10425
+"bb amide N-H","amide (Asn/Gln)",0.3022,2531.9865,8310
+"bb amide N-H","hydroxyl",0.1643,913.5191,3295
+"bb amide N-H","phenol -OH",0.3418,651.0978,2318
+"bb amide N-H","aromatic ring (Phe/Tyr)",-0.0761,3072.1188,10404
+"bb amide N-H","indole N-H",0.1915,158.5897,607
+"bb amide N-H","indole ring",0.1053,1021.5026,4096
+"bb amide N-H","imidazole",-0.1560,793.5509,3016
+"bb amide N-H","thiol/thioether",0.2964,370.2269,1329
+"bb amide N-H","aliphatic C",-0.5466,5738.9960,21699
+"bb amide N-H","bb amide N-H",-0.1651,1690.3133,6336
+"bb amide N-H","bb carbonyl C=O",0.4354,8623.4535,32193
+"bb carbonyl C=O","guanidinium",0.1055,8271.2846,30018
+"bb carbonyl C=O","ammonium",0.3171,1690.0306,5173
+"bb carbonyl C=O","carboxylate",-0.9808,4454.8182,14775
+"bb carbonyl C=O","amide (Asn/Gln)",0.1377,7601.3967,25231
+"bb carbonyl C=O","hydroxyl",0.0025,2747.6378,9668
+"bb carbonyl C=O","phenol -OH",-0.0660,1651.3803,5616
+"bb carbonyl C=O","aromatic ring (Phe/Tyr)",-0.2053,9451.2282,31989
+"bb carbonyl C=O","indole N-H",0.1191,507.4669,1926
+"bb carbonyl C=O","indole ring",-0.1374,2904.7974,10696
+"bb carbonyl C=O","imidazole",-0.0228,2928.2260,12595
+"bb carbonyl C=O","thiol/thioether",0.0193,1028.0193,3588
+"bb carbonyl C=O","aliphatic C",0.1318,30901.3400,115076
+"bb carbonyl C=O","bb amide N-H",0.4354,8623.4535,32193
+"bb carbonyl C=O","bb carbonyl C=O",-0.0281,21041.4487,79839

@@ -1,0 +1,106 @@
+{
+ "6a_dihedral_matches_biopython": {
+  "pass": true,
+  "detail": "max deviation 2.16e-05 deg vs Bio.PDB.vectors.calc_dihedral"
+ },
+ "6a_chi1_modal_rotamer_canonical": {
+  "pass": true,
+  "detail": "modal chi1 bin at -65 deg (canonical g- = -60); n=853,866"
+ },
+ "6a_glycine_has_no_chi1": {
+  "pass": true,
+  "detail": "0 glycines carry a chi1 value (must be 0 - Gly has no CB)"
+ },
+ "6a_kabsch_sander_validated": {
+  "pass": true,
+  "detail": "0.889 agreement with PDB HELIX/SHEET over 622,662 residues; 0 failures"
+ },
+ "6c_loop_confound_reproduces": {
+  "pass": true,
+  "detail": "recomputed r=0.184543 vs stored 0.184543"
+ },
+ "6c_matching_context_does_not_raise_r": {
+  "pass": true,
+  "detail": "loop-loop r=0.185 < all-contacts r=0.387, i.e. matching structural context does NOT explain the antibody-PPI difference"
+ },
+ "7_imgt_mapping_complete": {
+  "pass": true,
+  "detail": "median CA-coordinate mapping coverage 1.0000"
+ },
+ "7_nanobodies_have_no_light_chain": {
+  "pass": true,
+  "detail": "SD-H L1=0.0, L2=0, L3=0.0 (must be exactly 0)"
+ },
+ "7_cdr_fractions_sum_to_one_FAB": {
+  "pass": true,
+  "detail": "FAB CDR-only fractions sum to 1.0000"
+ },
+ "7_cdr_fractions_sum_to_one_SD-H": {
+  "pass": true,
+  "detail": "SD-H CDR-only fractions sum to 1.0000"
+ },
+ "7_two_nulls_disagree_as_expected": {
+  "pass": true,
+  "detail": "enriched on BOTH nulls: ['D', 'N', 'W', 'Y'] - Ser/Thr/Gly excluded, which is the finding that a single-background study would miss"
+ },
+ "8_permutation_observed_below_null": {
+  "pass": true,
+  "detail": "observed r=0.417 below null CI [0.728, 0.850], p=0.000999000999000999"
+ },
+ "8_antibody_asymmetric_ppi_not": {
+  "pass": true,
+  "detail": "antibody 0.757 vs ppi 0.028"
+ },
+ "8_dynamic_range_not_sample_size": {
+  "pass": true,
+  "detail": "SD_ab=0.572 above subsampled PPI CI [0.364, 0.437]"
+ },
+ "9_no_standard_residue_called_ptm": {
+  "pass": true,
+  "detail": "0 standard residues classified as PTM (ASN N-glycosylation MODRES records were the earlier bug)"
+ },
+ "9_mse_excluded": {
+  "pass": true,
+  "detail": "0 selenomethionines counted (must be 0 - crystallographic, not biological)"
+ },
+ "9_glycan_ptm_double_dissociation": {
+  "pass": true,
+  "detail": "glycans antibody 0.141 > ppi 0.051; PTMs ppi 0.090 > antibody 0.016"
+ },
+ "11_robust_to_dropping_any_cluster": {
+  "pass": true,
+  "detail": "leave-one-cluster-out r range 0.382-0.457"
+ },
+ "11_robust_to_hbond_cutoff": {
+  "pass": true,
+  "detail": "cross-arm r across 3.0/3.2/3.5 A: [0.3, 0.317, 0.276]"
+ },
+ "add1_auc_in_range_antibody_scored_by_antibody_": {
+  "pass": true,
+  "detail": "AUC=0.779"
+ },
+ "add1_auc_in_range_antibody_scored_by_ppi_poten": {
+  "pass": true,
+  "detail": "AUC=0.833"
+ },
+ "add1_prediction_refuted_recorded": {
+  "pass": true,
+  "detail": "PPI potential (0.833) OUTPERFORMS antibody potential (0.779) on antibody interfaces - the predicted below-chance transfer failure did NOT occur"
+ },
+ "add1_loo_subtraction_exact": {
+  "pass": true,
+  "detail": "max |fast - rebuilt| = 3.33e-15 over 400 cells"
+ },
+ "xphase_grammar_r_consistent": {
+  "pass": true,
+  "detail": "phase3 0.418025 == phase4 0.418025"
+ },
+ "xphase_baseline_r_close_to_phase3": {
+  "pass": true,
+  "detail": "phase11 baseline 0.406 vs phase3 0.418 (differ only by PPI deduplication)"
+ },
+ "xphase_all_figures_present": {
+  "pass": true,
+  "detail": "33 figures: add1_transfer, add2_thermodynamics, add3_shape_complementarity, add4_geometry, add4_pca, add5_epitope_logic..."
+ }
+}

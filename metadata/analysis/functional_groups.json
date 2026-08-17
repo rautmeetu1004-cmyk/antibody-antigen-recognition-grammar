@@ -1,0 +1,295 @@
+{
+ "antibody": {
+  "coverage_of_atom_rows": 0.8635,
+  "n_atom_contacts_mapped": 182442,
+  "top_enriched": [
+   {
+    "pair": "carboxylate <-> ammonium",
+    "log2_or": 1.862
+   },
+   {
+    "pair": "carboxylate <-> guanidinium",
+    "log2_or": 1.462
+   },
+   {
+    "pair": "ammonium <-> carboxylate",
+    "log2_or": 1.362
+   },
+   {
+    "pair": "guanidinium <-> carboxylate",
+    "log2_or": 0.988
+   },
+   {
+    "pair": "bb amide N-H <-> phenol -OH",
+    "log2_or": 0.898
+   },
+   {
+    "pair": "bb amide N-H <-> carboxylate",
+    "log2_or": 0.671
+   },
+   {
+    "pair": "hydroxyl <-> carboxylate",
+    "log2_or": 0.659
+   },
+   {
+    "pair": "ammonium <-> bb carbonyl C=O",
+    "log2_or": 0.588
+   },
+   {
+    "pair": "imidazole <-> aromatic ring (Phe/Tyr)",
+    "log2_or": 0.556
+   },
+   {
+    "pair": "carboxylate <-> hydroxyl",
+    "log2_or": 0.537
+   },
+   {
+    "pair": "aliphatic C <-> indole ring",
+    "log2_or": 0.527
+   },
+   {
+    "pair": "bb carbonyl C=O <-> phenol -OH",
+    "log2_or": 0.515
+   }
+  ],
+  "top_depleted": [
+   {
+    "pair": "carboxylate <-> carboxylate",
+    "log2_or": -2.192
+   },
+   {
+    "pair": "guanidinium <-> guanidinium",
+    "log2_or": -1.361
+   },
+   {
+    "pair": "indole ring <-> carboxylate",
+    "log2_or": -1.23
+   },
+   {
+    "pair": "carboxylate <-> bb carbonyl C=O",
+    "log2_or": -1.167
+   },
+   {
+    "pair": "phenol -OH <-> aromatic ring (Phe/Tyr)",
+    "log2_or": -1.031
+   },
+   {
+    "pair": "aromatic ring (Phe/Tyr) <-> phenol -OH",
+    "log2_or": -0.895
+   },
+   {
+    "pair": "bb amide N-H <-> bb amide N-H",
+    "log2_or": -0.838
+   },
+   {
+    "pair": "carboxylate <-> aromatic ring (Phe/Tyr)",
+    "log2_or": -0.771
+   },
+   {
+    "pair": "indole ring <-> hydroxyl",
+    "log2_or": -0.736
+   },
+   {
+    "pair": "amide (Asn/Gln) <-> imidazole",
+    "log2_or": -0.714
+   },
+   {
+    "pair": "bb amide N-H <-> aliphatic C",
+    "log2_or": -0.689
+   },
+   {
+    "pair": "guanidinium <-> imidazole",
+    "log2_or": -0.681
+   }
+  ]
+ },
+ "ppi": {
+  "coverage_of_atom_rows": 0.7867,
+  "n_atom_contacts_mapped": 1767916,
+  "top_enriched": [
+   {
+    "pair": "carboxylate <-> ammonium",
+    "log2_or": 1.85
+   },
+   {
+    "pair": "ammonium <-> carboxylate",
+    "log2_or": 1.85
+   },
+   {
+    "pair": "thiol/thioether <-> thiol/thioether",
+    "log2_or": 1.547
+   },
+   {
+    "pair": "guanidinium <-> carboxylate",
+    "log2_or": 1.295
+   },
+   {
+    "pair": "carboxylate <-> guanidinium",
+    "log2_or": 1.295
+   },
+   {
+    "pair": "imidazole <-> imidazole",
+    "log2_or": 0.833
+   },
+   {
+    "pair": "bb carbonyl C=O <-> bb amide N-H",
+    "log2_or": 0.435
+   },
+   {
+    "pair": "bb amide N-H <-> bb carbonyl C=O",
+    "log2_or": 0.435
+   },
+   {
+    "pair": "phenol -OH <-> aliphatic C",
+    "log2_or": 0.421
+   },
+   {
+    "pair": "aliphatic C <-> phenol -OH",
+    "log2_or": 0.421
+   },
+   {
+    "pair": "indole ring <-> aliphatic C",
+    "log2_or": 0.412
+   },
+   {
+    "pair": "aliphatic C <-> indole ring",
+    "log2_or": 0.412
+   }
+  ],
+  "top_depleted": [
+   {
+    "pair": "ammonium <-> aromatic ring (Phe/Tyr)",
+    "log2_or": -1.73
+   },
+   {
+    "pair": "aromatic ring (Phe/Tyr) <-> ammonium",
+    "log2_or": -1.73
+   },
+   {
+    "pair": "carboxylate <-> thiol/thioether",
+    "log2_or": -1.431
+   },
+   {
+    "pair": "thiol/thioether <-> carboxylate",
+    "log2_or": -1.431
+   },
+   {
+    "pair": "carboxylate <-> carboxylate",
+    "log2_or": -1.296
+   },
+   {
+    "pair": "ammonium <-> imidazole",
+    "log2_or": -1.269
+   },
+   {
+    "pair": "imidazole <-> ammonium",
+    "log2_or": -1.269
+   },
+   {
+    "pair": "ammonium <-> guanidinium",
+    "log2_or": -1.25
+   },
+   {
+    "pair": "guanidinium <-> ammonium",
+    "log2_or": -1.25
+   },
+   {
+    "pair": "ammonium <-> indole ring",
+    "log2_or": -1.151
+   },
+   {
+    "pair": "indole ring <-> ammonium",
+    "log2_or": -1.151
+   },
+   {
+    "pair": "carboxylate <-> indole ring",
+    "log2_or": -1.004
+   }
+  ]
+ },
+ "similarity_antibody_vs_ppi": 0.6175588593211865,
+ "most_ppi_enriched": [
+  {
+   "pair": "carboxylate <-> carboxylate",
+   "delta": -0.897
+  },
+  {
+   "pair": "guanidinium <-> guanidinium",
+   "delta": -0.886
+  },
+  {
+   "pair": "bb amide N-H <-> bb amide N-H",
+   "delta": -0.673
+  },
+  {
+   "pair": "ammonium <-> carboxylate",
+   "delta": -0.488
+  },
+  {
+   "pair": "indole ring <-> aromatic ring (Phe/Tyr)",
+   "delta": -0.396
+  },
+  {
+   "pair": "aromatic ring (Phe/Tyr) <-> aromatic ring (Phe/Tyr)",
+   "delta": -0.381
+  },
+  {
+   "pair": "aromatic ring (Phe/Tyr) <-> indole ring",
+   "delta": -0.375
+  },
+  {
+   "pair": "bb amide N-H <-> bb carbonyl C=O",
+   "delta": -0.365
+  },
+  {
+   "pair": "imidazole <-> aliphatic C",
+   "delta": -0.354
+  },
+  {
+   "pair": "hydroxyl <-> imidazole",
+   "delta": -0.34
+  }
+ ],
+ "most_antibody_enriched": [
+  {
+   "pair": "aromatic ring (Phe/Tyr) <-> ammonium",
+   "delta": 1.073
+  },
+  {
+   "pair": "imidazole <-> amide (Asn/Gln)",
+   "delta": 1.072
+  },
+  {
+   "pair": "bb carbonyl C=O <-> phenol -OH",
+   "delta": 0.581
+  },
+  {
+   "pair": "amide (Asn/Gln) <-> indole ring",
+   "delta": 0.575
+  },
+  {
+   "pair": "aromatic ring (Phe/Tyr) <-> guanidinium",
+   "delta": 0.569
+  },
+  {
+   "pair": "bb amide N-H <-> phenol -OH",
+   "delta": 0.556
+  },
+  {
+   "pair": "bb amide N-H <-> carboxylate",
+   "delta": 0.44
+  },
+  {
+   "pair": "bb amide N-H <-> aromatic ring (Phe/Tyr)",
+   "delta": 0.405
+  },
+  {
+   "pair": "bb carbonyl C=O <-> carboxylate",
+   "delta": 0.403
+  },
+  {
+   "pair": "guanidinium <-> aromatic ring (Phe/Tyr)",
+   "delta": 0.38
+  }
+ ]
+}

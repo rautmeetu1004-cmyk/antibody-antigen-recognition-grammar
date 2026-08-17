@@ -1,0 +1,132 @@
+{
+ "surface_definition_A2": 20.0,
+ "roles": {
+  "Antibody paratope": {
+   "n_interface_residues": 15558,
+   "n_surface_residues": 113233,
+   "composition_log2_vs_own_surface": {
+    "R": 0.449,
+    "K": -1.455,
+    "H": 0.991,
+    "W": 2.648,
+    "Y": 2.452,
+    "F": 1.416,
+    "Q": -1.268,
+    "N": 0.494,
+    "S": -0.448,
+    "T": -0.692,
+    "P": -1.375,
+    "G": -0.116,
+    "A": -0.232,
+    "M": 0.984,
+    "I": 1.1,
+    "L": -0.094,
+    "V": -0.6,
+    "C": 1.381,
+    "D": 0.496,
+    "E": -0.792
+   },
+   "mean_abs_enrichment": 0.9742440272701038,
+   "max_abs_enrichment": 2.6482756277966497,
+   "relative_accessibility": {
+    "median_interface": 0.3322754247499699,
+    "median_surface": 0.3526173666058024,
+    "effect_rank_biserial": -0.2703862660944206,
+    "p": 1.00559483861017e-07,
+    "n_units": 233
+   },
+   "protrusion": {
+    "median_interface": 0.6981016852265468,
+    "median_surface": 0.5668123848518235,
+    "effect_rank_biserial": 0.5793991416309013,
+    "p": 3.2811651841302484e-25,
+    "n_units": 233
+   }
+  },
+  "Antibody epitope": {
+   "n_interface_residues": 15226,
+   "n_surface_residues": 71610,
+   "composition_log2_vs_own_surface": {
+    "R": -0.07,
+    "K": -0.344,
+    "H": 0.331,
+    "W": 0.138,
+    "Y": 0.445,
+    "F": 0.803,
+    "Q": -0.012,
+    "N": -0.352,
+    "S": -0.224,
+    "T": -0.304,
+    "P": -0.181,
+    "G": 0.013,
+    "A": -0.048,
+    "M": 0.415,
+    "I": 0.292,
+    "L": 0.35,
+    "V": 0.051,
+    "C": 0.442,
+    "D": -0.079,
+    "E": 0.004
+   },
+   "mean_abs_enrichment": 0.24490926260398682,
+   "max_abs_enrichment": 0.8027991974294505,
+   "relative_accessibility": {
+    "median_interface": 0.36983635123873027,
+    "median_surface": 0.36263794191260823,
+    "effect_rank_biserial": 0.004291845493562232,
+    "p": 0.5119380147889712,
+    "n_units": 233
+   },
+   "protrusion": {
+    "median_interface": 0.5888605011490385,
+    "median_surface": 0.5937348760604536,
+    "effect_rank_biserial": -0.12446351931330472,
+    "p": 0.4364790089016476,
+    "n_units": 233
+   }
+  },
+  "PPI partner interface": {
+   "n_interface_residues": 72404,
+   "n_surface_residues": 208330,
+   "composition_log2_vs_own_surface": {
+    "R": -0.015,
+    "K": -0.88,
+    "H": 0.065,
+    "W": 0.848,
+    "Y": 0.412,
+    "F": 0.929,
+    "Q": -0.223,
+    "N": -0.229,
+    "S": -0.158,
+    "T": -0.139,
+    "P": -0.338,
+    "G": 0.136,
+    "A": 0.164,
+    "M": 0.802,
+    "I": 0.823,
+    "L": 0.605,
+    "V": 0.526,
+    "C": 1.126,
+    "D": -0.565,
+    "E": -0.673
+   },
+   "mean_abs_enrichment": 0.48281174122578185,
+   "max_abs_enrichment": 1.1264315488036294,
+   "relative_accessibility": {
+    "median_interface": 0.3515989551613551,
+    "median_surface": 0.3560986424523286,
+    "effect_rank_biserial": -0.125,
+    "p": 0.006635661446413792,
+    "n_units": 464
+   },
+   "protrusion": {
+    "median_interface": 0.5505943101574231,
+    "median_surface": 0.6060706152168978,
+    "effect_rank_biserial": -0.38660907127429806,
+    "p": 3.968761898199326e-21,
+    "n_units": 463
+   }
+  }
+ },
+ "interpretation": "mean_abs_enrichment is the headline: how chemically distinguishable an interface is from its OWN protein's accessible surface. A co-evolved PPI interface should be distinguishable; if an antibody epitope is much less so, antibodies are imposing chemistry on an arbitrary patch rather than selecting a chemically special one."
+}

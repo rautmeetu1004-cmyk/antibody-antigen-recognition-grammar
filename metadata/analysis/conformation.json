@@ -1,0 +1,104 @@
+{
+ "ss_composition": {
+  "antibody_probe": {
+   "helix": 0.0849,
+   "strand": 0.2448,
+   "loop": 0.6704
+  },
+  "antibody_target": {
+   "helix": 0.2593,
+   "strand": 0.2284,
+   "loop": 0.5123
+  },
+  "ppi_probe": {
+   "helix": 0.3686,
+   "strand": 0.169,
+   "loop": 0.4624
+  },
+  "ppi_target": {
+   "helix": 0.3448,
+   "strand": 0.1463,
+   "loop": 0.5089
+  }
+ },
+ "loop_confound": {
+  "all": {
+   "r": 0.38737137642186187,
+   "n_antibody": 36810,
+   "n_ppi": 181368
+  },
+  "loop_probe": {
+   "r": 0.3121451757776485,
+   "n_antibody": 25073,
+   "n_ppi": 88287
+  },
+  "loop_both": {
+   "r": 0.18454250967135236,
+   "n_antibody": 13427,
+   "n_ppi": 53648
+  },
+  "target_loop": {
+   "r": 0.2751081540316071,
+   "n_antibody": 19662,
+   "n_ppi": 98314
+  },
+  "target_strand": {
+   "r": 0.13376031406734706,
+   "n_antibody": 8443,
+   "n_ppi": 23627
+  },
+  "target_helix": {
+   "r": 0.22503027814330442,
+   "n_antibody": 8705,
+   "n_ppi": 59427
+  }
+ },
+ "torsion": {
+  "antibody_interface": {
+   "n": 30784,
+   "rotamer_fractions": {
+    "g+": 0.2258,
+    "g-": 0.5042,
+    "t": 0.27
+   },
+   "chi1_circular_spread": 0.7227,
+   "d_sasa_median": 32.05
+  },
+  "antibody_background": {
+   "n": 293557,
+   "rotamer_fractions": {
+    "g+": 0.2155,
+    "g-": 0.4935,
+    "t": 0.2909
+   },
+   "chi1_circular_spread": 0.7393,
+   "d_sasa_median": 0.0
+  },
+  "ppi_interface": {
+   "n": 137382,
+   "rotamer_fractions": {
+    "g+": 0.1825,
+    "g-": 0.5275,
+    "t": 0.2901
+   },
+   "chi1_circular_spread": 0.6704,
+   "d_sasa_median": 34.96
+  },
+  "ppi_background": {
+   "n": 557848,
+   "rotamer_fractions": {
+    "g+": 0.1692,
+    "g-": 0.522,
+    "t": 0.3088
+   },
+   "chi1_circular_spread": 0.6691,
+   "d_sasa_median": 0.0
+  }
+ },
+ "ss_composition_test": {
+  "chi2": 11398.521022713541,
+  "p": 0.0,
+  "cramers_v": 0.22856976096254988
+ },
+ "note": "loop_confound compares the SAME statistic (cross-arm grammar r) within matched structural context. A large rise from 'all' to 'loop_both' would mean the antibody signature is substantially a loop-context artefact; a flat profile means it is not."
+}

@@ -1,0 +1,345 @@
+{
+ "permutation_test": {
+  "observed_r": 0.41668805264967945,
+  "null_median": 0.7978329036030065,
+  "null_ci": [
+   0.7283072069829081,
+   0.8495847906668047
+  ],
+  "p_one_sided": 0.000999000999000999,
+  "n_perm": 1000,
+  "interpretation": "p is the probability of seeing a cross-group correlation this LOW if both arms were samples of one grammar"
+ },
+ "n_cells_significantly_different": 33,
+ "top_differential_cells": [
+  {
+   "pair": "H-C",
+   "delta": -4.73,
+   "ci": [
+    -6.909,
+    -3.095
+   ],
+   "q": 0.582716049382716,
+   "antibody": -4.217,
+   "ppi": 0.513,
+   "significant": false
+  },
+  {
+   "pair": "C-H",
+   "delta": -4.73,
+   "ci": [
+    -6.909,
+    -3.095
+   ],
+   "q": 0.582716049382716,
+   "antibody": -4.217,
+   "ppi": 0.513,
+   "significant": false
+  },
+  {
+   "pair": "I-C",
+   "delta": -2.151,
+   "ci": [
+    -4.997,
+    -0.937
+   ],
+   "q": 0.061538461538461535,
+   "antibody": -2.31,
+   "ppi": -0.159,
+   "significant": false
+  },
+  {
+   "pair": "C-I",
+   "delta": -2.151,
+   "ci": [
+    -4.997,
+    -0.937
+   ],
+   "q": 0.061538461538461535,
+   "antibody": -2.31,
+   "ppi": -0.159,
+   "significant": false
+  },
+  {
+   "pair": "A-C",
+   "delta": -1.482,
+   "ci": [
+    -3.936,
+    -0.278
+   ],
+   "q": 0.09824561403508773,
+   "antibody": -1.655,
+   "ppi": -0.173,
+   "significant": false
+  },
+  {
+   "pair": "C-A",
+   "delta": -1.482,
+   "ci": [
+    -3.936,
+    -0.278
+   ],
+   "q": 0.09824561403508773,
+   "antibody": -1.655,
+   "ppi": -0.173,
+   "significant": false
+  },
+  {
+   "pair": "Y-C",
+   "delta": 1.342,
+   "ci": [
+    0.745,
+    1.9
+   ],
+   "q": 0.0016,
+   "antibody": 0.826,
+   "ppi": -0.517,
+   "significant": true
+  },
+  {
+   "pair": "C-Y",
+   "delta": 1.342,
+   "ci": [
+    0.745,
+    1.9
+   ],
+   "q": 0.0016,
+   "antibody": 0.826,
+   "ppi": -0.517,
+   "significant": true
+  },
+  {
+   "pair": "R-C",
+   "delta": 1.233,
+   "ci": [
+    0.241,
+    1.948
+   ],
+   "q": 0.09824561403508773,
+   "antibody": 1.075,
+   "ppi": -0.158,
+   "significant": false
+  },
+  {
+   "pair": "C-R",
+   "delta": 1.233,
+   "ci": [
+    0.241,
+    1.948
+   ],
+   "q": 0.09824561403508773,
+   "antibody": 1.075,
+   "ppi": -0.158,
+   "significant": false
+  },
+  {
+   "pair": "E-E",
+   "delta": -1.144,
+   "ci": [
+    -1.852,
+    -0.598
+   ],
+   "q": 0.0016,
+   "antibody": -1.409,
+   "ppi": -0.265,
+   "significant": true
+  },
+  {
+   "pair": "W-C",
+   "delta": -1.055,
+   "ci": [
+    -2.749,
+    -0.024
+   ],
+   "q": 0.21621621621621623,
+   "antibody": -0.965,
+   "ppi": 0.09,
+   "significant": false
+  },
+  {
+   "pair": "C-W",
+   "delta": -1.055,
+   "ci": [
+    -2.749,
+    -0.024
+   ],
+   "q": 0.21621621621621623,
+   "antibody": -0.965,
+   "ppi": 0.09,
+   "significant": false
+  },
+  {
+   "pair": "C-D",
+   "delta": 1.011,
+   "ci": [
+    -0.588,
+    1.9
+   ],
+   "q": 0.582716049382716,
+   "antibody": 0.39,
+   "ppi": -0.621,
+   "significant": false
+  },
+  {
+   "pair": "D-C",
+   "delta": 1.011,
+   "ci": [
+    -0.588,
+    1.9
+   ],
+   "q": 0.582716049382716,
+   "antibody": 0.39,
+   "ppi": -0.621,
+   "significant": false
+  },
+  {
+   "pair": "H-H",
+   "delta": -1.007,
+   "ci": [
+    -2.414,
+    -0.062
+   ],
+   "q": 0.1942857142857143,
+   "antibody": -0.247,
+   "ppi": 0.76,
+   "significant": false
+  },
+  {
+   "pair": "W-Y",
+   "delta": -0.991,
+   "ci": [
+    -1.371,
+    -0.682
+   ],
+   "q": 0.0016,
+   "antibody": -0.815,
+   "ppi": 0.176,
+   "significant": true
+  },
+  {
+   "pair": "Y-W",
+   "delta": -0.991,
+   "ci": [
+    -1.371,
+    -0.682
+   ],
+   "q": 0.0016,
+   "antibody": -0.815,
+   "ppi": 0.176,
+   "significant": true
+  },
+  {
+   "pair": "D-E",
+   "delta": -0.989,
+   "ci": [
+    -1.496,
+    -0.549
+   ],
+   "q": 0.0016,
+   "antibody": -1.369,
+   "ppi": -0.38,
+   "significant": true
+  },
+  {
+   "pair": "E-D",
+   "delta": -0.989,
+   "ci": [
+    -1.496,
+    -0.549
+   ],
+   "q": 0.0016,
+   "antibody": -1.369,
+   "ppi": -0.38,
+   "significant": true
+  },
+  {
+   "pair": "W-M",
+   "delta": 0.93,
+   "ci": [
+    0.164,
+    1.488
+   ],
+   "q": 0.07111111111111111,
+   "antibody": 0.857,
+   "ppi": -0.073,
+   "significant": false
+  },
+  {
+   "pair": "M-W",
+   "delta": 0.93,
+   "ci": [
+    0.164,
+    1.488
+   ],
+   "q": 0.07111111111111111,
+   "antibody": 0.857,
+   "ppi": -0.073,
+   "significant": false
+  },
+  {
+   "pair": "K-A",
+   "delta": -0.909,
+   "ci": [
+    -1.517,
+    -0.411
+   ],
+   "q": 0.0016,
+   "antibody": -1.248,
+   "ppi": -0.339,
+   "significant": true
+  },
+  {
+   "pair": "A-K",
+   "delta": -0.909,
+   "ci": [
+    -1.517,
+    -0.411
+   ],
+   "q": 0.0016,
+   "antibody": -1.248,
+   "ppi": -0.339,
+   "significant": true
+  },
+  {
+   "pair": "Y-Y",
+   "delta": -0.854,
+   "ci": [
+    -1.218,
+    -0.524
+   ],
+   "q": 0.0016,
+   "antibody": -0.912,
+   "ppi": -0.058,
+   "significant": true
+  }
+ ],
+ "asymmetry": {
+  "antibody": {
+   "asymmetry": 0.7571111701259362,
+   "bootstrap_ci": [
+    0.7226201948612716,
+    0.8578951993256718
+   ],
+   "n_units": 233
+  },
+  "ppi": {
+   "asymmetry": 0.027668544421586692,
+   "bootstrap_ci": [
+    0.057819341650896736,
+    0.09233870977392875
+   ],
+   "n_units": 1326
+  }
+ },
+ "dynamic_range": {
+  "sd_antibody": 0.5723024505432854,
+  "sd_ppi_full": 0.3420715039670547,
+  "sd_ppi_subsampled_to_antibody_units_median": 0.3974208209299047,
+  "sd_ppi_subsampled_ci": [
+   0.36436495632139704,
+   0.43666558100158887
+  ],
+  "verdict": "antibody grammar is genuinely sharper than PPI at equal sample size"
+ },
+ "power_note": "400 cells are tested per map. The antibody arm has 233 cluster30 units against PPI's 1326, so the antibody map is the power-limiting side throughout; a cell failing significance here is not evidence of no difference."
+}

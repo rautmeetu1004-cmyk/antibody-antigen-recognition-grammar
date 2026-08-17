@@ -1,0 +1,10 @@
+{
+ "ss_validated": 622662,
+ "ss_agree": 553606,
+ "n_structures": 1512,
+ "n_failed": 0,
+ "failures": [],
+ "ss_agreement_vs_pdb_records": 0.8890955285532118,
+ "ppi_sampled": 1000,
+ "sampling_note": "the antibody arm is processed in full (512); the PPI arm is a seeded random sample of 1000 of 2,292 complexes, which still exceeds the antibody arm in both structures and cluster30 units. Reported so the coverage limit is visible rather than implied."
+}

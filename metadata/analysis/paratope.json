@@ -1,0 +1,191 @@
+{
+ "n_contacts_mapped": 35146,
+ "n_contacts_unmapped": 1664,
+ "imgt_mapping_coverage_median": 1.0,
+ "cdr_vs_framework": {
+  "FAB": {
+   "H3": 0.2899,
+   "framework": 0.2202,
+   "H2": 0.1379,
+   "L3": 0.1351,
+   "L1": 0.1054,
+   "H1": 0.0928,
+   "L2": 0.0187,
+   "_n_contacts": 17151,
+   "_n_structures": 245,
+   "_cdr_only_fractions": {
+    "H3": 0.3718,
+    "H2": 0.1768,
+    "L3": 0.1732,
+    "L1": 0.1352,
+    "H1": 0.119,
+    "L2": 0.024
+   }
+  },
+  "FV": {
+   "H3": 0.2665,
+   "framework": 0.2219,
+   "H2": 0.1396,
+   "L3": 0.1193,
+   "H1": 0.1166,
+   "L1": 0.11,
+   "L2": 0.0262,
+   "_n_contacts": 3708,
+   "_n_structures": 48,
+   "_cdr_only_fractions": {
+    "H3": 0.3425,
+    "H2": 0.1794,
+    "L3": 0.1533,
+    "H1": 0.1498,
+    "L1": 0.1414,
+    "L2": 0.0337
+   }
+  },
+  "SD-H": {
+   "H3": 0.52,
+   "framework": 0.2088,
+   "H1": 0.1421,
+   "H2": 0.1291,
+   "L1": 0.0,
+   "L3": 0.0,
+   "_n_contacts": 14258,
+   "_n_structures": 201,
+   "_cdr_only_fractions": {
+    "H3": 0.6572,
+    "H1": 0.1796,
+    "H2": 0.1632,
+    "L1": 0.0,
+    "L3": 0.0
+   }
+  },
+  "ALL": {
+   "H3": 0.3722,
+   "framework": 0.2165,
+   "H2": 0.1346,
+   "H1": 0.1133,
+   "L3": 0.0832,
+   "L1": 0.0667,
+   "L2": 0.0125,
+   "?2": 0.001,
+   "_n_contacts": 35146,
+   "_n_structures": 495,
+   "_cdr_only_fractions": {
+    "H3": 0.4757,
+    "H2": 0.172,
+    "H1": 0.1448,
+    "L3": 0.1063,
+    "L1": 0.0852,
+    "L2": 0.016
+   }
+  }
+ },
+ "paratope_composition": {
+  "R": {
+   "paratope": 0.0764,
+   "vs_ppi_interface": -0.11,
+   "vs_antibody_surface": 0.753
+  },
+  "K": {
+   "paratope": 0.0236,
+   "vs_ppi_interface": -1.059,
+   "vs_antibody_surface": -1.746
+  },
+  "H": {
+   "paratope": 0.0183,
+   "vs_ppi_interface": -0.633,
+   "vs_antibody_surface": 0.991
+  },
+  "W": {
+   "paratope": 0.0642,
+   "vs_ppi_interface": 1.138,
+   "vs_antibody_surface": 3.041
+  },
+  "Y": {
+   "paratope": 0.1891,
+   "vs_ppi_interface": 1.714,
+   "vs_antibody_surface": 2.698
+  },
+  "F": {
+   "paratope": 0.0509,
+   "vs_ppi_interface": -0.19,
+   "vs_antibody_surface": 1.846
+  },
+  "Q": {
+   "paratope": 0.0262,
+   "vs_ppi_interface": -0.689,
+   "vs_antibody_surface": -1.352
+  },
+  "N": {
+   "paratope": 0.0597,
+   "vs_ppi_interface": 0.428,
+   "vs_antibody_surface": 0.479
+  },
+  "S": {
+   "paratope": 0.1117,
+   "vs_ppi_interface": 1.138,
+   "vs_antibody_surface": -0.687
+  },
+  "T": {
+   "paratope": 0.0584,
+   "vs_ppi_interface": 0.215,
+   "vs_antibody_surface": -0.937
+  },
+  "P": {
+   "paratope": 0.0217,
+   "vs_ppi_interface": -0.854,
+   "vs_antibody_surface": -1.474
+  },
+  "G": {
+   "paratope": 0.0683,
+   "vs_ppi_interface": 0.442,
+   "vs_antibody_surface": -0.451
+  },
+  "A": {
+   "paratope": 0.034,
+   "vs_ppi_interface": -0.728,
+   "vs_antibody_surface": -0.496
+  },
+  "M": {
+   "paratope": 0.0064,
+   "vs_ppi_interface": -2.367,
+   "vs_antibody_surface": 0.975
+  },
+  "I": {
+   "paratope": 0.0259,
+   "vs_ppi_interface": -1.181,
+   "vs_antibody_surface": 1.102
+  },
+  "L": {
+   "paratope": 0.0409,
+   "vs_ppi_interface": -1.172,
+   "vs_antibody_surface": -0.014
+  },
+  "V": {
+   "paratope": 0.0324,
+   "vs_ppi_interface": -0.852,
+   "vs_antibody_surface": -0.648
+  },
+  "C": {
+   "paratope": 0.0026,
+   "vs_ppi_interface": -2.297,
+   "vs_antibody_surface": 0.656
+  },
+  "D": {
+   "paratope": 0.0591,
+   "vs_ppi_interface": 0.302,
+   "vs_antibody_surface": 0.291
+  },
+  "E": {
+   "paratope": 0.0304,
+   "vs_ppi_interface": -0.955,
+   "vs_antibody_surface": -0.861
+  }
+ },
+ "epitope": {
+  "median_segments": 4.0,
+  "mean_segments": 6.23,
+  "frac_discontinuous_ge2_segments": 0.9746,
+  "median_epitope_residues": 22.0
+ },
+ "note": "CDR shares are unit-weighted and computed WITHIN construct type; SD-H (nanobody) has no light chain, so pooling it with FAB would depress every L1/L2/L3 statistic artefactually. Paratope composition is reported against two nulls because enrichment is meaningless without a stated background."
+}

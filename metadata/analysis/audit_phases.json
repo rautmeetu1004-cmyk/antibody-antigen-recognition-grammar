@@ -1,0 +1,64 @@
+{
+ "checks": {
+  "ppi_rows_are_mirrored_duplicates": {
+   "pass": true,
+   "detail": "1.0000 of a_to_b pairs reappear mirrored in b_to_a (406,397 fwd, 406,397 rev, directions={'a_to_b': 406397, 'b_to_a': 406397})"
+  },
+  "ppi_significance_robust_to_deduplication": {
+   "pass": true,
+   "detail": "318/400 cells significant at doubled N -> 306/400 at true N (log2 odds ratios are unchanged; only p-values move)"
+  },
+  "bh_matches_textbook": {
+   "pass": true,
+   "detail": "max abs diff = 0.000e+00 over 400 synthetic p"
+  },
+  "log2_odds_zero_on_independent_table": {
+   "pass": true,
+   "detail": "max |log2 OR| on a rank-1 (independent) table = 0.00e+00; uniform-block sanity False"
+  },
+  "bootstrap_vectorisation_equivalent": {
+   "pass": true,
+   "detail": "median relative difference in per-cell bootstrap SD = 0.0556 (two independent resampling routes)"
+  },
+  "antibody_weights_are_reciprocal_cluster_size": {
+   "pass": true,
+   "detail": "0 mismatches; per-unit total weight CV = 0.64 (CV>0 is expected: weighting equalises STRUCTURES per unit, not CONTACTS per unit)"
+  },
+  "ppi_weights_are_reciprocal_cluster_size": {
+   "pass": true,
+   "detail": "0 mismatches; per-unit total weight CV = 1.36 (CV>0 is expected: weighting equalises STRUCTURES per unit, not CONTACTS per unit)"
+  },
+  "antibody_asymmetric_ppi_symmetric": {
+   "pass": true,
+   "detail": "relative asymmetry |M-M'|/sum(M): antibody=0.757, ppi=0.028 (PPI near 0 confirms both-direction extraction)"
+  },
+  "contact_totals_agree_across_phases": {
+   "pass": true,
+   "detail": "phase3=36,810 phase4=36,810"
+  },
+  "ppi_interface_count_is_doubled": {
+   "pass": true,
+   "detail": "antibody=512 (=structures), ppi=4584 (=2x2292 structures, one row per direction)"
+  },
+  "grammar_r_reproduces": {
+   "pass": true,
+   "detail": "phase3 r=0.418025 vs phase4 r=0.418025"
+  },
+  "salt_correlation_flagged_uninterpretable": {
+   "pass": true,
+   "detail": "n_cells=12, CI=[-0.917, 0.879] spans zero -> r=-0.796 must NOT be read as anticorrelation"
+  },
+  "glycine_has_no_sidechain_readout": {
+   "pass": true,
+   "detail": "G side-chain fraction antibody=0.0, ppi=0.0 (must be exactly 0)"
+  }
+ },
+ "ppi_fisher_impact": {
+  "n_sig_doubled": 318,
+  "n_sig_true": 306
+ },
+ "asymmetry": {
+  "antibody": 0.7571111701259361,
+  "ppi": 0.027668544421587737
+ }
+}

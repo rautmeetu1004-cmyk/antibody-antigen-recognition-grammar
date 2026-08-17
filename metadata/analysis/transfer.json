@@ -1,0 +1,56 @@
+{
+ "n_interfaces": {
+  "antibody": 511,
+  "ppi": 2271
+ },
+ "n_decoys_per_interface": 50,
+ "antibody_scored_by_antibody_potential": {
+  "label": "self (LOO)",
+  "mean_auc": 0.7791348327399829,
+  "unit_ci": [
+   0.14,
+   1.0
+  ],
+  "n_units": 233,
+  "p_vs_chance": 1.0628299882298763e-29,
+  "frac_units_below_chance": 0.14163090128755365
+ },
+ "antibody_scored_by_ppi_potential": {
+  "label": "cross (PPI)",
+  "mean_auc": 0.833093074069469,
+  "unit_ci": [
+   0.31200000000000006,
+   1.0
+  ],
+  "n_units": 233,
+  "p_vs_chance": 1.5872401505185263e-35,
+  "frac_units_below_chance": 0.08583690987124463
+ },
+ "ppi_scored_by_ppi_potential": {
+  "label": "self (LOO)",
+  "mean_auc": 0.891087353606967,
+  "unit_ci": [
+   0.31125,
+   1.0
+  ],
+  "n_units": 806,
+  "p_vs_chance": 6.623176870874638e-129,
+  "frac_units_below_chance": 0.06947890818858561
+ },
+ "ppi_scored_by_antibody_potential": {
+  "label": "cross (antibody)",
+  "mean_auc": 0.837246543069144,
+  "unit_ci": [
+   0.16,
+   1.0
+  ],
+  "n_units": 806,
+  "p_vs_chance": 1.3288367923366035e-110,
+  "frac_units_below_chance": 0.10918114143920596
+ },
+ "transfer_loss_antibody": -0.05395824132948612,
+ "transfer_loss_ppi": 0.05384081053782297,
+ "antibody_self_vs_cross_p": 0.03478425322409076,
+ "ppi_self_vs_cross_p": 1.0900727949992567e-07,
+ "method_note": "Decoys preserve interface geometry, contact count and residue composition, permuting only WHICH residue occupies WHICH position. AUC is averaged within cluster30 unit before any statistic. The self potential is leave-one-unit-out, so no interface contributes to the potential that scores it."
+}

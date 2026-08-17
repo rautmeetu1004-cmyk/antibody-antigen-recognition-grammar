@@ -1,0 +1,98 @@
+{
+ "per_residue": {
+  "antibody": {
+   "R": 0.8598,
+   "K": 0.8089,
+   "H": 0.8033,
+   "W": 0.823,
+   "Y": 0.873,
+   "F": 0.8305,
+   "Q": 0.826,
+   "N": 0.7485,
+   "S": 0.582,
+   "T": 0.6727,
+   "P": 0.6737,
+   "G": 0.0,
+   "A": 0.4768,
+   "M": 0.7795,
+   "I": 0.7575,
+   "L": 0.7531,
+   "V": 0.7309,
+   "C": 0.4447,
+   "D": 0.7469,
+   "E": 0.7948
+  },
+  "ppi": {
+   "R": 0.8269,
+   "K": 0.7417,
+   "H": 0.7616,
+   "W": 0.8564,
+   "Y": 0.8447,
+   "F": 0.8295,
+   "Q": 0.7766,
+   "N": 0.7256,
+   "S": 0.5611,
+   "T": 0.6558,
+   "P": 0.6446,
+   "G": 0.0,
+   "A": 0.4799,
+   "M": 0.7684,
+   "I": 0.7695,
+   "L": 0.7778,
+   "V": 0.7085,
+   "C": 0.5613,
+   "D": 0.6947,
+   "E": 0.7565
+  }
+ },
+ "maps": {
+  "antibody": {
+   "f_side_overall": 0.713365679531676,
+   "side_vs_main_map_r": 0.2781657782434861,
+   "n_units": 233,
+   "unit_f_side_median": 0.7158211926961927
+  },
+  "ppi": {
+   "f_side_overall": 0.697364201765329,
+   "side_vs_main_map_r": 0.7105909620009535,
+   "n_units": 1326,
+   "unit_f_side_median": 0.715983382637103
+  }
+ },
+ "per_residue_correlation": 0.9811656666187365,
+ "per_residue_delta": {
+  "R": 0.0329,
+  "K": 0.0672,
+  "H": 0.0417,
+  "W": -0.0334,
+  "Y": 0.0283,
+  "F": 0.001,
+  "Q": 0.0494,
+  "N": 0.0229,
+  "S": 0.0209,
+  "T": 0.0169,
+  "P": 0.0291,
+  "G": 0.0,
+  "A": -0.0031,
+  "M": 0.0111,
+  "I": -0.012,
+  "L": -0.0247,
+  "V": 0.0224,
+  "C": -0.1166,
+  "D": 0.0522,
+  "E": 0.0383
+ },
+ "unit_level_test": {
+  "median_antibody": 0.7158211926961927,
+  "median_ppi": 0.715983382637103,
+  "p": 0.9545125584775079,
+  "effect_rank_biserial": -0.0023433605862285267,
+  "n_units_antibody": 233,
+  "n_units_ppi": 1326
+ },
+ "cross_arm_map_r": {
+  "side": 0.4930491263859738,
+  "main": 0.1346860463831452
+ },
+ "note": "main-chain readout is identity-agnostic by construction: the backbone of every residue except proline and glycine is chemically identical, so a main-chain map's residue axis reports WHICH residues present their backbone, not which chemistry is being read."
+}

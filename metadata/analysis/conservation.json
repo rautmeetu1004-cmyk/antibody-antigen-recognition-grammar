@@ -1,0 +1,294 @@
+{
+ "overall": {
+  "all_contacts": {
+   "r": 0.41802485663332795,
+   "ci": [
+    0.25890102966036566,
+    0.43261743511355744
+   ],
+   "n_cells": 400,
+   "n_contacts_antibody": 36810,
+   "n_contacts_ppi": 812794
+  },
+  "vdw": {
+   "r": 0.37355627392705304,
+   "ci": [
+    0.24327764285024153,
+    0.42652794965769697
+   ],
+   "n_cells": 397,
+   "n_contacts_antibody": 23591,
+   "n_contacts_ppi": 563406
+  },
+  "hbond": {
+   "r": 0.24473295194735123,
+   "ci": [
+    0.12924975476126072,
+    0.34814840293220545
+   ],
+   "n_cells": 347,
+   "n_contacts_antibody": 9248,
+   "n_contacts_ppi": 164398
+  },
+  "salt": {
+   "r": -0.796227834513388,
+   "ci": [
+    -0.9165781353912491,
+    0.8788386073755208
+   ],
+   "n_cells": 12,
+   "n_contacts_antibody": 1248,
+   "n_contacts_ppi": 24310
+  }
+ },
+ "cys_masked": {
+  "all_contacts": {
+   "r": 0.5863301093561519,
+   "ci": [
+    0.37513817855987475,
+    0.5223308700894226
+   ],
+   "n_cells": 361
+  },
+  "vdw": {
+   "r": 0.5338288487435137,
+   "ci": [
+    0.33832897225365566,
+    0.47952787605168823
+   ],
+   "n_cells": 361
+  },
+  "hbond": {
+   "r": 0.3293286013382914,
+   "ci": [
+    0.1800501810266899,
+    0.3823822480064726
+   ],
+   "n_cells": 320
+  },
+  "salt": {
+   "r": -0.796227834513388,
+   "ci": [
+    -0.9165781353912491,
+    0.8788386073755208
+   ],
+   "n_cells": 12
+  }
+ },
+ "class_level": {
+  "r": 0.8412589989529822
+ },
+ "cells": {
+  "n_universal": 55,
+  "n_antibody_specific": 14,
+  "n_ppi_specific": 153,
+  "n_opposed": 1,
+  "universal": [
+   {
+    "pair": "K-A",
+    "log2_or_antibody": -1.95,
+    "log2_or_ppi": -0.339
+   },
+   {
+    "pair": "E-D",
+    "log2_or_antibody": -1.552,
+    "log2_or_ppi": -0.38
+   },
+   {
+    "pair": "K-F",
+    "log2_or_antibody": -1.443,
+    "log2_or_ppi": -0.46
+   },
+   {
+    "pair": "E-W",
+    "log2_or_antibody": -1.357,
+    "log2_or_ppi": -0.354
+   },
+   {
+    "pair": "D-K",
+    "log2_or_antibody": 1.326,
+    "log2_or_ppi": 1.179
+   },
+   {
+    "pair": "D-E",
+    "log2_or_antibody": -1.236,
+    "log2_or_ppi": -0.38
+   },
+   {
+    "pair": "K-R",
+    "log2_or_antibody": -1.201,
+    "log2_or_ppi": -0.388
+   },
+   {
+    "pair": "D-V",
+    "log2_or_antibody": -1.143,
+    "log2_or_ppi": -0.561
+   },
+   {
+    "pair": "P-W",
+    "log2_or_antibody": 1.141,
+    "log2_or_ppi": 0.584
+   },
+   {
+    "pair": "E-L",
+    "log2_or_antibody": -1.096,
+    "log2_or_ppi": -0.593
+   },
+   {
+    "pair": "L-M",
+    "log2_or_antibody": 1.004,
+    "log2_or_ppi": 0.287
+   },
+   {
+    "pair": "K-E",
+    "log2_or_antibody": 0.961,
+    "log2_or_ppi": 1.128
+   },
+   {
+    "pair": "E-I",
+    "log2_or_antibody": -0.95,
+    "log2_or_ppi": -0.596
+   },
+   {
+    "pair": "D-R",
+    "log2_or_antibody": 0.937,
+    "log2_or_ppi": 0.984
+   },
+   {
+    "pair": "A-K",
+    "log2_or_antibody": -0.931,
+    "log2_or_ppi": -0.339
+   },
+   {
+    "pair": "I-M",
+    "log2_or_antibody": 0.923,
+    "log2_or_ppi": 0.186
+   },
+   {
+    "pair": "K-D",
+    "log2_or_antibody": 0.898,
+    "log2_or_ppi": 1.179
+   },
+   {
+    "pair": "F-D",
+    "log2_or_antibody": -0.882,
+    "log2_or_ppi": -0.655
+   },
+   {
+    "pair": "R-M",
+    "log2_or_antibody": -0.87,
+    "log2_or_ppi": -0.335
+   },
+   {
+    "pair": "E-R",
+    "log2_or_antibody": 0.869,
+    "log2_or_ppi": 0.899
+   },
+   {
+    "pair": "I-L",
+    "log2_or_antibody": 0.85,
+    "log2_or_ppi": 0.459
+   },
+   {
+    "pair": "R-D",
+    "log2_or_antibody": 0.826,
+    "log2_or_ppi": 0.984
+   },
+   {
+    "pair": "N-G",
+    "log2_or_antibody": 0.816,
+    "log2_or_ppi": 0.408
+   },
+   {
+    "pair": "R-R",
+    "log2_or_antibody": -0.812,
+    "log2_or_ppi": -0.151
+   },
+   {
+    "pair": "E-K",
+    "log2_or_antibody": 0.791,
+    "log2_or_ppi": 1.128
+   }
+  ],
+  "antibody_specific": [
+   {
+    "pair": "T-W",
+    "log2_or_antibody": -1.478,
+    "log2_or_ppi": -0.062
+   },
+   {
+    "pair": "R-C",
+    "log2_or_antibody": 1.307,
+    "log2_or_ppi": -0.158
+   },
+   {
+    "pair": "D-D",
+    "log2_or_antibody": -1.234,
+    "log2_or_ppi": -0.45
+   },
+   {
+    "pair": "P-D",
+    "log2_or_antibody": -1.187,
+    "log2_or_ppi": -0.033
+   },
+   {
+    "pair": "E-E",
+    "log2_or_antibody": -1.06,
+    "log2_or_ppi": -0.265
+   },
+   {
+    "pair": "Q-A",
+    "log2_or_antibody": -0.764,
+    "log2_or_ppi": -0.05
+   },
+   {
+    "pair": "A-F",
+    "log2_or_antibody": 0.602,
+    "log2_or_ppi": 0.052
+   },
+   {
+    "pair": "A-Q",
+    "log2_or_antibody": 0.58,
+    "log2_or_ppi": -0.05
+   },
+   {
+    "pair": "D-Y",
+    "log2_or_antibody": -0.559,
+    "log2_or_ppi": -0.083
+   },
+   {
+    "pair": "Q-Q",
+    "log2_or_antibody": 0.473,
+    "log2_or_ppi": 0.395
+   },
+   {
+    "pair": "T-E",
+    "log2_or_antibody": 0.469,
+    "log2_or_ppi": 0.066
+   },
+   {
+    "pair": "Y-Y",
+    "log2_or_antibody": -0.419,
+    "log2_or_ppi": -0.058
+   },
+   {
+    "pair": "T-K",
+    "log2_or_antibody": -0.303,
+    "log2_or_ppi": -0.012
+   },
+   {
+    "pair": "Y-I",
+    "log2_or_antibody": 0.298,
+    "log2_or_ppi": 0.001
+   }
+  ],
+  "opposed": [
+   {
+    "pair": "S-H",
+    "log2_or_antibody": -0.364,
+    "log2_or_ppi": 0.227
+   }
+  ]
+ },
+ "interpretation_note": "r is computed over the 400 cells of the log2-odds maps. The CI resamples cluster30 units in BOTH arms independently. A high per-bond r with a low overall r would mean the groups share a bond vocabulary but deploy it differently; the reverse would mean the aggregate agreement is carried by one dominant bond type."
+}

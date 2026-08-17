@@ -1,0 +1,93 @@
+{
+ "n_interfaces": 1508,
+ "explained_variance_ratio": [
+  0.218,
+  0.1729,
+  0.1062,
+  0.0883,
+  0.0733
+ ],
+ "classifier_auc_group_cv": 0.8749,
+ "frac_antibody_inside_ppi_95pct_ellipse": 0.9375,
+ "top_discriminative_descriptors": [
+  {
+   "descriptor": "n_pairs",
+   "coef": 1.677
+  },
+  {
+   "descriptor": "f_apolar_apolar",
+   "coef": 1.112
+  },
+  {
+   "descriptor": "n_probe_residues",
+   "coef": 0.714
+  },
+  {
+   "descriptor": "f_aromatic",
+   "coef": -0.707
+  },
+  {
+   "descriptor": "target_n_spatial_patches",
+   "coef": -0.689
+  },
+  {
+   "descriptor": "contacts_per_probe_residue",
+   "coef": -0.572
+  },
+  {
+   "descriptor": "probe_n_spatial_patches",
+   "coef": 0.53
+  },
+  {
+   "descriptor": "f_hbond",
+   "coef": -0.465
+  },
+  {
+   "descriptor": "probe_rg",
+   "coef": -0.398
+  },
+  {
+   "descriptor": "f_like_charge",
+   "coef": 0.347
+  }
+ ],
+ "geometry_medians": {
+  "probe_rg": {
+   "antibody": 10.655000000000001,
+   "ppi": 16.3,
+   "effect_rank_biserial": -0.3180145906469408,
+   "p": 4.174569639410295e-24
+  },
+  "probe_planarity": {
+   "antibody": 0.84605,
+   "ppi": 0.7916,
+   "effect_rank_biserial": 0.25121654024573714,
+   "p": 1.242388116652992e-15
+  },
+  "probe_n_spatial_patches": {
+   "antibody": 2.0,
+   "ppi": 2.0,
+   "effect_rank_biserial": -0.22682304726680036,
+   "p": 8.054198579518345e-14
+  },
+  "target_rg": {
+   "antibody": 10.49,
+   "ppi": 16.03,
+   "effect_rank_biserial": -0.2776238872868606,
+   "p": 9.47374062100479e-19
+  },
+  "target_planarity": {
+   "antibody": 0.86695,
+   "ppi": 0.8199,
+   "effect_rank_biserial": 0.1974732792126379,
+   "p": 3.201951835786611e-10
+  },
+  "target_n_spatial_patches": {
+   "antibody": 2.0,
+   "ppi": 2.0,
+   "effect_rank_biserial": -0.012110550401203568,
+   "p": 0.6850464428001026
+  }
+ },
+ "note": "Cross-validation is grouped by cluster30 so no unit appears in both train and test; an ungrouped CV would report an inflated AUC driven by redundancy. AUC near 1 would mean antibody interfaces are a separable class; AUC near 0.5 would mean they are indistinguishable in these descriptors."
+}

@@ -1,0 +1,58 @@
+{
+ "n_structures": 1512,
+ "n_failed": 0,
+ "stats": {
+  "dA_total": {
+   "median_antibody": 1810.9250000000002,
+   "median_ppi": 2851.25,
+   "effect_rank_biserial": -0.3436158798283262,
+   "p": 1.2937018703753275e-13,
+   "n_units_antibody": 233,
+   "n_units_ppi": 464
+  },
+  "dA_apolar": {
+   "median_antibody": 922.1,
+   "median_ppi": 1608.925,
+   "effect_rank_biserial": -0.41660500221992003,
+   "p": 2.7033854727920676e-19,
+   "n_units_antibody": 233,
+   "n_units_ppi": 464
+  },
+  "dA_polar": {
+   "median_antibody": 905.1,
+   "median_ppi": 1215.7624999999998,
+   "effect_rank_biserial": -0.2167844457599526,
+   "p": 2.970853754336113e-06,
+   "n_units_antibody": 233,
+   "n_units_ppi": 464
+  },
+  "frac_apolar_buried": {
+   "median_antibody": 0.49805,
+   "median_ppi": 0.5793,
+   "effect_rank_biserial": -0.5180645996744118,
+   "p": 5.898025759633623e-29,
+   "n_units_antibody": 233,
+   "n_units_ppi": 464
+  },
+  "dCp_cal_mol_K": {
+   "median_antibody": -172.74499999999998,
+   "median_ppi": -393.96243749999996,
+   "effect_rank_biserial": 0.5116360811010803,
+   "p": 2.7794205930062838e-28,
+   "n_units_antibody": 233,
+   "n_units_ppi": 464
+  },
+  "dCp_per_1000A2": {
+   "median_antibody": -93.64019624667493,
+   "median_ppi": -151.28216836369697,
+   "effect_rank_biserial": 0.5181108480094716,
+   "p": 5.832406551971379e-29,
+   "n_units_antibody": 233,
+   "n_units_ppi": 464
+  }
+ },
+ "model": "dCp = 0.45*dA_apolar - 0.26*dA_polar (cal/mol/K), Murphy & Freire 1992",
+ "method_note": "atom-level Shrake-Rupley (64 points), elements C/S/Se counted apolar and N/O polar; buried area = (free A + free B) - complex. No residue-composition approximation is used. dCp_per_1000A2 is the size-normalised comparison, because antibody interfaces are smaller and a raw dCp difference would partly restate that.",
+ "interpretation": "A more negative dCp indicates greater apolar burial and a more hydrophobically (entropically) driven association. If antibody interfaces are enthalpy-leaning as Phase 2 inferred, their size-normalised dCp should be LESS negative than general PPI.",
+ "sign_correction": "dCp uses the CHANGE in accessible area (negative on binding); an earlier version omitted the sign and reported positive dCp."
+}

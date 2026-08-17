@@ -1,0 +1,23 @@
+# Regenerable large outputs
+interactions/analysis/structural_residues.csv
+metadata/sabdab_summary.csv
+
+# Downloaded caches
+sabdab_imgt/
+metadata/analysis/fold_annotations.json
+
+# Source structural data (public; identifiers in metadata/corpus_manifest.csv)
+pdb_antibody/
+pdb_ppi/
+interactions/*_contacts.csv
+interactions/*_atom_contacts.csv
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db

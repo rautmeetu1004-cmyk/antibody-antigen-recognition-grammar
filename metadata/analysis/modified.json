@@ -1,0 +1,167 @@
+{
+ "n_structures_scanned": 2804,
+ "n_failed": 0,
+ "antibody_ptm": {
+  "n_residues_found": 75,
+  "n_at_interface": 14,
+  "n_structures_with_any": 45,
+  "n_structures_with_interfacial": 8,
+  "frac_structures_with_interfacial": 0.0156,
+  "top_types": [
+   [
+    "pyroglutamate",
+    7
+   ],
+   [
+    "sulfo-Tyr",
+    4
+   ],
+   [
+    "phospho-Thr",
+    2
+   ],
+   [
+    "methyl-Lys",
+    1
+   ]
+  ],
+  "detection_note": "8 of 512 structures carry an interfacial PTM. With this corpus a per-structure rate below ~0.0059 (rule of three) could not have been distinguished from zero."
+ },
+ "antibody_glycan": {
+  "n_residues_found": 656,
+  "n_at_interface": 301,
+  "n_structures_with_any": 120,
+  "n_structures_with_interfacial": 72,
+  "frac_structures_with_interfacial": 0.1406,
+  "top_types": [
+   [
+    "NAG",
+    185
+   ],
+   [
+    "MAN",
+    54
+   ],
+   [
+    "FUC",
+    27
+   ],
+   [
+    "BMA",
+    17
+   ],
+   [
+    "GLC",
+    9
+   ],
+   [
+    "GAL",
+    6
+   ],
+   [
+    "BGC",
+    3
+   ]
+  ]
+ },
+ "ppi_ptm": {
+  "n_residues_found": 1560,
+  "n_at_interface": 634,
+  "n_structures_with_any": 368,
+  "n_structures_with_interfacial": 206,
+  "frac_structures_with_interfacial": 0.0899,
+  "top_types": [
+   [
+    "oxidised-Cys",
+    159
+   ],
+   [
+    "SMC",
+    78
+   ],
+   [
+    "phospho-Thr",
+    59
+   ],
+   [
+    "MME",
+    50
+   ],
+   [
+    "AGM",
+    34
+   ],
+   [
+    "GL3",
+    34
+   ],
+   [
+    "NRQ",
+    22
+   ],
+   [
+    "modified-Cys",
+    17
+   ],
+   [
+    "phospho-Ser",
+    14
+   ],
+   [
+    "methyl-Lys",
+    13
+   ]
+  ],
+  "detection_note": "206 of 2292 structures carry an interfacial PTM. With this corpus a per-structure rate below ~0.0013 (rule of three) could not have been distinguished from zero."
+ },
+ "ppi_glycan": {
+  "n_residues_found": 1033,
+  "n_at_interface": 623,
+  "n_structures_with_any": 145,
+  "n_structures_with_interfacial": 116,
+  "frac_structures_with_interfacial": 0.0506,
+  "top_types": [
+   [
+    "NAG",
+    313
+   ],
+   [
+    "MAN",
+    85
+   ],
+   [
+    "FUC",
+    54
+   ],
+   [
+    "BMA",
+    52
+   ],
+   [
+    "GAL",
+    32
+   ],
+   [
+    "GLC",
+    25
+   ],
+   [
+    "BGC",
+    18
+   ],
+   [
+    "SIA",
+    10
+   ],
+   [
+    "NDG",
+    8
+   ],
+   [
+    "XYS",
+    8
+   ]
+  ]
+ },
+ "method_note": "MODRES records are unioned with a curated PTM code list so structures without MODRES are still covered. MSE (selenomethionine) is EXCLUDED: it is a crystallographic phasing substitute for Met, not a biological modification, and counting it would inflate every PTM statistic."
+}
