@@ -1,0 +1,16 @@
+{
+ "observed_cross_format_r": 0.17931035963912734,
+ "cross_format_bootstrap_mean": 0.14776272669127527,
+ "within_fab_reliability_mean": 0.25531504922788484,
+ "difference": -0.10755232253660957,
+ "difference_ci": [
+  -0.29674646626076084,
+  0.08289949159447359
+ ],
+ "equivalence_margin": 0.08464682846393103,
+ "margin_basis": "20 percent of the class-level minus residue-level grammar gap (0.423), the difference this study treats as substantive",
+ "tost_p": 0.9999992388606466,
+ "equivalent": false,
+ "n_units_fab": 136,
+ "n_units_nanobody": 96
+}

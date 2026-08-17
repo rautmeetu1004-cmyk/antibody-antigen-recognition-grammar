@@ -238,8 +238,9 @@ def build_manuscript():
          "We then asked three questions in sequence. First, what physical forces "
          "hold each interface class together. Second, whether the residue-pair "
          "preferences, which we refer to as the recognition grammar, are the same. "
-         "Third, if they differ, whether the difference can be attributed to "
-         "structural context, and if not, which chemistry is responsible.",
+         "Third, if they differ, we ask whether the difference can be attributed to "
+         "structural context, and where it cannot, which chemistry is "
+         "responsible.",
          align=WD_ALIGN_PARAGRAPH.JUSTIFY)
 
     # -------------------------------------------------------------------- methods
@@ -767,11 +768,19 @@ def build_manuscript():
          "correlation in any stratum. Resolution stratification, removal of the "
          "largest antigen clusters, leave-one-cluster-out resampling and variation "
          "of the hydrogen-bond distance criterion all leave the result intact. "
-         "Finally, Fab and single-domain antibodies, which differ substantially in "
-         "architecture, share one recognition grammar: their cross-format "
-         "correlation of 0.18 falls inside the reliability ceiling of 0.25 with a "
-         "range of 0.12 to 0.37 obtained by splitting the Fab corpus in half at the "
-         "same sample size.",
+         "Finally, Fab and single-domain antibodies differ substantially in "
+         "architecture, and their cross-format grammar correlation of 0.18 falls "
+         "inside the reliability ceiling of 0.25, with a range of 0.12 to 0.37, "
+         "obtained by splitting the Fab corpus in half at the same sample size. "
+         "That overlap is consistent with the two formats sharing one grammar, but "
+         "it does not establish it. Holding this comparison to the same "
+         "equivalence standard applied to the null results in Section 3.2, a two "
+         "one-sided test against a margin of 0.085 does not reject non-equivalence, "
+         "and the interval on the difference between the cross-format correlation "
+         "and the within-format ceiling runs from -0.30 to +0.08. With 96 "
+         "independence units on the single-domain side the comparison is "
+         "underpowered, and it should be read as failing to detect a difference "
+         "rather than as demonstrating equivalence.",
          align=WD_ALIGN_PARAGRAPH.JUSTIFY)
     para(doc,
          "One alternative explanation deserves direct treatment, because it would "
@@ -880,13 +889,13 @@ def build_manuscript():
          "functional surface; antibodies do not.",
          align=WD_ALIGN_PARAGRAPH.JUSTIFY)
     figure(doc, "pymol_matched_pair.png",
-           "Fig. 7 The same protein read by an antibody and by its natural "
+           "Fig. 6 The same protein read by an antibody and by its natural "
            "partner, with both footprints painted onto one copy of the shared "
            "protein. (a) Angiogenin, among the higher-overlap pairs. (b) A "
            "low-overlap pair. Red marks residues contacted only by the antibody, "
            "blue only by the natural partner, and purple by both.")
     figure(doc, "add5_epitope_logic.png",
-           "Fig. 6 Interface composition, accessibility and protrusion scored "
+           "Fig. 7 Interface composition, accessibility and protrusion scored "
            "against each protein's own accessible surface.")
 
     heading(doc, "3.8 Interface geometry and separability", 2)
@@ -923,7 +932,7 @@ def build_manuscript():
          "than concentrated in one.",
          align=WD_ALIGN_PARAGRAPH.JUSTIFY)
     figure(doc, "add4_pca.png",
-           "Fig. 7 Principal component projection of interface descriptors, and the "
+           "Fig. 8 Principal component projection of interface descriptors, and the "
            "descriptors that most separate the two classes.")
 
     heading(doc, "3.9 How large is the difference in practice", 2)
@@ -1013,7 +1022,11 @@ def build_manuscript():
          align=WD_ALIGN_PARAGRAPH.JUSTIFY)
     para(doc,
          "The two observations are compatible, and their reconciliation is the point "
-         "of this section. Convergence does not require that the targeted patch be "
+         "of this section. It rests on one antigen and 42 structures that the "
+         "weighting scheme treats as a single independence unit everywhere else, so "
+         "what follows is an interpretation consistent with the corpus-wide results "
+         "rather than an independent test of them, and it should not be generalised "
+         "to antigens with different surface topography. Convergence does not require that the targeted patch be "
          "chemically special. A contiguous, accessible, conformationally coherent "
          "face is sufficient, because that is what a set of hypervariable loops can "
          "engage. Selection acts on the antibody, which must present a complementary "
@@ -1036,6 +1049,10 @@ def build_manuscript():
          "direction is consistent with targeting of surface that is under no "
          "selective pressure to be bound.",
          align=WD_ALIGN_PARAGRAPH.JUSTIFY)
+    figure(doc, "pymol_immunodominance_montage.png",
+           "Fig. 9 Contact frequency of 42 independently raised antibodies mapped "
+           "onto the lysozyme surface. Catalytic residues are shown as sticks.")
+
     para(doc,
          "The same series answers a further question that the corpus-wide "
          "thermodynamics cannot. If 42 antibodies converge on one face, do they "
@@ -1058,15 +1075,11 @@ def build_manuscript():
          "epitope carries little compositional signature of its own.",
          align=WD_ALIGN_PARAGRAPH.JUSTIFY)
     figure(doc, "case_thermodynamics.png",
-           "Fig. 9 Thermodynamic signature across 42 independent antibodies against "
+           "Fig. 10 Thermodynamic signature across 42 independent antibodies against "
            "one antigen. (a) Heat-capacity change per unit buried surface for the "
            "lysozyme series against all antibody interfaces. (b) The same quantity "
            "against the number of immunodominant positions contacted. (c) Apolar "
            "fraction of buried surface against total buried surface.")
-    figure(doc, "pymol_immunodominance_montage.png",
-           "Fig. 8 Contact frequency of 42 independently raised antibodies mapped "
-           "onto the lysozyme surface. Catalytic residues are shown as sticks.")
-
     heading(doc, "3.11 Synthesis", 2)
     para(doc,
          "The results assemble into a consistent account. An antibody is a "
@@ -1103,12 +1116,18 @@ def build_manuscript():
          "published figures although the between-group comparison is internally "
          "valid. CATH assignments cover 43 percent of antibody antigens against 80 "
          "percent of protein-protein partners, so the fold-matched control is weaker "
-         "than the secondary-structure control. Per-residue evolutionary "
+         "than the secondary-structure control. The secondary-structure "
+         "implementation operates on one chain at a time, so beta bridges formed "
+         "between chains are not detected and their residues are assigned as loop. "
+         "This inflates loop content and deflates strand content in both groups. "
+         "Because the same procedure is applied to each, the comparative claims are "
+         "unaffected, but the absolute loop fractions in Section 3.6 should be read "
+         "as upper bounds, and no DSSP executable was available for a direct "
+         "cross-check. Per-residue evolutionary "
          "conservation could not be computed corpus-wide in this environment and is "
          "reported only for the lysozyme case study. Interface-versus-surface "
-         "comparisons in Section 3.7 were computed at residue level rather than unit "
-         "level, so their effect sizes should be read in preference to their p "
-         "values. Finally, rigorous Poisson-Boltzmann electrostatics, molecular "
+         "comparisons in Section 3.7 are computed on unit-level medians, paired within "
+         "independence unit. Finally, rigorous Poisson-Boltzmann electrostatics, molecular "
          "dynamics and docking were outside the scope of the analysis environment.",
          align=WD_ALIGN_PARAGRAPH.JUSTIFY)
 
