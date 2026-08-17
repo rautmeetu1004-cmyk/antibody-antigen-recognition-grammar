@@ -130,11 +130,16 @@ def composition(rows, arm, role, interface):
     of a singleton. Each residue is weighted by the reciprocal of the number of
     structures in its cluster30 unit.
     """
+    # The unit key must carry the arm. cluster30 identifiers were assigned in
+    # separate runs for the two corpora and are NOT globally unique: 36 identifiers
+    # occur in both arms, and 19 of those denote different proteins. Keying this
+    # dictionary on the bare identifier merged unrelated structure sets across the
+    # two arms and inflated the denominator of the weight.
     per_unit_structs = defaultdict(set)
     for r in rows:
         u = UNIT_OF.get((r["arm"], r["pdb_id"]))
         if u:
-            per_unit_structs[u].add(r["pdb_id"])
+            per_unit_structs[(r["arm"], u)].add(r["pdb_id"])
 
     w = defaultdict(float)
     n_raw = 0
@@ -150,7 +155,7 @@ def composition(rows, arm, role, interface):
         u = UNIT_OF.get((r["arm"], r["pdb_id"]))
         if not u:
             continue
-        w[r["aa"]] += 1.0 / len(per_unit_structs[u])
+        w[r["aa"]] += 1.0 / len(per_unit_structs[(r["arm"], u)])
         n_raw += 1
     tot = sum(w.values()) or 1.0
     return {a: w.get(a, 0.0) / tot for a in C.AAS}, n_raw

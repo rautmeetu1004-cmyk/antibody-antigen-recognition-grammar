@@ -33,6 +33,7 @@ import json
 import pathlib
 import sys
 import time
+import http.client
 import urllib.error
 import urllib.request
 from collections import Counter, defaultdict
@@ -82,7 +83,10 @@ def download_imgt(pdb_ids):
                 raise ValueError("response too small")
             (IMGT_DIR / f"{p}.cif").write_bytes(data)
             ok += 1
-        except (urllib.error.URLError, TimeoutError, ValueError) as e:
+        except (urllib.error.URLError, TimeoutError, ValueError,
+                http.client.HTTPException, OSError) as e:
+            # a truncated response raises http.client.IncompleteRead, which is not a
+            # URLError; catching only URLError let one bad download abort the run
             fail += 1
             if fail <= 5:
                 print(f"  {p}: {type(e).__name__}", flush=True)

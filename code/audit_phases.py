@@ -182,9 +182,15 @@ def cross_phase_consistency():
 
     n_ab_int = inv["n_interfaces"]["antibody"]
     n_ppi_int = inv["n_interfaces"]["ppi"]
-    check("ppi_interface_count_is_doubled", n_ppi_int == 2 * 2292,
+    # The raw PPI table stores every complex in both directions, so it holds 2x2292
+    # interface records. Phase 2 must report the DEDUPLICATED count, because a
+    # per-interface distribution counting each complex twice would halve its p values
+    # without adding evidence. An earlier version of this check asserted the doubled
+    # count and so encoded the defect rather than the fix.
+    check("ppi_interface_count_is_deduplicated", n_ppi_int == 2292,
           f"antibody={n_ab_int} (=structures), ppi={n_ppi_int} "
-          f"(=2x2292 structures, one row per direction)")
+          f"(=structures, deduplicated from the 4,584 direction-records in the "
+          f"raw table)")
 
     r3 = hm["cluster30"]["grammar_similarity_antibody_vs_ppi"]
     r4 = cons["overall"]["all_contacts"]["r"]

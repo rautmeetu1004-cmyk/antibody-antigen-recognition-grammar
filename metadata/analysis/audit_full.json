@@ -101,6 +101,10 @@
  },
  "xphase_all_figures_present": {
   "pass": true,
-  "detail": "33 figures: add1_transfer, add2_thermodynamics, add3_shape_complementarity, add4_geometry, add4_pca, add5_epitope_logic..."
+  "detail": "41 figures: add1_transfer, add2_thermodynamics, add3_shape_complementarity, add4_geometry, add4_pca, add5_epitope_logic..."
+ },
+ "unit_ids_are_not_globally_unique_documented": {
+  "pass": true,
+  "detail": "52 cluster30 ids occur in both arms, 35 of them denoting different proteins; aa_common weights are computed per arm so the collision does not propagate there"
  }
 }

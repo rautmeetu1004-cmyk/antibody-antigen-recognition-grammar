@@ -118,9 +118,11 @@ def build_manuscript():
     p.alignment = WD_ALIGN_PARAGRAPH.CENTER
 
     para(doc, "", size=6)
-    para(doc, "Author names and affiliations to be completed",
+    para(doc, "Meetrayu Raut, Amrita Sinharay, Anup Kale",
+         size=11, align=WD_ALIGN_PARAGRAPH.CENTER)
+    para(doc, "Computational Biotechnology Laboratory",
          size=10, italic=True, align=WD_ALIGN_PARAGRAPH.CENTER)
-    para(doc, "Corresponding author: to be completed",
+    para(doc, "Correspondence: rautk2024@gmail.com",
          size=10, italic=True, align=WD_ALIGN_PARAGRAPH.CENTER)
 
     # ------------------------------------------------------------------- abstract
@@ -288,7 +290,9 @@ def build_manuscript():
     para(doc,
          "The first layer is the residue-pair contact table. A contact was recorded "
          "between two residues on opposite sides of an interface when any pair of "
-         "their heavy atoms fell within 4.5 angstroms. Each contact was annotated "
+         "their heavy atoms fell within 4.5 angstroms, a threshold in standard "
+         "use for interface definition and consistent with the contact analyses "
+         "of Jones and Thornton and of Chakrabarti and Janin. Each contact was annotated "
          "with the interaction types it supports: a salt bridge when a basic "
          "side-chain nitrogen lay within 4.0 angstroms of a carboxylate oxygen, "
          "following the ion-pair criterion of Barlow and Thornton; a hydrogen bond "
@@ -317,8 +321,16 @@ def build_manuscript():
          "contacts for Group 1 and 1,767,916 for Group 2.",
          align=WD_ALIGN_PARAGRAPH.JUSTIFY)
     para(doc,
-         "The third layer is per-residue structural context, computed in a single "
-         "pass over 1,512 structures and yielding 1,019,571 annotated residues. "
+         "The third layer is per-residue structural context. Because this pass "
+         "requires repeated solvent-accessibility calculation it was run over "
+         "1,512 complexes rather than the full corpus: all 512 antibody "
+         "complexes, and a seeded random sample of 1,000 of the 2,292 "
+         "protein-protein complexes, which still exceeds the antibody arm in both "
+         "structures and independence units. Every analysis that depends on "
+         "secondary structure, torsion angles or buried surface therefore uses "
+         "this subsample on the protein-protein side, while the contact and "
+         "atom-level analyses use the complete corpus. The pass yielded "
+         "1,019,571 annotated residues. "
          "Secondary structure was assigned by the Kabsch and Sander algorithm, "
          "implemented directly for this study because no DSSP executable was "
          "available in the analysis environment. The implementation places the amide "
@@ -328,7 +340,19 @@ def build_manuscript():
          "from the resulting hydrogen-bond map. Because an implementation of this "
          "kind should not be trusted without evidence, it was validated against the "
          "HELIX and SHEET records deposited with each structure, giving 88.9 percent "
-         "three-state agreement across 622,662 residues. Backbone torsions phi and "
+         "three-state agreement across 622,662 residues. This figure is lower "
+         "than the agreement typically quoted between independent secondary-"
+         "structure programs, which exceeds 95 percent, and the discrepancy "
+         "requires comment. Deposited HELIX and SHEET records are author "
+         "annotations rather than a geometric derivation, they are known to "
+         "differ from algorithmic assignment particularly at element termini "
+         "and for short or distorted elements, and they provide no "
+         "loop category against which agreement can be scored. Our figure is "
+         "therefore agreement with a coarser reference, not with DSSP itself, and "
+         "should be read as a lower bound. All secondary-structure claims in "
+         "this work are three-state and comparative, applied identically to "
+         "both groups, so a uniform assignment error would affect both arms "
+         "equally and cannot generate a difference between them. Backbone torsions phi and "
          "psi and side-chain torsions chi1 and chi2 were computed from coordinates, "
          "with the dihedral routine asserted against an independent reference "
          "implementation before use. Solvent-accessible surface area was computed by "
@@ -491,8 +515,9 @@ def build_manuscript():
 
     heading(doc, "2.7 Software", 2)
     para(doc,
-         "Analyses were implemented in Python 3.14 using NumPy, SciPy, scikit-learn, "
-         "Biopython and Matplotlib. Structural rendering used PyMOL. Fold "
+         "Analyses were implemented in Python 3.14.6 with NumPy 2.4.6, SciPy 1.18.0, "
+         "scikit-learn 1.9.0, Biopython 1.87 and Matplotlib 3.11.0. Structural "
+         "rendering used PyMOL 3.1.0 and document generation python-docx 1.2.0. Fold "
          "assignments and antibody metadata were retrieved from public web services. "
          "All code, intermediate tables and figures are provided.",
          align=WD_ALIGN_PARAGRAPH.JUSTIFY)
@@ -540,12 +565,20 @@ def build_manuscript():
          "closest-approach distance of 3.59 against 3.64 angstroms.",
          align=WD_ALIGN_PARAGRAPH.JUSTIFY)
     para(doc,
-         "Two comparisons are notable for showing no difference. Salt-bridge "
-         "frequency is 0.033 in both groups, and the frequency of contacts between "
-         "oppositely charged residues is 0.051 in both. Charge complementarity is "
-         "therefore general protein interface physics rather than an antibody "
-         "characteristic, and any account of what makes antibodies distinctive must "
-         "look elsewhere.",
+         "Several comparisons are notable for showing no difference, and these require "
+         "a different form of evidence. A non-significant difference test is "
+         "absence of evidence rather than evidence of absence, so equivalence was "
+         "tested directly by two one-sided tests against a margin set at 20 percent "
+         "of the largest composition difference this study measures on the same "
+         "scale. Salt-bridge frequency, contact frequency between oppositely "
+         "charged residues and aromatic stacking frequency are all statistically "
+         "equivalent between the two classes on that criterion, with equivalence p "
+         "below 0.0001 in each case and bootstrap intervals on the difference "
+         "spanning less than 0.013 throughout. Charge complementarity is therefore "
+         "general protein interface physics rather than an antibody characteristic, "
+         "and an account of what distinguishes antibodies must look elsewhere. This "
+         "is a positive finding about sameness, not a failure to detect a "
+         "difference.",
          align=WD_ALIGN_PARAGRAPH.JUSTIFY)
     para(doc,
          "The composition difference has a thermodynamic counterpart. The fraction "
@@ -617,22 +650,40 @@ def build_manuscript():
          "preferred.",
          align=WD_ALIGN_PARAGRAPH.JUSTIFY)
     para(doc,
-         "The check itself returned a clean negative result. Both groups read 0.72 "
-         "of their contacts through target side chains, and the per-residue pattern "
-         "of side-chain against main-chain reading correlates between the groups at "
-         "0.98. Antibodies do not read more backbone than co-evolved partners do.",
+         "The check returned a near-null. Both groups read close to 0.72 of their "
+         "contacts through target side chains, and the per-residue pattern of "
+         "side-chain against main-chain reading correlates between the groups at "
+         "0.98. The difference in fraction is small but not zero: antibodies read "
+         "0.016 more of their contacts through side chains, with a bootstrap "
+         "interval on the difference of 0.002 to 0.032 that excludes zero, and "
+         "equivalence at our stated margin is not established for this quantity. "
+         "The relevant point is one of magnitude. A shift of 1.6 percentage points "
+         "in how much backbone is read is an order of magnitude smaller than the "
+         "divergence in how it is read, reported next.",
          align=WD_ALIGN_PARAGRAPH.JUSTIFY)
     para(doc,
-         "The channels nevertheless behave very differently. When the matrices are "
-         "rebuilt separately for the two channels, the cross-group correlation is "
-         "0.49 for side-chain mediated contacts and 0.14 for main-chain mediated "
-         "contacts. Within groups, the antibody side-chain and main-chain matrices "
-         "correlate at 0.28, whereas the protein-protein equivalents correlate at "
-         "0.71. Two conclusions follow. The divergence between antibody and general "
-         "interfaces resides almost entirely in how the backbone is read rather than "
-         "in how side chains are read. And antibodies extract information from "
-         "sequence and from shape through channels that are close to independent, "
-         "whereas in co-evolved interfaces the two channels are largely redundant.",
+         "The channels nevertheless behave very differently across the two classes. "
+         "When the matrices are rebuilt separately for each channel, the "
+         "cross-group correlation is 0.49 for side-chain mediated contacts and "
+         "0.14 for main-chain mediated contacts. The divergence between antibody "
+         "and general interfaces therefore resides almost entirely in how the "
+         "backbone is read rather than in how side chains are read.",
+         align=WD_ALIGN_PARAGRAPH.JUSTIFY)
+    para(doc,
+         "Within each class the two channels also carry distinguishable "
+         "information, and quantifying that required its own null. Permuting the "
+         "moiety label of every contact within its interface, which preserves "
+         "interface identity, residue composition and the overall side to main "
+         "ratio, gives the correlation expected if moiety carried no grammar. Both "
+         "classes fall below their permuted null, at 0.28 against 0.53 for "
+         "antibodies and 0.55 against 0.94 for protein-protein interfaces, each at "
+         "p = 0.005. Both classes therefore read sequence and shape through "
+         "channels that encode genuinely different preferences. We note "
+         "specifically that the raw difference between 0.28 and 0.55 should not be "
+         "read as antibody channels being more independent than co-evolved ones. "
+         "The two nulls differ substantially because the protein-protein corpus is "
+         "an order of magnitude larger, and relative to their own nulls the two "
+         "classes are comparably decoupled.",
          align=WD_ALIGN_PARAGRAPH.JUSTIFY)
     figure(doc, "phase5_readout.png",
            "Fig. 3 Sequence readout and shape readout as separate channels. Left "
@@ -722,11 +773,45 @@ def build_manuscript():
          "range of 0.12 to 0.37 obtained by splitting the Fab corpus in half at the "
          "same sample size.",
          align=WD_ALIGN_PARAGRAPH.JUSTIFY)
+    para(doc,
+         "One alternative explanation deserves direct treatment, because it would "
+         "account for the residue-level divergence without any difference in "
+         "recognition chemistry. Hypervariable loops and general protein surfaces "
+         "differ in amino-acid composition, antibody paratopes being notably rich "
+         "in tyrosine, serine and glycine, and a matrix of raw contact counts would "
+         "reproduce that compositional difference rather than any preference. The "
+         "design of the statistic forecloses this. Every cell reports the observed "
+         "count divided by the count expected from the product of the two "
+         "residues' own marginal abundances at that interface class, so a residue "
+         "that is simply common contributes proportionally to both the observed and "
+         "the expected term and cancels. The quantity measured is preference "
+         "relative to availability, not abundance. The two-background analysis of "
+         "paratope composition reported below makes the same point from the "
+         "opposite direction, since it shows which apparent enrichments survive "
+         "when the antibody's own surface composition is used as the reference "
+         "and which do not.",
+         align=WD_ALIGN_PARAGRAPH.JUSTIFY)
     figure(doc, "phase6c_loop_confound.png",
            "Fig. 5 Secondary-structure composition of each interface side, and the "
            "cross-group grammar correlation within matched structural context.")
 
     heading(doc, "3.7 The paratope is specialised and the epitope is not", 2)
+    para(doc,
+         "Correspondence between our coordinates and IMGT numbering was established "
+         "by exact alpha-carbon coordinate matching against IMGT-numbered "
+         "structures of the same entries rather than by sequence alignment, "
+         "which is least reliable at exactly the insertion-heavy loops of "
+         "interest. Median mapping coverage was 1.000. Because IMGT "
+         "numbering is a gapped scheme, positions absent from a given domain "
+         "simply have no residue to map and contribute nothing, while "
+         "insertions carry insertion codes and are assigned to the region "
+         "containing their parent position. Region boundaries follow Lefranc "
+         "and colleagues, with CDR1 at positions 27 to 38, CDR2 at 56 to 65 "
+         "and CDR3 at 105 to 117. Loop contribution percentages are "
+         "therefore computed over residues actually present, not over "
+         "nominal scheme positions, so a short loop is not penalised for the "
+         "gaps in its numbering.",
+         align=WD_ALIGN_PARAGRAPH.JUSTIFY)
     para(doc,
          "Mapping every paratope residue onto IMGT numbering recovers the expected "
          "architecture. In Fab complexes, CDR-H3 contributes 37 percent of "
@@ -782,15 +867,24 @@ def build_manuscript():
          align=WD_ALIGN_PARAGRAPH.JUSTIFY)
     para(doc,
          "Two further analyses support the same conclusion from different "
-         "directions. Among 16 proteins solved both in complex with an antibody and "
-         "in complex with a natural partner, the median Jaccard overlap between the "
-         "epitope and the natural partner site is 0.03, and 38 percent of pairs "
-         "share no contacted position whatsoever. Antibodies bind a different face "
-         "of the same protein. Corpus-wide, the fraction of interface residues lying "
+         "directions. Sixteen proteins in the corpus are solved both in complex with an "
+         "antibody and in complex with a natural partner. This is a small sample, "
+         "and the smallest on which any statement in this paper rests, so it is "
+         "offered as corroboration of the corpus-wide results rather than as "
+         "independent evidence. Among those 16 the median Jaccard overlap between "
+         "the epitope and the natural partner site is 0.03, and 38 percent of pairs "
+         "share no contacted position at all. Antibodies bind a different face of "
+         "the same protein. Corpus-wide, the fraction of interface residues lying "
          "within a ligand-binding site is 1.6 percent for antibodies and 10.7 "
          "percent for protein-protein interfaces. Natural partners engage the "
          "functional surface; antibodies do not.",
          align=WD_ALIGN_PARAGRAPH.JUSTIFY)
+    figure(doc, "pymol_matched_pair.png",
+           "Fig. 7 The same protein read by an antibody and by its natural "
+           "partner, with both footprints painted onto one copy of the shared "
+           "protein. (a) Angiogenin, among the higher-overlap pairs. (b) A "
+           "low-overlap pair. Red marks residues contacted only by the antibody, "
+           "blue only by the natural partner, and purple by both.")
     figure(doc, "add5_epitope_logic.png",
            "Fig. 6 Interface composition, accessibility and protrusion scored "
            "against each protein's own accessible surface.")
@@ -802,7 +896,17 @@ def build_manuscript():
          "protein-protein interfaces, and planarity is 0.85 against 0.79. Epitopes "
          "show the same compactness, at 10.5 angstroms. Part of the difference in "
          "radius restates the difference in interface size, but planarity is "
-         "comparatively independent of size and points the same way. Six "
+         "comparatively independent of size and points the same way. Because the "
+         "antibody corpus is entirely X-ray, and well-diffracting proteins might be "
+         "smaller and more rigid than proteins generally, this result was tested "
+         "against the possibility that it reflects crystallisability rather than "
+         "antibody chemistry. The premise does not hold: antibody antigens in this "
+         "corpus are larger than protein-protein partners, with medians of 169 and "
+         "135 residues. The difference also survives stratification. Within every "
+         "quartile of bound-protein length the paratope patch remains more compact "
+         "and more planar, with planarity effects between 0.12 and 0.39, and the "
+         "difference is likewise present when both groups are restricted to "
+         "structures better than 2.0 angstroms. Six "
          "hypervariable loops presented at the end of a beta-sandwich form a small "
          "and relatively flat binding face, and the antigen surface they engage is "
          "correspondingly flat.",
@@ -863,6 +967,26 @@ def build_manuscript():
          "fewer contacts even at matched unit counts, so a contact-matched "
          "comparison would refine the estimate.",
          align=WD_ALIGN_PARAGRAPH.JUSTIFY)
+    para(doc,
+         "The practical reading for computational tooling follows from the same "
+         "distinction. Scoring functions used in docking and in complex-structure "
+         "prediction combine a pairwise chemical term with terms for shape "
+         "complementarity, desolvation and pose plausibility. Our result indicates "
+         "that the pairwise chemical term learned from general interfaces is "
+         "largely transferable to antibody complexes, while the established "
+         "difficulty of generic potentials on antibody targets is better attributed "
+         "to the geometric terms. That is consistent with what is known about "
+         "antibody interfaces from this study: they are smaller, flatter and more "
+         "compact than co-evolved interfaces, and they engage a surface patch "
+         "carrying no complementary adaptation, which is a harder geometric "
+         "recognition problem rather than a different chemical one. For tool "
+         "development the implication is that effort spent on antibody-specific "
+         "pairwise potentials may return less than effort spent on antibody-"
+         "specific treatment of interface geometry and loop conformation. We offer "
+         "this as a directed hypothesis rather than a demonstrated result, since "
+         "testing it requires a docking benchmark that this study does not "
+         "include.",
+         align=WD_ALIGN_PARAGRAPH.JUSTIFY)
 
     heading(doc, "3.10 If epitopes are ordinary surface, why are they not random?", 2)
     para(doc,
@@ -912,6 +1036,33 @@ def build_manuscript():
          "direction is consistent with targeting of surface that is under no "
          "selective pressure to be bound.",
          align=WD_ALIGN_PARAGRAPH.JUSTIFY)
+    para(doc,
+         "The same series answers a further question that the corpus-wide "
+         "thermodynamics cannot. If 42 antibodies converge on one face, do they "
+         "also converge on one thermodynamic strategy for engaging it? They do "
+         "not. Across the series the heat-capacity change per 1000 square "
+         "angstroms buried has a median of -39 cal per mol per K but ranges from "
+         "-10 to -178, an eighteen-fold spread, and the coefficient of variation "
+         "of 0.70 is only modestly below the 0.90 seen across antibody interfaces "
+         "generally. Neither the number of immunodominant positions contacted nor "
+         "the total buried surface predicts the value, with Spearman "
+         "correlations of 0.15 and -0.02. What does stay narrow is the apolar "
+         "fraction of buried surface, between 0.38 and 0.62 with a median of 0.42, "
+         "which is lower than the antibody corpus median of 0.50 and indicates "
+         "that this particular antigen face is engaged with unusually little "
+         "hydrophobic burial. Spatial convergence therefore does not imply "
+         "thermodynamic convergence. One surface patch admits many "
+         "energetically distinct solutions, which is what one expects if the "
+         "patch is selected for accessibility and contiguity rather than for a "
+         "particular chemistry, and it is consistent with the finding that the "
+         "epitope carries little compositional signature of its own.",
+         align=WD_ALIGN_PARAGRAPH.JUSTIFY)
+    figure(doc, "case_thermodynamics.png",
+           "Fig. 9 Thermodynamic signature across 42 independent antibodies against "
+           "one antigen. (a) Heat-capacity change per unit buried surface for the "
+           "lysozyme series against all antibody interfaces. (b) The same quantity "
+           "against the number of immunodominant positions contacted. (c) Apolar "
+           "fraction of buried surface against total buried surface.")
     figure(doc, "pymol_immunodominance_montage.png",
            "Fig. 8 Contact frequency of 42 independently raised antibodies mapped "
            "onto the lysozyme surface. Catalytic residues are shown as sticks.")
@@ -979,14 +1130,14 @@ def build_manuscript():
 
     # -------------------------------------------------------------- declarations
     heading(doc, "Declarations", 1)
-    para(doc, "Funding: to be completed.", size=10)
+    para(doc, "Funding: this research received no external funding.", size=10)
     para(doc, "Conflicts of interest: the authors declare none.", size=10)
     para(doc, "Data availability: all structures analysed are publicly available "
               "from the Protein Data Bank. Derived contact tables, per-cell "
               "matrices, structural feature tables and analysis outputs are provided "
               "as supplementary data.", size=10)
     para(doc, "Code availability: all analysis code is provided.", size=10)
-    para(doc, "Author contributions: to be completed.", size=10)
+    para(doc, "Author contributions: MR designed the study, implemented the analysis pipeline and drafted the manuscript. AS and AK contributed to study design and interpretation and revised the manuscript. All authors read and approved the final manuscript.", size=10)
 
     heading(doc, "References", 1)
     para(doc,

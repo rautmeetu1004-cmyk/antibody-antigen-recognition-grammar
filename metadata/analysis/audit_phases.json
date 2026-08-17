@@ -36,9 +36,9 @@
    "pass": true,
    "detail": "phase3=36,810 phase4=36,810"
   },
-  "ppi_interface_count_is_doubled": {
+  "ppi_interface_count_is_deduplicated": {
    "pass": true,
-   "detail": "antibody=512 (=structures), ppi=4584 (=2x2292 structures, one row per direction)"
+   "detail": "antibody=512 (=structures), ppi=2292 (=structures, deduplicated from the 4,584 direction-records in the raw table)"
   },
   "grammar_r_reproduces": {
    "pass": true,

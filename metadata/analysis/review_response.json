@@ -1,0 +1,193 @@
+{
+ "equivalence": {
+  "f_salt": {
+   "label": "Salt-bridge fraction",
+   "median_antibody": 0.03260869565217391,
+   "median_ppi": 0.03333333333333333,
+   "difference_of_means": -0.00424873886486956,
+   "bootstrap_ci_on_difference": [
+    -0.00888777886773153,
+    0.00035584209744250864
+   ],
+   "difference_test_p": 0.30028441836830666,
+   "equivalence_margin": 0.021591497767220243,
+   "tost_p": 2.3170354523927017e-13,
+   "equivalent_at_margin": true
+  },
+  "f_opp_charge": {
+   "label": "Opposite-charge pair fraction",
+   "median_antibody": 0.05128205128205128,
+   "median_ppi": 0.0510576493371071,
+   "difference_of_means": -0.006510749569428383,
+   "bootstrap_ci_on_difference": [
+    -0.012870143249359325,
+    -0.00012551248465278108
+   ],
+   "difference_test_p": 0.35032395348710976,
+   "equivalence_margin": 0.021591497767220243,
+   "tost_p": 1.3497695393605014e-06,
+   "equivalent_at_margin": true
+  },
+  "f_target_sidechain_read": {
+   "label": "Side-chain readout fraction",
+   "median_antibody": 0.7309952692867541,
+   "median_ppi": 0.7110285978355491,
+   "difference_of_means": 0.01638970320420019,
+   "bootstrap_ci_on_difference": [
+    0.0018467136617804497,
+    0.03216291943117128
+   ],
+   "difference_test_p": 0.03690530247947647,
+   "equivalence_margin": 0.021591497767220243,
+   "tost_p": 0.24930155594028738,
+   "equivalent_at_margin": false
+  },
+  "f_stack": {
+   "label": "Aromatic stacking fraction",
+   "median_antibody": 0.0,
+   "median_ppi": 0.0,
+   "difference_of_means": 0.0006401181100693207,
+   "bootstrap_ci_on_difference": [
+    -0.0004061009310954003,
+    0.001718710731163685
+   ],
+   "difference_test_p": 0.6499320180645377,
+   "equivalence_margin": 0.021591497767220243,
+   "tost_p": 5.431575928302395e-129,
+   "equivalent_at_margin": true
+  },
+  "_margin_note": "Equivalence margin is 20 percent of the largest composition difference the study measures on the same scale, the apolar-apolar contact fraction (absolute difference 0.1080), giving a margin of 0.0216. A significant TOST licenses the statement that the two classes do not differ by an amount comparable to the effects the study reports elsewhere."
+ },
+ "channel_null": {
+  "antibody": {
+   "observed": 0.2781657782434861,
+   "null_median": 0.530333854679224,
+   "null_ci": [
+    0.4214051937395566,
+    0.6360022992879638
+   ],
+   "p_one_sided_observed_below_null": 0.004975124378109453,
+   "n_perm": 200,
+   "interpretation": "p is the probability of a side-vs-main correlation this LOW if the moiety of each contact carried no grammar information. A low p means the two channels encode genuinely different residue preferences."
+  },
+  "ppi": {
+   "observed": 0.5539591489166881,
+   "null_median": 0.9432695696805089,
+   "null_ci": [
+    0.9249503822680815,
+    0.9546193977092425
+   ],
+   "p_one_sided_observed_below_null": 0.004975124378109453,
+   "n_perm": 200,
+   "interpretation": "p is the probability of a side-vs-main correlation this LOW if the moiety of each contact carried no grammar information. A low p means the two channels encode genuinely different residue preferences."
+  }
+ },
+ "crystallisability": {
+  "n_with_metadata": 1508,
+  "strata": {
+   "length_50_103": {
+    "n_antibody": 59,
+    "n_ppi": 328,
+    "length_range": [
+     50.0,
+     103.0
+    ],
+    "probe_rg": {
+     "median_antibody": 10.47,
+     "median_ppi": 13.510000000000002,
+     "effect_rank_biserial": -0.10929102935097146,
+     "p": 0.1814667136897512
+    },
+    "probe_planarity": {
+     "median_antibody": 0.8454,
+     "median_ppi": 0.75005,
+     "effect_rank_biserial": 0.3870917734601076,
+     "p": 2.197148177524135e-06
+    }
+   },
+   "length_103_141": {
+    "n_antibody": 154,
+    "n_ppi": 262,
+    "length_range": [
+     103.0,
+     141.0
+    ],
+    "probe_rg": {
+     "median_antibody": 10.405,
+     "median_ppi": 16.125,
+     "effect_rank_biserial": -0.42894319421036975,
+     "p": 2.7178479340361233e-13
+    },
+    "probe_planarity": {
+     "median_antibody": 0.849,
+     "median_ppi": 0.808,
+     "effect_rank_biserial": 0.21168335481312583,
+     "p": 0.00031081165126867433
+    }
+   },
+   "length_141_222": {
+    "n_antibody": 127,
+    "n_ppi": 276,
+    "length_range": [
+     141.0,
+     222.0
+    ],
+    "probe_rg": {
+     "median_antibody": 11.17,
+     "median_ppi": 19.305,
+     "effect_rank_biserial": -0.32836927992696563,
+     "p": 1.1754417108649606e-07
+    },
+    "probe_planarity": {
+     "median_antibody": 0.8377,
+     "median_ppi": 0.7968999999999999,
+     "effect_rank_biserial": 0.18914755220814783,
+     "p": 0.0022797454559619615
+    }
+   },
+   "length_222_693": {
+    "n_antibody": 176,
+    "n_ppi": 203,
+    "length_range": [
+     222.0,
+     693.0
+    ],
+    "probe_rg": {
+     "median_antibody": 10.585,
+     "median_ppi": 20.72,
+     "effect_rank_biserial": -0.5122313031795791,
+     "p": 7.810550224214044e-18
+    },
+    "probe_planarity": {
+     "median_antibody": 0.8508,
+     "median_ppi": 0.8174,
+     "effect_rank_biserial": 0.11847850425436635,
+     "p": 0.04666290384192428
+    }
+   },
+   "resolution_better_than_2A": {
+    "n_antibody": 459,
+    "n_ppi": 844,
+    "probe_rg": {
+     "median_antibody": 10.58,
+     "median_ppi": 16.14,
+     "effect_rank_biserial": -0.32820679614657866,
+     "p": 1.1466884999673013e-22
+    },
+    "probe_planarity": {
+     "median_antibody": 0.8428,
+     "median_ppi": 0.7947500000000001,
+     "effect_rank_biserial": 0.23476494336544507,
+     "p": 2.4080475192290507e-12
+    }
+   }
+  },
+  "target_length": {
+   "median_antibody": 169.0,
+   "median_ppi": 135.0,
+   "effect_rank_biserial": 0.25904006651606415,
+   "p": 1.603866166919099e-16,
+   "note": "If antibody antigens were systematically smaller, the compactness difference could follow from protein size rather than from antibody chemistry. This tests the premise of the objection."
+  }
+ }
+}

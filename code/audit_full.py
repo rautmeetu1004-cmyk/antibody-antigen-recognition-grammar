@@ -215,12 +215,55 @@ def a_cross_phase():
           f"{len(figs)} figures: {', '.join(f[:-4] for f in figs[:6])}...")
 
 
+# ---------------------------------------------- unit-identifier namespace hazard
+def a_unit_id_namespace():
+    """cluster30 identifiers are NOT globally unique across the two corpora.
+
+    They were assigned in separate clustering runs, so the same string can denote
+    different proteins in the two arms. Any dictionary that groups by the bare
+    identifier while iterating rows from BOTH arms will silently merge unrelated
+    structure sets. This check documents the hazard so it cannot be reintroduced,
+    and verifies that the weighting in aa_common is computed per arm.
+    """
+    ab = {v.get("cluster30") for v in C.units("antibody").values()
+          if v.get("cluster30")}
+    pp = set()
+    for v in C.units("ppi").values():
+        for d in (v.get("a_to_b"), v.get("b_to_a")):
+            if d and d.get("cluster30"):
+                pp.add(d["cluster30"])
+    shared = ab & pp
+
+    ab_up = {v["cluster30"]: v.get("uniprot") for v in C.units("antibody").values()
+             if v.get("cluster30")}
+    pp_up = {}
+    for v in C.units("ppi").values():
+        d = v.get("a_to_b") or {}
+        if d.get("cluster30"):
+            pp_up.setdefault(d["cluster30"], d.get("uniprot"))
+    conflicting = [c for c in shared if ab_up.get(c) != pp_up.get(c)]
+
+    # aa_common must weight within arm: identical unit strings in the two arms must
+    # not produce identical weights unless the arms genuinely share the structures
+    wa = {r["unit"]: r["weight"] for r in C.load_contacts("antibody")}
+    wp = {}
+    for r in C.load_contacts("ppi"):
+        wp.setdefault(r["unit"], r["weight"])
+    independent = any(c in wa and c in wp and wa[c] != wp[c] for c in conflicting)
+
+    check("unit_ids_are_not_globally_unique_documented",
+          len(shared) > 0 and independent,
+          f"{len(shared)} cluster30 ids occur in both arms, {len(conflicting)} of "
+          f"them denoting different proteins; aa_common weights are computed per "
+          f"arm so the collision does not propagate there")
+
+
 if __name__ == "__main__":
     print("=" * 78)
     for fn in (a_dihedral, a_chi1_canonical, a_ss_validation,
                a_loop_confound_independent, a_paratope, a_differential,
                a_modified, a_controls, a_transfer, a_loo_subtraction,
-               a_cross_phase):
+               a_cross_phase, a_unit_id_namespace):
         try:
             fn()
         except Exception as e:                                    # noqa: BLE001
