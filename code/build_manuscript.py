@@ -129,49 +129,33 @@ def build_manuscript():
     heading(doc, "Abstract", 1)
     para(doc,
          "Antibodies bind protein surfaces with which they have no evolutionary "
-         "history. It has been proposed that they achieve this by exploiting "
-         "physicochemical features common to all protein surfaces rather than "
-         "features peculiar to their targets. Testing that proposition requires "
-         "measuring antibody interfaces and co-evolved protein-protein interfaces by "
-         "the same procedure, which has rarely been done, because the two classes are "
-         "usually characterised in separate studies differing in corpus, contact "
-         "criteria and treatment of redundancy. The absence of a matched comparator "
-         "carries a specific cost. Several of the most important observations about "
-         "epitopes are null results, and a null result cannot be interpreted without "
-         "knowing what a positive one looks like. We therefore measured 512 "
-         "antibody-antigen and 2,292 general protein-protein complexes with one "
-         "pipeline, weighting every statistic over 30 percent sequence-identity "
-         "clusters. Feature extraction produced residue-pair contacts, atom contacts "
-         "resolved to fourteen functional groups, and per-residue secondary "
-         "structure, torsion angles and buried surface. The two classes agree closely "
-         "when chemistry is described by chemical class, with a correlation of 0.84, "
-         "and differ at the resolution of residue pairs, where a permutation test "
-         "against the null of one shared grammar gives an observed correlation of "
-         "0.42 against a null of 0.80 at p = 0.001. The difference survives matching "
-         "on secondary structure, fold class, resolution, redundancy, hydrogen-bond "
-         "criterion and antibody format. Decomposing contacts by the moiety of the "
-         "target residue localises it. Both classes read side chains in the same "
-         "proportion, 0.72, with a per-residue correlation of 0.98, and their "
-         "side-chain grammars correlate at 0.49, but their main-chain grammars "
-         "correlate at only 0.14. The two channels are close to independent in "
-         "antibodies, at 0.28, and largely redundant in co-evolved interfaces, at "
-         "0.71. Functional-group analysis attributes this to the tyrosine phenol "
-         "hydroxyl hydrogen bonding to the antigen main chain, enriched by 0.56 and "
-         "0.58 over the protein-protein baseline, together with cation-pi contacts, "
-         "while aromatic stacking is depleted. Antibody interfaces are smaller, "
-         "flatter and less hydrophobically driven, with a heat-capacity change of "
-         "-94 against -151 cal per mol per K per 1000 square angstroms. Measuring "
-         "three interface types by one procedure also places existing null results on "
-         "a scale. Compositional distinguishability from a protein's own accessible "
-         "surface is 0.97 for the paratope and 0.48 for a co-evolved interface, but "
-         "0.25 for the epitope, and epitopes show no protrusion preference while "
-         "paratopes protrude strongly. The specialised component of an "
-         "antibody-antigen interface is the antibody. Finally, a potential trained on "
-         "general interfaces discriminates native antibody interfaces from "
-         "sequence-permuted decoys as effectively as an antibody-specific potential. "
-         "This bounds the practical magnitude of the difference and, read alongside "
-         "the known difficulty of generic potentials in antibody docking, locates "
-         "that difficulty in the geometric rather than the chemical term.",
+         "history, and are thought to exploit physicochemical features common to all "
+         "protein surfaces rather than features peculiar to their targets. Testing "
+         "that proposition requires measuring antibody and co-evolved interfaces by "
+         "one procedure, which is rarely done. The absence of a matched comparator "
+         "carries a specific cost: several important observations about epitopes are "
+         "null results, and a null cannot be interpreted without knowing what a "
+         "positive one looks like. We measured 512 antibody-antigen and 2,292 "
+         "protein-protein complexes with a single pipeline, weighting every statistic "
+         "over 30 percent sequence-identity clusters. The two classes agree closely "
+         "when chemistry is described by chemical class (r = 0.84) and differ at "
+         "residue-pair resolution, where a permutation test against the null of one "
+         "shared grammar gives 0.42 against a null of 0.80 (p = 0.001). The "
+         "difference survives matching on secondary structure, fold class, "
+         "resolution, redundancy, hydrogen-bond criterion and antibody format. "
+         "Decomposing contacts by the moiety being read localises it. Both classes "
+         "read side chains in the same proportion, 0.72, and their side-chain "
+         "grammars correlate at 0.49, but their main-chain grammars correlate at "
+         "0.14. Functional-group analysis attributes this to the tyrosine phenol "
+         "hydroxyl hydrogen bonding to the antigen main chain, while aromatic "
+         "stacking is depleted. Antibody interfaces are smaller, flatter and less "
+         "hydrophobically driven, with a heat-capacity change of -94 against -151 cal "
+         "per mol per K per 1000 square angstroms buried. Measuring three interface "
+         "types by one procedure also places existing null results on a scale: "
+         "compositional distinguishability from a protein's own accessible surface is "
+         "0.97 for the paratope and 0.48 for a co-evolved interface, but 0.25 for the "
+         "epitope. The specialised component of an antibody-antigen interface is the "
+         "antibody.",
          align=WD_ALIGN_PARAGRAPH.JUSTIFY)
 
     para(doc, "Keywords: antibody-antigen recognition; protein-protein interfaces; "
@@ -1588,50 +1572,52 @@ def build_supplementary():
          size=9)
 
     heading(doc, "S10. Supplementary figures", 1)
-    for fn, cap in (
-        ("heatmap_chemical_classes.png",
-         "Fig. S1 Chemical-class collapse of the recognition matrices."),
-        ("heatmap_bond_decomposition.png",
-         "Fig. S2 Recognition matrices decomposed by bond type."),
-        ("heatmap_20x20_uniprot.png",
-         "Fig. S3 Recognition matrices using UniProt accession as the independence "
-         "unit, as a sensitivity analysis."),
-        ("phase4_conservation.png",
-         "Fig. S4 Cell-by-cell agreement between the two grammars and classification "
-         "of shared and specific cells."),
-        ("phase6b_functional_groups.png",
-         "Fig. S5 Functional-group recognition maps and their difference."),
-        ("phase6d_folds.png",
-         "Fig. S6 CATH fold composition and the fold-matched control."),
-        ("phase11_controls.png", "Fig. S7 Resolution, redundancy, hydrogen-bond "
-                                 "criterion and antibody-format controls."),
-        ("phase8_differential.png",
-         "Fig. S8 Differential map, permutation test and matrix asymmetry."),
-        ("phase7_paratope.png",
-         "Fig. S9 Paratope architecture and epitope contiguity."),
-        ("phase9_modified.png",
-         "Fig. S10 Post-translational modifications and glycans at interfaces."),
-        ("add1_transfer.png",
-         "Fig. S11 Native-versus-decoy discrimination with self and cross "
-         "potentials."),
-        ("add2_thermodynamics.png", "Fig. S12 Burial thermodynamics."),
-        ("add3_shape_complementarity.png", "Fig. S13 Shape complementarity."),
-        ("add4_geometry.png", "Fig. S14 Geometric spread of paratope and epitope."),
-        ("add6_functional_sites.png",
-         "Fig. S15 Overlap of interfaces with ligand-binding sites."),
-        ("phase6c_conformation.png",
-         "Fig. S16 Backbone dihedrals, side-chain rotamers and burial."),
-        ("immunodominance_profile.png",
-         "Fig. S17 Per-position antibody contact frequency on lysozyme C."),
-        ("case_lysozyme.png",
-         "Fig. S18 Immunodominance and sequence conservation on lysozyme C."),
-        ("case_matched_targets.png",
-         "Fig. S19 Epitope overlap with the natural partner site for proteins "
-         "solved in both complexes."),
-        ("phase2_interface_inventory.png",
-         "Fig. S20 Interface size and packing distributions."),
-    ):
-        figure(doc, fn, cap, width=5.9)
+    figure(doc, "heatmap_chemical_classes.png",
+           "Fig. S1 Chemical-class collapse of the recognition matrices. (a) Antibody-antigen. (b) General protein-protein. Cell values are log2(observed/expected).", width=5.9)
+    figure(doc, "heatmap_bond_decomposition.png",
+           "Fig. S2 Recognition matrices decomposed by bond type. (a) to (d) Antibody-antigen, showing salt bridge, hydrogen bond, van der Waals and aromatic stacking respectively. (e) to (h) The same four decompositions for general protein-protein interfaces.", width=5.9)
+    figure(doc, "heatmap_20x20_uniprot.png",
+           "Fig. S3 Recognition matrices computed with UniProt accession as the independence unit, as a sensitivity analysis on the cluster30 definition used throughout. (a) Antibody-antigen. (b) General protein-protein.", width=5.9)
+    figure(doc, "phase4_conservation.png",
+           "Fig. S4 Conservation of recognition chemistry between the two classes. (a) Cell-by-cell agreement, coloured by the chemical class of the probe residue. (b) Correlation by bond type, with and without cysteine. (c) Classification of cells as universal, class-specific or opposed.", width=5.9)
+    figure(doc, "phase6b_functional_groups.png",
+           "Fig. S5 Functional-group recognition maps over fourteen chemical groups. (a) Antibody-antigen. (b) General protein-protein. (c) Difference between them, with orange indicating antibody enrichment.", width=5.9)
+    figure(doc, "phase6d_folds.png",
+           "Fig. S6 Fold composition and the fold-matched control. (a) CATH class of the recognised protein in each group. (b) Cross-class grammar correlation within matched fold class, against size-matched nulls shown in grey.", width=5.9)
+    figure(doc, "phase11_controls.png",
+           "Fig. S7 Robustness controls. (a) Resolution stratification against size-matched nulls. (b) Effect of removing the largest antigen clusters. (c) Sensitivity to the hydrogen-bond distance criterion. (d) Fab against single-domain antibodies, with the within-format reliability ceiling.", width=5.9)
+    figure(doc, "phase8_differential.png",
+           "Fig. S8 Formal comparison of the two grammars. (a) Differential map, antibody minus protein-protein, with dots marking cells whose interval excludes zero. (b) Permutation test against the null of one shared grammar. (c) Matrix asymmetry for each class.", width=5.9)
+    figure(doc, "phase7_paratope.png",
+           "Fig. S9 Paratope architecture and epitope character. (a) Share of paratope contacts by CDR loop and framework, split by construct type. (b) Paratope residue enrichment scored against two backgrounds. (c) Number of sequence segments per epitope.", width=5.9)
+    figure(doc, "phase9_modified.png",
+           "Fig. S10 Modified residues and glycans at interfaces. (a) Post-translational modifications. (b) Glycans. Bars give the fraction of structures with at least one such group contacting the partner.", width=5.9)
+    figure(doc, "add1_transfer.png",
+           "Fig. S11 Native-versus-decoy discrimination using each matrix as a threading potential. (a) Antibody interfaces scored by the antibody potential under leave-one-unit-out validation and by the protein-protein potential. (b) The equivalent comparison for protein-protein interfaces.", width=5.9)
+    figure(doc, "add2_thermodynamics.png",
+           "Fig. S12 Burial thermodynamics from atom-level solvent accessibility. (a) Fraction of buried surface that is apolar. (b) Heat-capacity change per 1000 square angstroms buried. (c) Total buried surface. Distributions are over cluster30 units.", width=5.9)
+    figure(doc, "add3_shape_complementarity.png",
+           "Fig. S13 Shape complementarity of the two interface classes, computed on the van der Waals contact surface. Values are not directly comparable with published figures because re-entrant surface is omitted; the between-class comparison is internally valid.", width=5.9)
+    figure(doc, "add4_geometry.png",
+           "Fig. S14 Geometric spread of the contacted patch. (a) to (c) Probe side: radius of gyration, planarity, and number of spatially separate sub-patches. (d) to (f) The same three quantities for the target side.", width=5.9)
+    figure(doc, "add6_functional_sites.png",
+           "Fig. S15 Overlap between interfaces and ligand-binding sites. (a) Fraction of interface residues lying within a ligand-binding site. (b) Ligands most often defining those sites.", width=5.9)
+    figure(doc, "phase6c_conformation.png",
+           "Fig. S16 Backbone dihedrals, side-chain rotamers and burial. (a) to (c) Antibody-antigen: Ramachandran distribution of interface residues, chi1 for interface against background, and buried surface per residue. (d) to (f) The same three for general protein-protein interfaces.", width=5.9)
+    figure(doc, "immunodominance_profile.png",
+           "Fig. S17 Per-position contact frequency across 42 independently raised antibodies against lysozyme C, in canonical numbering. Labelled positions are the eight most frequently contacted.", width=5.9)
+    figure(doc, "case_lysozyme.png",
+           "Fig. S18 Lysozyme C case study. (a) Fraction of the 42 antibodies contacting each position, with catalytic residues marked by dashed lines. (b) Sequence conservation at each position from 236 aligned UniRef50 homologues.", width=5.9)
+    figure(doc, "case_matched_targets.png",
+           "Fig. S19 Proteins solved both with an antibody and with a natural partner. (a) Distribution of Jaccard overlap between the epitope and the partner site across 16 matched proteins. (b) The highest-overlap pairs individually.", width=5.9)
+    figure(doc, "phase2_interface_inventory.png",
+           "Fig. S20 Interface size and packing. (a) to (f) Residue pairs per interface, interface residues on each side, atom contacts, contacts per probe residue, and mean closest-approach distance. Distributions are over cluster30 units.", width=5.9)
+    figure(doc, "add7_equivalence.png",
+           "Fig. S21 Equivalence testing of the reported null results. Points give the difference of means between the classes, bars the bootstrap interval, and the shaded band the equivalence margin. Green marks quantities established as equivalent.", width=5.9)
+    figure(doc, "add7_channel_null.png",
+           "Fig. S22 Permutation null for readout-channel independence. (a) Antibody-antigen. (b) General protein-protein. The shaded band is the correlation expected if the moiety of a contact carried no grammar information.", width=5.9)
+    figure(doc, "add7_crystallisability.png",
+           "Fig. S23 Test of whether the interface geometry difference reflects crystallisability. (a) Radius of gyration and (b) planarity effects within quartiles of bound-protein length and within the high-resolution subset.", width=5.9)
 
     heading(doc, "S11. Supplementary data files", 1)
     table(doc, [
