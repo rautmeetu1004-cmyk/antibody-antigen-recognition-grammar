@@ -1282,11 +1282,12 @@ def build_supplementary():
         ["S5", "Paratope composition against two backgrounds", "Table S5"],
         ["S6", "Burial thermodynamics", "Table S6"],
         ["S7", "Interface geometry", "Table S7"],
-        ["S8", "Verification checks and corrected errors", "Text"],
+        ["S8", "Verification checks and corrected errors",
+         "Text, Tables S8 to S10"],
         ["S9", "Analysis code and the purpose of each script",
-         "Tables S8 to S10"],
-        ["S10", "Supplementary figures", "Figs. S1 to S20"],
-        ["S11", "Supplementary data files", "Table S11"],
+         "Tables S11 to S13"],
+        ["S10", "Supplementary figures", "Figs. S1 to S23"],
+        ["S11", "Supplementary data files", "Table S14"],
     ])
     para(doc, "Table of contents for the supplementary information.", size=9)
 
@@ -1344,12 +1345,20 @@ def build_supplementary():
               "Mann-Whitney U test. Effect is the rank-biserial correlation.", size=9)
 
     heading(doc, "S4. Confound controls", 1)
+    rd = J("loop_confound_real_dssp.json")["loop_confound"]
+
+    def _rd(key):
+        e = rd[key]
+        return [f"{e['r']:.3f}",
+                f"null {e['null_median']:.3f} "
+                f"[{e['null_ci'][0]:.3f}, {e['null_ci'][1]:.3f}]",
+                "below null" if e["r"] < e["null_ci"][0] else "within null"]
+
     table(doc, [
         ["Confound", "Test", "Observed r", "Reference", "Verdict"],
-        ["Secondary structure", "loop to loop", "0.185", "null 0.323 [0.247, 0.390]",
-         "below null"],
-        ["Secondary structure", "target strand", "0.134", "null 0.275 [0.177, 0.366]",
-         "below null"],
+        ["Secondary structure", "loop to loop"] + _rd("loop_both"),
+        ["Secondary structure", "target loop"] + _rd("target_loop"),
+        ["Secondary structure", "target strand"] + _rd("target_strand"),
         ["Fold class", "mainly alpha", "0.167", "null 0.242 [0.168, 0.336]",
          "not raised"],
         ["Fold class", "mainly beta", "0.260", "null 0.312 [0.214, 0.394]",
@@ -1435,7 +1444,7 @@ def build_supplementary():
          "compared each protein against its partner rather than against itself.",
          align=WD_ALIGN_PARAGRAPH.JUSTIFY)
 
-    heading(doc, "S8b. Secondary-structure cross-validation", 1)
+    heading(doc, "S8.1 Secondary-structure cross-validation", 2)
     v = J("dssp_validation.json")
     table(doc, [
         ["Quantity", "Value"],
@@ -1455,12 +1464,12 @@ def build_supplementary():
          f"{v['per_state']['loop']['recall_vs_pydssp']:.3f} / "
          f"{v['per_state']['loop']['precision_vs_pydssp']:.3f}"],
     ])
-    para(doc, "Table S8b Agreement between the in-house Kabsch-Sander implementation "
+    para(doc, "Table S8 Agreement between the in-house Kabsch-Sander implementation "
               "and an independent implementation of the same algorithm. Both assign "
               "from a single ordered backbone array, so this establishes fidelity to "
               "the algorithm and does not address inter-chain beta bridges.", size=9)
 
-    heading(doc, "S8c. Validation against the DSSP program", 1)
+    heading(doc, "S8.2 Validation against the DSSP program", 2)
     w = J("dssp_real_validation.json")
     table(doc, [
         ["Quantity", "Value"],
@@ -1475,10 +1484,44 @@ def build_supplementary():
          f"{w.get('strand_called_loop_by_us', 0):,} of "
          f"{w.get('strand_total_in_dssp', 0):,}"],
     ])
-    para(doc, "Table S8c Agreement with the DSSP program itself. Residues were "
+    para(doc, "Table S9 Agreement with the DSSP program itself. Residues were "
               "matched by alpha-carbon coordinate. The one-directional strand "
               "disagreement quantifies the per-chain limitation of the in-house "
               "implementation.", size=9)
+
+    heading(doc, "S8.3 Section 3.6 recomputed on DSSP assignments", 2)
+    rc = J("loop_confound_real_dssp.json")
+    lc, comp = rc["loop_confound"], rc["ss_composition"]
+    rows = [["Stratum", "Antibody contacts", "Cross-group r", "Size-matched null",
+             "Verdict"]]
+    for key, lab in (("all", "all contacts"), ("loop_probe", "probe loop"),
+                     ("loop_both", "loop to loop"), ("target_loop", "target loop"),
+                     ("target_strand", "target strand"),
+                     ("target_helix", "target helix")):
+        e = lc[key]
+        if "null_ci" in e:
+            ref = (f"{e['null_median']:.3f} "
+                   f"[{e['null_ci'][0]:.3f}, {e['null_ci'][1]:.3f}]")
+            verdict = "below null" if e["r"] < e["null_ci"][0] else "within null"
+        else:
+            ref, verdict = "-", "reference value"
+        rows.append([lab, f"{e['n_antibody']:,}", f"{e['r']:.3f}", ref, verdict])
+    table(doc, rows)
+    para(doc, "Table S10 The Section 3.6 loop-confound test repeated with secondary "
+              "structure taken from the DSSP program rather than from the in-house "
+              "assignment. Annotations were available for "
+              f"{rc['n_structures_with_dssp']:,} of "
+              f"{rc['n_structures_with_dssp'] + rc['n_structures_without_dssp']:,} "
+              "corpus entries, labelling "
+              f"{rc['n_residues_labelled']:,} residues. Loop-weighted composition at "
+              "the interface, in the same weighting, is "
+              f"{comp['antibody_probe']['loop']:.1%} loop for the paratope, "
+              f"{comp['antibody_target']['loop']:.1%} for the epitope, "
+              f"{comp['ppi_probe']['loop']:.1%} and "
+              f"{comp['ppi_target']['loop']:.1%} for the two protein-protein sides. "
+              "The loop-to-loop and target-loop strata remain below their nulls, so "
+              "the conclusion does not depend on the per-chain limitation quantified "
+              "in Table S9.", size=9)
 
     heading(doc, "S9. Analysis code", 1)
     para(doc,
@@ -1508,7 +1551,7 @@ def build_supplementary():
          "Database metadata, and records exclusion reasons for structures that do "
          "not enter the analysis."],
     ])
-    para(doc, "Table S8 Shared engine and corpus preparation scripts.", size=9)
+    para(doc, "Table S11 Shared engine and corpus preparation scripts.", size=9)
 
     heading(doc, "S9.2 Feature extraction and core analyses", 2)
     table(doc, [
@@ -1562,7 +1605,7 @@ def build_supplementary():
          "Resolution, redundancy, hydrogen-bond criterion and antibody-format "
          "controls."],
     ])
-    para(doc, "Table S9 Feature extraction and core analysis scripts.", size=9)
+    para(doc, "Table S12 Feature extraction and core analysis scripts.", size=9)
 
     heading(doc, "S9.3 Extended analyses, case studies and verification", 2)
     table(doc, [
@@ -1612,7 +1655,7 @@ def build_supplementary():
          "Generates the manuscript and this supplementary file, drawing numerical "
          "values from the result files so that text cannot drift from results."],
     ])
-    para(doc, "Table S10 Extended analyses, case studies and verification scripts.",
+    para(doc, "Table S13 Extended analyses, case studies and verification scripts.",
          size=9)
 
     heading(doc, "S10. Supplementary figures", 1)
@@ -1683,7 +1726,7 @@ def build_supplementary():
         ["differential_cells.csv", "Per-cell differences with intervals"],
         ["modified_contacts.csv", "Modified residues and glycans at interfaces"],
     ])
-    para(doc, "Table S11 Supplementary data files provided with this manuscript.",
+    para(doc, "Table S14 Supplementary data files provided with this manuscript.",
          size=9)
 
     out = C.ROOT / "SUPPLEMENTARY.docx"
