@@ -64,12 +64,15 @@ SCRIPTS = [
 ]
 
 
+_ORIGINAL_SAVEFIG = matplotlib.figure.Figure.savefig
+
+
 def install_patches():
     """Suppress titles and stamp panel letters at save time."""
     matplotlib.axes.Axes.set_title = lambda self, *a, **k: None
     matplotlib.figure.Figure.suptitle = lambda self, *a, **k: None
 
-    original_savefig = matplotlib.figure.Figure.savefig
+    original_savefig = _ORIGINAL_SAVEFIG
 
     def savefig(self, *args, **kwargs):
         # a colorbar is an Axes with data, but it is not a panel and must not be
@@ -194,7 +197,9 @@ def remontage(panels, out_name, legend=None, figsize_per=5.6):
         fig.tight_layout(rect=[0, 0.07, 1, 1])
     else:
         fig.tight_layout()
-    fig.savefig(C.OUT_FIG / out_name, dpi=180, bbox_inches="tight")
+    # this function letters its own panels, so save through the unpatched method;
+    # going through the patch would stamp a second set of letters on every panel
+    _ORIGINAL_SAVEFIG(fig, C.OUT_FIG / out_name, dpi=180, bbox_inches="tight")
     plt.close(fig)
     print("  rebuilt " + out_name)
 
