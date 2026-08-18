@@ -167,10 +167,10 @@ def build_manuscript():
     para(doc,
          "The antibody-antigen interface occupies an unusual position in structural "
          "biology. It is among the most intensively solved classes of protein "
-         "complex, but it is also the least evolutionarily conserved [22, 25]. "
+         "complex, but the pairing itself has no evolutionary history [22, 25]. "
          "The production of antibodies revolves around a germline repertoire, "
          "diversified by somatic hypermutation, which produces binders against "
-         "surfaces that have no evolutionary history of being bound [26]. This is the "
+         "surfaces that have never been selected for binding [26]. This is the "
          "opposite of the situation in an obligate oligomer or an enzyme-inhibitor "
          "pair, where both partners have been shaped by selection acting on the "
          "interface itself [9, 14]. The question that follows is simple to state but "
@@ -204,8 +204,9 @@ def build_manuscript():
          "quantity it should be compared against has been missing.",
          align=WD_ALIGN_PARAGRAPH.JUSTIFY)
     para(doc,
-         "Additionally, antibody paratopes are formed by hypervariable loops [13, 16], "
-         "and antibody antigens are drawn disproportionately from beta-rich viral "
+         "A second difficulty is more conceptual. Antibody paratopes are formed by "
+         "hypervariable loops [13, 16], and antibody antigens are drawn "
+         "disproportionately from beta-rich viral "
          "surface proteins. Any chemical difference between antibody and general "
          "interfaces could therefore reflect what is being bound rather than how it "
          "is being bound. This confound is widely acknowledged and seldom tested. "
@@ -215,8 +216,8 @@ def build_manuscript():
          "correlations for purely statistical reasons.",
          align=WD_ALIGN_PARAGRAPH.JUSTIFY)
     para(doc,
-         "In this paper, we addressed both difficulties directly, the missing "
-         "comparator and the structural confound. A single extraction pipeline was "
+         "In this paper, we addressed both difficulties directly. A single extraction "
+         "pipeline was "
          "applied to antibody-antigen and general protein-protein complexes, and all "
          "statistics were weighted over independence units defined by 30 percent "
          "sequence identity clustering of the bound protein. Every stratified "
