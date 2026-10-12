@@ -91,6 +91,7 @@ python3 code/add4_pca_geometry.py           # geometry and separability
 python3 code/add5_epitope_logic.py          # interface vs its own surface
 python3 code/add6_functional_sites.py       # functional-site overlap
 python3 code/add12_affinity_mechanism.py    # SKEMPI: tyrosine-backbone count vs measured dG
+python3 code/add15_skempi_thermo.py         # SKEMPI: enthalpy/entropy partition by class (sec 3.2)
 python3 code/add13_cryoem_holdout.py        # cryo-EM held-out tyrosine-backbone mechanism (n=45)
 python3 code/add14_cryoem_arm.py            # independent cryo-EM grammar arm (431 structures)
 python3 code/immunodominance.py             # lysozyme immunodominance

@@ -1,0 +1,14 @@
+{
+ "antibody_dH_median": -14.0,
+ "n_antibody_dH": 9,
+ "nonantibody_dH_median": -7.75,
+ "n_nonantibody_dH": 28,
+ "dH_MWU_p": 0.0246,
+ "dH_rank_biserial": -0.508,
+ "antibody_TdS_median": -4.5,
+ "nonantibody_TdS_median": 1.293,
+ "TdS_MWU_p": 0.0084,
+ "TdS_rank_biserial": -0.595,
+ "antibody_dG_median": -11.234,
+ "generalPPI_dG_median": -10.294
+}
