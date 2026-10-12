@@ -30,3 +30,8 @@ Thumbs.db
 metadata/cryoem/cif_cache/
 metadata/skempi/pdb_cache/
 metadata/skempi/skempi_v2.csv
+
+# Review artifacts (not part of the published record)
+CODE_AUDIT.md
+REVISION_PLAN.md
+MANUSCRIPT_v6_redlined.docx
