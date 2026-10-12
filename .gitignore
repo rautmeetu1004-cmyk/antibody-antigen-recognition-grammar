@@ -25,3 +25,8 @@ Thumbs.db
 
 # Word lock files
 ~$*
+
+# Regenerable validation caches
+metadata/cryoem/cif_cache/
+metadata/skempi/pdb_cache/
+metadata/skempi/skempi_v2.csv

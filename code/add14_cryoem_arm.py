@@ -13,7 +13,7 @@ import json, re, sys, pathlib, urllib.request, urllib.parse, urllib.error, time
 from collections import defaultdict
 import numpy as np
 # aa_common (log2_odds, contact_matrix, load_contacts) lives with the main X-ray pipeline
-sys.path.insert(0, "/Users/meetrayuraut/Documents/Antibody_Antigen_Recognition_Study/code")
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import aa_common as C
 from Bio.PDB import MMCIFParser, NeighborSearch
 from Bio.PDB.Polypeptide import PPBuilder
@@ -26,13 +26,14 @@ BB = {'N':'main','O':'main','C':'main','CA':'main','OXT':'main'}  # backbone ato
 AB_MOTIF = re.compile(r"WG[QRKEGA]G")   # Ig heavy/light FR4, first ~130 aa
 
 HERE = pathlib.Path(__file__).resolve().parent
-SP = pathlib.Path("/private/tmp/claude-501/-Users-meetrayuraut-Documents-antibody-antigen-git-ready--claude-worktrees-manuscript-final-audit-ce7eea/081dcfbe-4cf6-4b1f-8b3d-76770996b679/scratchpad")
-CIF = SP / "cryoem_cif"; CIF.mkdir(parents=True, exist_ok=True)   # ~1 GB download cache, regenerable
-DATA = HERE / "data"; DATA.mkdir(exist_ok=True)
-IDS_CACHE = DATA / "cryoem_ids.json"
-REC_CACHE = DATA / "cryoem_records.json"
-OUT = HERE / "results"
-OUT.mkdir(exist_ok=True)
+ROOT = HERE.parent                                               # repository root
+CIF = ROOT / "metadata" / "cryoem" / "cif_cache"                 # ~1 GB CIF download cache, regenerable (gitignored)
+CIF.mkdir(parents=True, exist_ok=True)
+DATA = ROOT / "metadata" / "cryoem"; DATA.mkdir(parents=True, exist_ok=True)
+IDS_CACHE = DATA / "cryoem_ids.json"                             # bundled: RCSB cryo-EM entry ids
+REC_CACHE = DATA / "cryoem_records.json"                         # bundled: per-structure extracted records
+OUT = ROOT / "metadata" / "analysis"
+OUT.mkdir(parents=True, exist_ok=True)
 parser = MMCIFParser(QUIET=True); ppb = PPBuilder()
 
 

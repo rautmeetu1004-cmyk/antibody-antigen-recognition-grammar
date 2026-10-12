@@ -9,19 +9,20 @@ rebuts the X-ray-only limitation.
 cryo-EM ids from the RCSB search API; X-ray reference = the corpus antibody structures on disk.
 """
 from __future__ import annotations
-import json, re, pathlib, urllib.request
+import json, os, re, pathlib, urllib.request
 import numpy as np
 from scipy.stats import mannwhitneyu
 from Bio.PDB import MMCIFParser, PDBParser, NeighborSearch
 from Bio.PDB.Polypeptide import PPBuilder
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-SP = pathlib.Path("/private/tmp/claude-501/-Users-meetrayuraut-Documents-antibody-antigen-git-ready--claude-worktrees-perplexity-manuscript-revisions-37c4c4/1ae2188b-6204-4678-9691-7bff9462748f/scratchpad")
-CIFDIR = SP / "cryoem_cif"; CIFDIR.mkdir(exist_ok=True)
-XRAYDIR = pathlib.Path("/Users/meetrayuraut/Documents/heatmap_validation/pdb_complexes_antibody")
-IDS = json.load(open("/tmp/cryoem_ids.json"))
-OUT_JSON = ROOT / "revision_perplexity/cryoem_holdout.json"
-OUT_MD   = ROOT / "revision_perplexity/CRYOEM_HOLDOUT_RESULTS.md"
+CIFDIR = ROOT / "metadata" / "cryoem" / "cif_cache"; CIFDIR.mkdir(parents=True, exist_ok=True)  # regenerable (gitignored)
+# X-ray antibody structures (not redistributed here; PDB ids are in metadata/corpus_manifest.csv).
+# Point this at a directory of <pdb_id>.pdb files for the antibody arm before running.
+XRAYDIR = pathlib.Path(os.environ.get("XRAY_ANTIBODY_DIR", str(ROOT / "pdb_antibody")))
+IDS = json.load(open(ROOT / "metadata" / "cryoem" / "cryoem_ids.json"))  # bundled RCSB cryo-EM ids
+OUT_JSON = ROOT / "metadata" / "analysis" / "cryoem_holdout.json"
+OUT_MD   = ROOT / "metadata" / "analysis" / "CRYOEM_HOLDOUT_RESULTS.md"
 
 cif = MMCIFParser(QUIET=True); pdbp = PDBParser(QUIET=True); ppb = PPBuilder()
 AB_MOTIF = re.compile(r"WG[QRKEGA]G")

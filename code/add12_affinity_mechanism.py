@@ -9,17 +9,18 @@ bonds go with tighter binding, the grammar has energetic meaning, not merely geo
 Independent of the structural corpus. SKEMPI affinity + RCSB structures.
 """
 from __future__ import annotations
-import csv, json, math, re, pathlib, urllib.request
+import csv, json, math, os, re, pathlib, urllib.request
 import numpy as np
 from scipy.stats import spearmanr
 from Bio.PDB import PDBParser, NeighborSearch
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-SP = pathlib.Path("/private/tmp/claude-501/-Users-meetrayuraut-Documents-antibody-antigen-git-ready--claude-worktrees-perplexity-manuscript-revisions-37c4c4/1ae2188b-6204-4678-9691-7bff9462748f/scratchpad")
-SKEMPI = SP / "skempi_v2.csv"
-PDBDIR = SP / "skempi_pdb"; PDBDIR.mkdir(exist_ok=True)
-OUT_JSON = ROOT / "revision_perplexity/affinity_mechanism.json"
-OUT_MD   = ROOT / "revision_perplexity/AFFINITY_MECHANISM_RESULTS.md"
+# SKEMPI 2.0 is a public download (https://life.bsc.es/pid/skempi2); not redistributed here.
+# Set SKEMPI_CSV to its path, or drop skempi_v2.csv into metadata/skempi/.
+SKEMPI = pathlib.Path(os.environ.get("SKEMPI_CSV", str(ROOT / "metadata" / "skempi" / "skempi_v2.csv")))
+PDBDIR = ROOT / "metadata" / "skempi" / "pdb_cache"; PDBDIR.mkdir(parents=True, exist_ok=True)  # regenerable (gitignored)
+OUT_JSON = ROOT / "metadata" / "analysis" / "affinity_mechanism.json"
+OUT_MD   = ROOT / "metadata" / "analysis" / "AFFINITY_MECHANISM_RESULTS.md"
 R = 1.987e-3
 parser = PDBParser(QUIET=True)
 AB_KW = ("antibody","fab","immunoglobulin","heavy chain","light chain","scfv","nanobody","vhh","igg","fv ")
