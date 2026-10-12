@@ -1,0 +1,110 @@
+{
+  "n_disulfide_interfaces": 258,
+  "results": {
+    "all_ppi": {
+      "n_units": 1326,
+      "n_structures": 2292,
+      "r_obs": 0.418,
+      "boot_ci": [
+        0.362,
+        0.445
+      ],
+      "size_matched_null": [
+        0.418,
+        0.418,
+        0.418
+      ],
+      "below_null": false
+    },
+    "heteromeric": {
+      "n_units": 1185,
+      "n_structures": 1876,
+      "r_obs": 0.385,
+      "boot_ci": [
+        0.322,
+        0.419
+      ],
+      "size_matched_null": [
+        0.399,
+        0.416,
+        0.434
+      ],
+      "below_null": true
+    },
+    "homomeric": {
+      "n_units": 228,
+      "n_structures": 416,
+      "r_obs": 0.487,
+      "boot_ci": [
+        0.365,
+        0.518
+      ],
+      "size_matched_null": [
+        0.278,
+        0.366,
+        0.459
+      ],
+      "below_null": false
+    },
+    "enzyme_inhibitor": {
+      "n_units": 78,
+      "n_structures": 150,
+      "r_obs": 0.152,
+      "boot_ci": [
+        0.067,
+        0.21
+      ],
+      "size_matched_null": [
+        0.157,
+        0.291,
+        0.418
+      ],
+      "below_null": true
+    },
+    "receptor_ligand": {
+      "n_units": 64,
+      "n_structures": 55,
+      "r_obs": 0.154,
+      "boot_ci": [
+        0.033,
+        0.209
+      ],
+      "size_matched_null": [
+        0.155,
+        0.276,
+        0.413
+      ],
+      "below_null": true
+    },
+    "no_disulfide": {
+      "n_units": 1274,
+      "n_structures": 2034,
+      "r_obs": 0.364,
+      "boot_ci": [
+        0.311,
+        0.399
+      ],
+      "size_matched_null": [
+        0.408,
+        0.417,
+        0.427
+      ],
+      "below_null": true
+    },
+    "disulfide": {
+      "n_units": 73,
+      "n_structures": 258,
+      "r_obs": 0.251,
+      "boot_ci": [
+        0.158,
+        0.309
+      ],
+      "size_matched_null": [
+        0.166,
+        0.285,
+        0.418
+      ],
+      "below_null": false
+    }
+  }
+}

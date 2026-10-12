@@ -1,0 +1,25 @@
+{
+ "n": 1508,
+ "models": {
+  "full_20_descriptors": {
+   "auc": 0.869,
+   "ci": [
+    0.851,
+    0.887
+   ],
+   "balanced_acc": 0.769
+  },
+  "interface_size_only": {
+   "auc": 0.69
+  },
+  "resolution_only": {
+   "auc": 0.448
+  },
+  "target_length_only": {
+   "auc": 0.653
+  },
+  "mean_min_dist_only": {
+   "auc": 0.688
+  }
+ }
+}

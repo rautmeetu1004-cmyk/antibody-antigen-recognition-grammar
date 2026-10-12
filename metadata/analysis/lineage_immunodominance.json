@@ -1,0 +1,66 @@
+{
+ "n_structures": 42,
+ "n_lineages": 10,
+ "n_unmapped_to_lineage": 0,
+ "gini_per_structure": 0.495,
+ "gini_per_lineage": 0.348,
+ "frac_surface_contacted": 0.659,
+ "top_positions": [
+  {
+   "pos": 102,
+   "res": "G",
+   "struct_frac": 0.857,
+   "lineage_frac": 0.6,
+   "n_lineages": 6
+  },
+  {
+   "pos": 19,
+   "res": "N",
+   "struct_frac": 0.738,
+   "lineage_frac": 0.4,
+   "n_lineages": 4
+  },
+  {
+   "pos": 103,
+   "res": "N",
+   "struct_frac": 0.714,
+   "lineage_frac": 0.7,
+   "n_lineages": 7
+  },
+  {
+   "pos": 63,
+   "res": "W",
+   "struct_frac": 0.619,
+   "lineage_frac": 0.4,
+   "n_lineages": 4
+  },
+  {
+   "pos": 73,
+   "res": "R",
+   "struct_frac": 0.619,
+   "lineage_frac": 0.4,
+   "n_lineages": 4
+  },
+  {
+   "pos": 21,
+   "res": "R",
+   "struct_frac": 0.595,
+   "lineage_frac": 0.5,
+   "n_lineages": 5
+  },
+  {
+   "pos": 62,
+   "res": "W",
+   "struct_frac": 0.595,
+   "lineage_frac": 0.4,
+   "n_lineages": 4
+  },
+  {
+   "pos": 75,
+   "res": "L",
+   "struct_frac": 0.595,
+   "lineage_frac": 0.4,
+   "n_lineages": 4
+  }
+ ]
+}

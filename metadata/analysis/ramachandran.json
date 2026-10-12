@@ -1,0 +1,15 @@
+{
+ "antibody": {
+  "n": 497,
+  "median_outlier_pct": 1.2,
+  "mean_outlier_pct": 1.27,
+  "pct_structures_under_2pct_outliers": 88.7
+ },
+ "ppi": {
+  "n": 500,
+  "median_outlier_pct": 1.6,
+  "mean_outlier_pct": 1.66,
+  "pct_structures_under_2pct_outliers": 73.2
+ },
+ "note": "Coarse general/Gly/Pro Ramachandran regions; applied identically to both arms."
+}

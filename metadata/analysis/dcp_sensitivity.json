@@ -1,0 +1,14 @@
+{
+  "murphy_freire": {
+    "label": "Murphy-Freire (paper)",
+    "ab_median": -93.6,
+    "ppi_median": -148.9,
+    "effect": 0.506
+  },
+  "spolar_record": {
+    "label": "Spolar-Record",
+    "ab_median": -89.1,
+    "ppi_median": -124.9,
+    "effect": 0.506
+  }
+}

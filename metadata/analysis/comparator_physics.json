@@ -1,0 +1,556 @@
+{
+  "meta": {
+    "n_structures": {
+      "all_ppi": 2292,
+      "heteromeric": 1876,
+      "homomeric": 416,
+      "enzyme_inhibitor": 150,
+      "receptor_ligand": 55,
+      "no_disulfide": 2034,
+      "disulfide": 258
+    },
+    "n_disulfide_interfaces": 258,
+    "note": "PPI thermo features cover the 1,000-structure structural subsample only."
+  },
+  "results": {
+    "f_apolar_apolar": {
+      "label": "apolar-apolar fraction",
+      "antibody_median": 0.14545454545454545,
+      "antibody_n_units": 233,
+      "subclasses": {
+        "all_ppi": {
+          "n_units": 812,
+          "comparator_median": 0.26076414628119593,
+          "rank_biserial": -0.518,
+          "p": 1.3813847519503394e-33
+        },
+        "heteromeric": {
+          "n_units": 680,
+          "comparator_median": 0.2558258903146605,
+          "rank_biserial": -0.519,
+          "p": 2.674646230729668e-32
+        },
+        "homomeric": {
+          "n_units": 190,
+          "comparator_median": 0.2811373256337147,
+          "rank_biserial": -0.556,
+          "p": 7.542429158366087e-23
+        },
+        "enzyme_inhibitor": {
+          "n_units": 43,
+          "comparator_median": 0.19047619047619047,
+          "rank_biserial": -0.333,
+          "p": 0.0005253129849642164
+        },
+        "receptor_ligand": {
+          "n_units": 34,
+          "comparator_median": 0.1576779904725944,
+          "rank_biserial": -0.143,
+          "p": 0.17725874068079905
+        },
+        "no_disulfide": {
+          "n_units": 776,
+          "comparator_median": 0.25554000426712187,
+          "rank_biserial": -0.501,
+          "p": 3.976323798864008e-31
+        },
+        "disulfide": {
+          "n_units": 49,
+          "comparator_median": 0.31953925517631265,
+          "rank_biserial": -0.813,
+          "p": 3.9130546895805597e-19
+        }
+      }
+    },
+    "f_aromatic": {
+      "label": "aromatic-residue fraction",
+      "antibody_median": 0.4305555555555556,
+      "antibody_n_units": 233,
+      "subclasses": {
+        "all_ppi": {
+          "n_units": 812,
+          "comparator_median": 0.306099212814825,
+          "rank_biserial": 0.528,
+          "p": 8.11500818043875e-35
+        },
+        "heteromeric": {
+          "n_units": 680,
+          "comparator_median": 0.3086497010151579,
+          "rank_biserial": 0.524,
+          "p": 5.846985415740036e-33
+        },
+        "homomeric": {
+          "n_units": 190,
+          "comparator_median": 0.31224832217769727,
+          "rank_biserial": 0.535,
+          "p": 2.8716497801765693e-21
+        },
+        "enzyme_inhibitor": {
+          "n_units": 43,
+          "comparator_median": 0.3532608695652174,
+          "rank_biserial": 0.299,
+          "p": 0.0018332717014065514
+        },
+        "receptor_ligand": {
+          "n_units": 34,
+          "comparator_median": 0.3121527777777778,
+          "rank_biserial": 0.546,
+          "p": 2.712807386747032e-07
+        },
+        "no_disulfide": {
+          "n_units": 776,
+          "comparator_median": 0.3084323339892241,
+          "rank_biserial": 0.524,
+          "p": 6.269658222665631e-34
+        },
+        "disulfide": {
+          "n_units": 49,
+          "comparator_median": 0.2847026612372144,
+          "rank_biserial": 0.602,
+          "p": 3.502693517859354e-11
+        }
+      }
+    },
+    "f_hbond": {
+      "label": "hydrogen-bond fraction",
+      "antibody_median": 0.2530425963488844,
+      "antibody_n_units": 233,
+      "subclasses": {
+        "all_ppi": {
+          "n_units": 812,
+          "comparator_median": 0.2,
+          "rank_biserial": 0.436,
+          "p": 3.345582752275189e-24
+        },
+        "heteromeric": {
+          "n_units": 680,
+          "comparator_median": 0.2,
+          "rank_biserial": 0.432,
+          "p": 6.788330296532147e-23
+        },
+        "homomeric": {
+          "n_units": 190,
+          "comparator_median": 0.2,
+          "rank_biserial": 0.47,
+          "p": 8.768446090799639e-17
+        },
+        "enzyme_inhibitor": {
+          "n_units": 43,
+          "comparator_median": 0.22929856190516118,
+          "rank_biserial": 0.195,
+          "p": 0.04282955726581457
+        },
+        "receptor_ligand": {
+          "n_units": 34,
+          "comparator_median": 0.22466793168880456,
+          "rank_biserial": 0.196,
+          "p": 0.06522257905464264
+        },
+        "no_disulfide": {
+          "n_units": 776,
+          "comparator_median": 0.2014174095963137,
+          "rank_biserial": 0.425,
+          "p": 7.030352580960541e-23
+        },
+        "disulfide": {
+          "n_units": 49,
+          "comparator_median": 0.18803418803418803,
+          "rank_biserial": 0.607,
+          "p": 2.474543894595877e-11
+        }
+      }
+    },
+    "f_cation_pi": {
+      "label": "cation-pi fraction",
+      "antibody_median": 0.05555555555555555,
+      "antibody_n_units": 233,
+      "subclasses": {
+        "all_ppi": {
+          "n_units": 812,
+          "comparator_median": 0.03207538293063305,
+          "rank_biserial": 0.339,
+          "p": 2.7682634150653215e-15
+        },
+        "heteromeric": {
+          "n_units": 680,
+          "comparator_median": 0.032876959106467304,
+          "rank_biserial": 0.325,
+          "p": 1.140487873606447e-13
+        },
+        "homomeric": {
+          "n_units": 190,
+          "comparator_median": 0.029641099982428393,
+          "rank_biserial": 0.401,
+          "p": 1.2653228156125394e-12
+        },
+        "enzyme_inhibitor": {
+          "n_units": 43,
+          "comparator_median": 0.047619047619047616,
+          "rank_biserial": 0.158,
+          "p": 0.0992912744490552
+        },
+        "receptor_ligand": {
+          "n_units": 34,
+          "comparator_median": 0.038589981447124305,
+          "rank_biserial": 0.301,
+          "p": 0.004621073456049227
+        },
+        "no_disulfide": {
+          "n_units": 776,
+          "comparator_median": 0.03225806451612903,
+          "rank_biserial": 0.333,
+          "p": 1.0286045429421288e-14
+        },
+        "disulfide": {
+          "n_units": 49,
+          "comparator_median": 0.029850746268656716,
+          "rank_biserial": 0.399,
+          "p": 1.1551925933710322e-05
+        }
+      }
+    },
+    "f_salt": {
+      "label": "salt-bridge fraction",
+      "antibody_median": 0.03260869565217391,
+      "antibody_n_units": 233,
+      "subclasses": {
+        "all_ppi": {
+          "n_units": 812,
+          "comparator_median": 0.03333333333333333,
+          "rank_biserial": -0.044,
+          "p": 0.30028441836830666
+        },
+        "heteromeric": {
+          "n_units": 680,
+          "comparator_median": 0.035413599282903344,
+          "rank_biserial": -0.077,
+          "p": 0.0799618032067725
+        },
+        "homomeric": {
+          "n_units": 190,
+          "comparator_median": 0.023414164812861397,
+          "rank_biserial": 0.161,
+          "p": 0.004455841962243041
+        },
+        "enzyme_inhibitor": {
+          "n_units": 43,
+          "comparator_median": 0.019801980198019802,
+          "rank_biserial": 0.204,
+          "p": 0.033150008854178264
+        },
+        "receptor_ligand": {
+          "n_units": 34,
+          "comparator_median": 0.04297169449175019,
+          "rank_biserial": -0.121,
+          "p": 0.2525628197766473
+        },
+        "no_disulfide": {
+          "n_units": 776,
+          "comparator_median": 0.03418803418803419,
+          "rank_biserial": -0.057,
+          "p": 0.18615325066814625
+        },
+        "disulfide": {
+          "n_units": 49,
+          "comparator_median": 0.022222222222222223,
+          "rank_biserial": 0.235,
+          "p": 0.009727504911903854
+        }
+      }
+    },
+    "f_stack": {
+      "label": "aromatic-stacking fraction",
+      "antibody_median": 0.0,
+      "antibody_n_units": 233,
+      "subclasses": {
+        "all_ppi": {
+          "n_units": 812,
+          "comparator_median": 0.0,
+          "rank_biserial": 0.015,
+          "p": 0.6499320180645377
+        },
+        "heteromeric": {
+          "n_units": 680,
+          "comparator_median": 0.0,
+          "rank_biserial": 0.027,
+          "p": 0.4098358248571108
+        },
+        "homomeric": {
+          "n_units": 190,
+          "comparator_median": 0.0,
+          "rank_biserial": -0.048,
+          "p": 0.2775754655199345
+        },
+        "enzyme_inhibitor": {
+          "n_units": 43,
+          "comparator_median": 0.0,
+          "rank_biserial": 0.008,
+          "p": 0.917432442420222
+        },
+        "receptor_ligand": {
+          "n_units": 34,
+          "comparator_median": 0.0,
+          "rank_biserial": 0.116,
+          "p": 0.13910534141071382
+        },
+        "no_disulfide": {
+          "n_units": 776,
+          "comparator_median": 0.0,
+          "rank_biserial": 0.017,
+          "p": 0.605578402563953
+        },
+        "disulfide": {
+          "n_units": 49,
+          "comparator_median": 0.0,
+          "rank_biserial": -0.015,
+          "p": 0.8356103443141044
+        }
+      }
+    },
+    "f_target_sidechain_read": {
+      "label": "side-chain-read fraction",
+      "antibody_median": 0.7309952692867541,
+      "antibody_n_units": 233,
+      "subclasses": {
+        "all_ppi": {
+          "n_units": 812,
+          "comparator_median": 0.7110285978355491,
+          "rank_biserial": 0.09,
+          "p": 0.03690530247947647
+        },
+        "heteromeric": {
+          "n_units": 680,
+          "comparator_median": 0.7140030207064145,
+          "rank_biserial": 0.079,
+          "p": 0.07185993604080416
+        },
+        "homomeric": {
+          "n_units": 190,
+          "comparator_median": 0.6936225567919507,
+          "rank_biserial": 0.188,
+          "p": 0.0009008571145042442
+        },
+        "enzyme_inhibitor": {
+          "n_units": 43,
+          "comparator_median": 0.6417184265010352,
+          "rank_biserial": 0.298,
+          "p": 0.001946273785907908
+        },
+        "receptor_ligand": {
+          "n_units": 34,
+          "comparator_median": 0.7421666662069657,
+          "rank_biserial": 0.017,
+          "p": 0.8706339552270442
+        },
+        "no_disulfide": {
+          "n_units": 776,
+          "comparator_median": 0.7140030207064145,
+          "rank_biserial": 0.071,
+          "p": 0.09900549003924135
+        },
+        "disulfide": {
+          "n_units": 49,
+          "comparator_median": 0.6249824939275378,
+          "rank_biserial": 0.419,
+          "p": 4.105828025116108e-06
+        }
+      }
+    },
+    "n_pairs": {
+      "label": "interface size (residue pairs)",
+      "antibody_median": 59.0,
+      "antibody_n_units": 233,
+      "subclasses": {
+        "all_ppi": {
+          "n_units": 812,
+          "comparator_median": 86.32142857142857,
+          "rank_biserial": -0.314,
+          "p": 2.8134537269566774e-13
+        },
+        "heteromeric": {
+          "n_units": 680,
+          "comparator_median": 85.0,
+          "rank_biserial": -0.327,
+          "p": 8.212201235555771e-14
+        },
+        "homomeric": {
+          "n_units": 190,
+          "comparator_median": 121.0,
+          "rank_biserial": -0.356,
+          "p": 3.055675315354872e-10
+        },
+        "enzyme_inhibitor": {
+          "n_units": 43,
+          "comparator_median": 79.0,
+          "rank_biserial": -0.317,
+          "p": 0.0009590517146550739
+        },
+        "receptor_ligand": {
+          "n_units": 34,
+          "comparator_median": 62.75,
+          "rank_biserial": -0.08,
+          "p": 0.4496090704107475
+        },
+        "no_disulfide": {
+          "n_units": 776,
+          "comparator_median": 85.5,
+          "rank_biserial": -0.304,
+          "p": 1.8048836051542686e-12
+        },
+        "disulfide": {
+          "n_units": 49,
+          "comparator_median": 139.75,
+          "rank_biserial": -0.511,
+          "p": 1.8578634023345382e-08
+        }
+      }
+    },
+    "mean_min_dist": {
+      "label": "mean closest-approach (A)",
+      "antibody_median": 3.5868,
+      "antibody_n_units": 233,
+      "subclasses": {
+        "all_ppi": {
+          "n_units": 812,
+          "comparator_median": 3.641399587445126,
+          "rank_biserial": -0.405,
+          "p": 3.5330988467252645e-21
+        },
+        "heteromeric": {
+          "n_units": 680,
+          "comparator_median": 3.6391062992125986,
+          "rank_biserial": -0.394,
+          "p": 2.8156336813529073e-19
+        },
+        "homomeric": {
+          "n_units": 190,
+          "comparator_median": 3.645926466551888,
+          "rank_biserial": -0.438,
+          "p": 8.97699518722068e-15
+        },
+        "enzyme_inhibitor": {
+          "n_units": 43,
+          "comparator_median": 3.621353114478114,
+          "rank_biserial": -0.277,
+          "p": 0.003950947909767873
+        },
+        "receptor_ligand": {
+          "n_units": 34,
+          "comparator_median": 3.6272724472172326,
+          "rank_biserial": -0.286,
+          "p": 0.00709339561797296
+        },
+        "no_disulfide": {
+          "n_units": 776,
+          "comparator_median": 3.6417629816992294,
+          "rank_biserial": -0.404,
+          "p": 8.211311561390618e-21
+        },
+        "disulfide": {
+          "n_units": 49,
+          "comparator_median": 3.630051960321209,
+          "rank_biserial": -0.393,
+          "p": 1.555146746471251e-05
+        }
+      }
+    },
+    "dCp_per_1000A2": {
+      "label": "area-derived dCp per 1000 A^2",
+      "antibody_median": 93.6,
+      "antibody_n_units": 233,
+      "subclasses": {
+        "all_ppi": {
+          "n_units": 464,
+          "comparator_median": 151.25,
+          "rank_biserial": -0.518,
+          "p": 5.897854991996719e-29
+        },
+        "heteromeric": {
+          "n_units": 392,
+          "comparator_median": 151.01666666666665,
+          "rank_biserial": -0.513,
+          "p": 7.273479495258124e-27
+        },
+        "homomeric": {
+          "n_units": 106,
+          "comparator_median": 156.325,
+          "rank_biserial": -0.564,
+          "p": 8.354466333327081e-17
+        },
+        "enzyme_inhibitor": {
+          "n_units": 22,
+          "comparator_median": 123.6375,
+          "rank_biserial": -0.404,
+          "p": 0.0017489907535185166
+        },
+        "receptor_ligand": {
+          "n_units": 18,
+          "comparator_median": 116.16666666666666,
+          "rank_biserial": -0.275,
+          "p": 0.05227228720594901
+        },
+        "no_disulfide": {
+          "n_units": 436,
+          "comparator_median": 149.85,
+          "rank_biserial": -0.506,
+          "p": 3.64809014164505e-27
+        },
+        "disulfide": {
+          "n_units": 32,
+          "comparator_median": 164.375,
+          "rank_biserial": -0.674,
+          "p": 6.351609041542655e-10
+        }
+      }
+    },
+    "frac_apolar_buried": {
+      "label": "apolar fraction of buried area",
+      "antibody_median": 0.49805,
+      "antibody_n_units": 233,
+      "subclasses": {
+        "all_ppi": {
+          "n_units": 464,
+          "comparator_median": 0.5793,
+          "rank_biserial": -0.518,
+          "p": 5.898025759633623e-29
+        },
+        "heteromeric": {
+          "n_units": 392,
+          "comparator_median": 0.5789333333333334,
+          "rank_biserial": -0.513,
+          "p": 7.255677257071075e-27
+        },
+        "homomeric": {
+          "n_units": 106,
+          "comparator_median": 0.58635,
+          "rank_biserial": -0.564,
+          "p": 8.525212662155022e-17
+        },
+        "enzyme_inhibitor": {
+          "n_units": 22,
+          "comparator_median": 0.540325,
+          "rank_biserial": -0.404,
+          "p": 0.001758037690576818
+        },
+        "receptor_ligand": {
+          "n_units": 18,
+          "comparator_median": 0.5297666666666667,
+          "rank_biserial": -0.274,
+          "p": 0.052888825135362694
+        },
+        "no_disulfide": {
+          "n_units": 436,
+          "comparator_median": 0.57725,
+          "rank_biserial": -0.506,
+          "p": 3.639882246372174e-27
+        },
+        "disulfide": {
+          "n_units": 32,
+          "comparator_median": 0.59775,
+          "rank_biserial": -0.674,
+          "p": 6.401573636296442e-10
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "antibody": {
+    "n_folds_held_out": 53,
+    "n_interfaces_scored": 218,
+    "loFo_mean_auc": 0.767,
+    "loU_mean_auc": 0.76,
+    "auc_drop_fold_vs_unit": -0.0062,
+    "loFo_ci": [
+      0.149,
+      1.0
+    ]
+  },
+  "ppi": {
+    "n_folds_held_out": 192,
+    "n_interfaces_scored": 1807,
+    "loFo_mean_auc": 0.847,
+    "loU_mean_auc": 0.851,
+    "auc_drop_fold_vs_unit": 0.0036,
+    "loFo_ci": [
+      0.16,
+      1.0
+    ]
+  }
+}

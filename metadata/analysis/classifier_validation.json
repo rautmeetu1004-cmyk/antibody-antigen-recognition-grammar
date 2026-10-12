@@ -1,0 +1,47 @@
+{
+ "auc_logreg": 0.869,
+ "auc_randomforest": 0.891,
+ "auc_balanced_classes": 0.859,
+ "top_permutation_importance": [
+  {
+   "descriptor": "f_aromatic",
+   "auc_drop": 0.0236,
+   "sd": 0.0006
+  },
+  {
+   "descriptor": "f_apolar_apolar",
+   "auc_drop": 0.0213,
+   "sd": 0.0007
+  },
+  {
+   "descriptor": "f_hbond",
+   "auc_drop": 0.005,
+   "sd": 0.0005
+  },
+  {
+   "descriptor": "n_pairs",
+   "auc_drop": 0.0049,
+   "sd": 0.0001
+  },
+  {
+   "descriptor": "f_like_charge",
+   "auc_drop": 0.0044,
+   "sd": 0.0004
+  },
+  {
+   "descriptor": "probe_elongation",
+   "auc_drop": 0.0014,
+   "sd": 0.0005
+  },
+  {
+   "descriptor": "probe_planarity",
+   "auc_drop": 0.0005,
+   "sd": 0.0003
+  },
+  {
+   "descriptor": "mean_min_dist",
+   "auc_drop": 0.0003,
+   "sd": 0.0004
+  }
+ ]
+}
