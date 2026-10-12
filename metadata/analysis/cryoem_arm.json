@@ -1,0 +1,11 @@
+{
+ "n_structures": 431,
+ "n_antigen_clusters": 202,
+ "total_tyr_bb": 250,
+ "grammar_corr_cryoEM_vs_Xray_antibody": 0.28806481779961196,
+ "grammar_corr_cryoEM_vs_Xray_ppi": 0.31897625056432105,
+ "side_corr_cryoEM_vs_Xray_antibody": 0.2820096650852445,
+ "note": "cryo-EM antibody grammar vs X-ray antibody (reproduction) and vs X-ray PPI (divergence).",
+ "main_corr_cryoEM_vs_Xray_ppi": 0.14057302519041825,
+ "side_corr_cryoEM_vs_Xray_ppi": 0.34699333850476305
+}

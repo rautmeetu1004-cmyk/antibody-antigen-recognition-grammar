@@ -1,0 +1,37 @@
+RCSB returned 600 cryo-EM 'antibody' entries at <=3.5 A
+  processed 0/600, kept 8 Ab-Ag
+  processed 25/600, kept 20 Ab-Ag
+  processed 50/600, kept 43 Ab-Ag
+  processed 75/600, kept 59 Ab-Ag
+  processed 100/600, kept 77 Ab-Ag
+  processed 125/600, kept 96 Ab-Ag
+  processed 150/600, kept 111 Ab-Ag
+  processed 175/600, kept 133 Ab-Ag
+  processed 200/600, kept 153 Ab-Ag
+  processed 225/600, kept 173 Ab-Ag
+  processed 250/600, kept 194 Ab-Ag
+  processed 275/600, kept 209 Ab-Ag
+  processed 300/600, kept 225 Ab-Ag
+  processed 325/600, kept 243 Ab-Ag
+  processed 350/600, kept 258 Ab-Ag
+  processed 375/600, kept 274 Ab-Ag
+  processed 400/600, kept 295 Ab-Ag
+  processed 425/600, kept 313 Ab-Ag
+  processed 450/600, kept 331 Ab-Ag
+  processed 475/600, kept 351 Ab-Ag
+  processed 500/600, kept 370 Ab-Ag
+  processed 525/600, kept 385 Ab-Ag
+  processed 550/600, kept 398 Ab-Ag
+  processed 575/600, kept 413 Ab-Ag
+FINAL kept 431 cryo-EM Ab-Ag complexes
+{
+ "n_structures": 431,
+ "n_antigen_clusters": 202,
+ "total_tyr_bb": 250,
+ "grammar_corr_cryoEM_vs_Xray_antibody": 0.28806481779961196,
+ "grammar_corr_cryoEM_vs_Xray_ppi": 0.31897625056432105,
+ "side_corr_cryoEM_vs_Xray_antibody": 0.2820096650852445,
+ "note": "cryo-EM antibody grammar vs X-ray antibody (reproduction) and vs X-ray PPI (divergence).",
+ "main_corr_cryoEM_vs_Xray_ppi": 0.14057302519041825,
+ "side_corr_cryoEM_vs_Xray_ppi": 0.34699333850476305
+}

@@ -1,0 +1,15 @@
+{
+ "cryoem": {
+  "n": 45,
+  "frac_with_tyr_bb": 0.5555555555555556,
+  "median_tyr_bb": 1.0,
+  "median_per100": 0.6814310051107325
+ },
+ "xray": {
+  "n": 90,
+  "frac_with_tyr_bb": 0.8111111111111111,
+  "median_tyr_bb": 2.0,
+  "median_per100": 0.8037944698079076
+ },
+ "rate_difference_MWU_p": 0.19381888622572008
+}
