@@ -94,8 +94,7 @@ def main():
         "antibody_dG_median": float(np.median(classes["antibody"]["dG"])),
         "generalPPI_dG_median": float(np.median(classes["general PPI"]["dG"])),
     }
-    json.dump(summary, open(ROOT / "metadata" / "analysis" / "skempi_thermo_summary.json", "w"), indent=1)
-    print(json.dumps(summary, indent=1))
+    print(json.dumps(summary, indent=1))  # summary is printed, not written, to keep outputs lean
 
 
 if __name__ == "__main__":
