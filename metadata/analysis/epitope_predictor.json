@@ -1,0 +1,20 @@
+{
+ "task": "predict epitope among exposed antigen residues (RSA>=0.25), cluster30-grouped 5-fold CV",
+ "n_residues": 60214,
+ "epitope_rate": 0.1711,
+ "n_antigen_clusters": 233,
+ "features_full": "aa one-hot (20) + ss3 one-hot (3) + relative accessibility (1)",
+ "auc_logreg_full": [
+  0.558,
+  0.009
+ ],
+ "auc_logreg_rsa_only": [
+  0.534,
+  0.015
+ ],
+ "auc_randomforest_full": [
+  0.555,
+  0.009
+ ],
+ "interpretation": "AUC near 0.5-0.65 indicates exposed epitopes are weakly distinguishable from other exposed surface, consistent with the study's finding that epitopes are ordinary accessible surface; compare full vs accessibility-only to see what composition/SS add."
+}
