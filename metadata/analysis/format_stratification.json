@@ -1,0 +1,26 @@
+{
+ "task": "paratope compactness/planarity stratified by antibody format (reviewer point 4)",
+ "by_format": {
+  "Fab": {
+   "n": 254,
+   "median_planarity": 0.844,
+   "median_radius_of_gyration": 10.725
+  },
+  "single_domain": {
+   "n": 204,
+   "median_planarity": 0.854,
+   "median_radius_of_gyration": 9.915
+  },
+  "Fv": {
+   "n": 48,
+   "median_planarity": 0.838,
+   "median_radius_of_gyration": 10.96
+  }
+ },
+ "ppi_partner": {
+  "n": 997,
+  "median_planarity": 0.792,
+  "median_radius_of_gyration": 16.3
+ },
+ "conclusion": "flat, compact paratope holds within every format; single-domain is slightly flatter/more compact than Fab, so it is not a Fab artefact."
+}

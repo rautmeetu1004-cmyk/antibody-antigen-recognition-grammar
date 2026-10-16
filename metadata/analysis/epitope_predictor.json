@@ -1,20 +1,45 @@
 {
- "task": "predict epitope among exposed antigen residues (RSA>=0.25), cluster30-grouped 5-fold CV",
+ "task": "predict epitope among exposed antigen residues (RSA>=0.25); cluster30-grouped 5-fold CV",
  "n_residues": 60214,
  "epitope_rate": 0.1711,
  "n_antigen_clusters": 233,
  "features_full": "aa one-hot (20) + ss3 one-hot (3) + relative accessibility (1)",
- "auc_logreg_full": [
-  0.558,
-  0.009
- ],
- "auc_logreg_rsa_only": [
-  0.534,
-  0.015
- ],
- "auc_randomforest_full": [
-  0.555,
-  0.009
- ],
- "interpretation": "AUC near 0.5-0.65 indicates exposed epitopes are weakly distinguishable from other exposed surface, consistent with the study's finding that epitopes are ordinary accessible surface; compare full vs accessibility-only to see what composition/SS add."
+ "note_imbalanced": "task is imbalanced (~17% positive), so PR-AUC/average precision and precision-recall are the informative metrics; ROC-AUC is reported for comparability",
+ "logreg_full": {
+  "roc_auc": 0.549,
+  "pr_auc_average_precision": 0.201,
+  "pr_auc_baseline_positive_rate": 0.171,
+  "pr_auc_lift_over_baseline": 1.18,
+  "brier_score": 0.1413,
+  "precision_at_baserate_threshold": 0.225,
+  "recall_at_baserate_threshold": 0.225,
+  "f1_at_baserate_threshold": 0.225,
+  "precision_in_top_decile": 0.242,
+  "enrichment_top_decile_over_baseline": 1.41
+ },
+ "logreg_accessibility_only": {
+  "roc_auc": 0.518,
+  "pr_auc_average_precision": 0.179,
+  "pr_auc_baseline_positive_rate": 0.171,
+  "pr_auc_lift_over_baseline": 1.04,
+  "brier_score": 0.1418,
+  "precision_at_baserate_threshold": 0.184,
+  "recall_at_baserate_threshold": 0.184,
+  "f1_at_baserate_threshold": 0.184,
+  "precision_in_top_decile": 0.185,
+  "enrichment_top_decile_over_baseline": 1.08
+ },
+ "randomforest_full": {
+  "roc_auc": 0.545,
+  "pr_auc_average_precision": 0.198,
+  "pr_auc_baseline_positive_rate": 0.171,
+  "pr_auc_lift_over_baseline": 1.15,
+  "brier_score": 0.1414,
+  "precision_at_baserate_threshold": 0.213,
+  "recall_at_baserate_threshold": 0.213,
+  "f1_at_baserate_threshold": 0.213,
+  "precision_in_top_decile": 0.231,
+  "enrichment_top_decile_over_baseline": 1.35
+ },
+ "interpretation": "All models sit just above the no-skill baseline (PR-AUC ~= the 0.17 base rate; ROC-AUC ~0.56), and composition+secondary structure add little over accessibility, confirming that an exposed epitope is barely distinguishable from equally exposed surface."
 }
