@@ -151,7 +151,7 @@ def main():
     ax[1].set_xlabel("angle between approach vectors (deg)"); ax[1].set_ylabel("antibody pairs"); ax[1].legend()
     fig.suptitle("Structural diversity of the anti-lysozyme series: rigid antigen, many binding modes", fontsize=12)
     fig.tight_layout()
-    fig.savefig(ROOT / "figures/case_lysozyme_structural.png", dpi=200, bbox_inches="tight")
+    fig.savefig(ROOT / "figures/case_lysozyme_structural.png", dpi=600, bbox_inches="tight")
     print(json.dumps(out, indent=1))
 
 
