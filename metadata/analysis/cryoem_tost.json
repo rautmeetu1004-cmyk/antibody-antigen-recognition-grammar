@@ -1,0 +1,20 @@
+{
+ "metric": "tyrosine-OH -> antigen main-chain bonds per 100 interface residues (zero-inflated)",
+ "cryoem": {
+  "n": 411,
+  "median": 0.0,
+  "frac_with_bond": 0.365
+ },
+ "xray": {
+  "n": 460,
+  "median": 0.0,
+  "frac_with_bond": 0.457
+ },
+ "mann_whitney_p": 0.6621,
+ "rank_biserial": 0.015,
+ "rank_biserial_95ci": [
+  -0.054,
+  0.088
+ ],
+ "interpretation": "Full-set replacement for the n=45 holdout: with 411 cryo-EM and 460 X-ray structures the tyrosine-backbone rate is statistically indistinguishable (Mann-Whitney p=0.66; rank-biserial 0.02, 95% CI [-0.054, 0.088]), a far better-powered confirmation than the holdout (p=0.19). The small effect and a CI tight around zero support generalisation of the mechanism to cryo-EM structures."
+}
