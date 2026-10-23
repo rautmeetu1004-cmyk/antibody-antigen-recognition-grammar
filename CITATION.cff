@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the following."
+title: "Conserved Chemistry, Divergent Grammar: how antibodies read protein interfaces differently from co-evolved partners"
+type: software
+authors:
+  - family-names: Raut
+    given-names: Meetrayu
+  - family-names: Sinharay
+    given-names: Amrita
+  - family-names: Kale
+    given-names: Anup
+    email: anup.kale@mitwpu.edu.in
+repository-code: "https://github.com/rautmeetu1004-cmyk/antibody-antigen-recognition-grammar"
+abstract: >-
+  A matched-pipeline comparison of 512 antibody-antigen and 2,292 co-evolved protein-protein
+  interfaces: shared chemistry at the chemical-class level, divergent residue-pair grammar
+  localised to tyrosine-hydroxyl backbone readout. Includes the full analysis code, data
+  manifests, result tables, figures, and tools (grammar scorer, epitope predictor).
+keywords:
+  - antibody-antigen recognition
+  - protein-protein interfaces
+  - structural bioinformatics
+  - interface chemistry
+  - epitope
+  - paratope
+license: CC-BY-4.0
+version: "1.0.0"
+date-released: "2026-10-23"
