@@ -99,6 +99,21 @@ def metrics(y, p):
     }
 
 
+def cluster_boot_ci(y, p, groups, n_boot=1000, seed=20260816):
+    """95% CI on ROC-AUC and PR-AUC by resampling antigen clusters with replacement."""
+    rng = np.random.default_rng(seed)
+    uniq = np.array(sorted(set(groups)))
+    by = {g: np.where(groups == g)[0] for g in uniq}
+    rocs, aps = [], []
+    for _ in range(n_boot):
+        idx = np.concatenate([by[g] for g in rng.choice(uniq, len(uniq), replace=True)])
+        yb, pb = y[idx], p[idx]
+        if len(np.unique(yb)) > 1:
+            rocs.append(roc_auc_score(yb, pb)); aps.append(average_precision_score(yb, pb))
+    ci = lambda v: [round(float(np.percentile(v, 2.5)), 3), round(float(np.percentile(v, 97.5)), 3)]
+    return {"roc_auc_95ci": ci(rocs), "pr_auc_95ci": ci(aps)}
+
+
 if __name__ == "__main__":
     X, y, groups, rsa = build()
     base = y.mean()
@@ -114,7 +129,7 @@ if __name__ == "__main__":
         "features_full": "aa one-hot (20) + ss3 one-hot (3) + relative accessibility (1)",
         "note_imbalanced": ("task is imbalanced (~17% positive), so PR-AUC/average precision and "
                             "precision-recall are the informative metrics; ROC-AUC is reported for comparability"),
-        "logreg_full": metrics(y, oof_full),
+        "logreg_full": {**metrics(y, oof_full), **cluster_boot_ci(y, oof_full, groups)},
         "logreg_accessibility_only": metrics(y, oof_rsa),
         "randomforest_full": metrics(y, oof_rf),
         "interpretation": ("All models sit just above the no-skill baseline (PR-AUC ~= the 0.17 base "

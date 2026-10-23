@@ -15,7 +15,15 @@
   "recall_at_baserate_threshold": 0.225,
   "f1_at_baserate_threshold": 0.225,
   "precision_in_top_decile": 0.242,
-  "enrichment_top_decile_over_baseline": 1.41
+  "enrichment_top_decile_over_baseline": 1.41,
+  "roc_auc_95ci": [
+   0.54,
+   0.562
+  ],
+  "pr_auc_95ci": [
+   0.186,
+   0.217
+  ]
  },
  "logreg_accessibility_only": {
   "roc_auc": 0.518,
